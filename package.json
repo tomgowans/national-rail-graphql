@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@ovotech/apollo-datasource-soap": "^4.1.0",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "enzyme": "^3.10.0",
+    "graphql": "^14.5.8",
+    "jest": "^24.9.0",
+    "node-fetch": "^2.6.0",
+    "soap": "^0.30.0",
+    "xml2js": "^0.4.22"
+  }
+}

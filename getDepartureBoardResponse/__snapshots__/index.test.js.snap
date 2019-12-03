@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sends the request correctly 1`] = `
+Array [
+  Object {
+    "destination": Array [
+      Object {
+        "location": Array [
+          Object {
+            "crs": Array [
+              "GTW",
+            ],
+            "locationName": Array [
+              "Gatwick Airport",
+            ],
+          },
+        ],
+      },
+    ],
+    "etd": Array [
+      "On time",
+    ],
+    "length": Array [
+      "12",
+    ],
+    "operator": Array [
+      "Thameslink",
+    ],
+    "operatorCode": Array [
+      "TL",
+    ],
+    "origin": Array [
+      Object {
+        "location": Array [
+          Object {
+            "crs": Array [
+              "BDM",
+            ],
+            "locationName": Array [
+              "Bedford",
+            ],
+          },
+        ],
+      },
+    ],
+    "platform": Array [
+      "6",
+    ],
+    "serviceID": Array [
+      "8NvDNS9Gpylp0MOg/MmCxw==",
+    ],
+    "serviceType": Array [
+      "train",
+    ],
+    "std": Array [
+      "21:07",
+    ],
+  },
+  Object {
+    "destination": Array [
+      Object {
+        "location": Array [
+          Object {
+            "crs": Array [
+              "TBD",
+            ],
+            "locationName": Array [
+              "Three Bridges",
+            ],
+          },
+        ],
+      },
+    ],
+    "etd": Array [
+      "On time",
+    ],
+    "operator": Array [
+      "Thameslink",
+    ],
+    "operatorCode": Array [
+      "TL",
+    ],
+    "origin": Array [
+      Object {
+        "location": Array [
+          Object {
+            "crs": Array [
+              "LBG",
+            ],
+            "locationName": Array [
+              "London Bridge",
+            ],
+          },
+        ],
+      },
+    ],
+    "platform": Array [
+      "3",
+    ],
+    "serviceID": Array [
+      "rkEPUnFHelVWfAllpJoHZA==",
+    ],
+    "serviceType": Array [
+      "train",
+    ],
+    "std": Array [
+      "21:08",
+    ],
+  },
+]
+`;
