@@ -34,7 +34,7 @@ function GetDepartureBoardResponse(
     tokenValue
   })
     .then(result => {
-      return result;
+      return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
     })
     .catch(err => console.error(err));
 }

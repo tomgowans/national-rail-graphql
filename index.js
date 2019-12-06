@@ -5,39 +5,39 @@ const config = require("./config.json");
 
 const { tokenValue } = config;
 
-const typeDefs = gql`
+// const typeDefs = gql`
 
-type Station {
-  crs: [String]
-  locationName: [String]
-}
+// type Station {
+//   crs: [String]
+//   locationName: [String]
+// }
 
-type Services {
-  destination: [Station]
-  etd: [String]
-  operator: [String]
-  operatorCode: [String]
-  origin: [
-    location: [Station]
-  ]
-  platform: [String]
-  serviceID: [String]
-  serviceType: [String]
-  std: [String]
-}
+// type Services {
+//   destination: [Station]
+//   etd: [String]
+//   operator: [String]
+//   operatorCode: [String]
+//   origin: [
+//     location: [Station]
+//   ]
+//   platform: [String]
+//   serviceID: [String]
+//   serviceType: [String]
+//   std: [String]
+// }
 
-GetDepartureBoardResponse: {
-  GetStationBoardResult: {
-    trainServices: [
-      service: [Services]
-    ]
-  }
-}
+// GetDepartureBoardResponse: {
+//   GetStationBoardResult: {
+//     trainServices: [
+//       service: [Services]
+//     ]
+//   }
+// }
 
-type Query {
-  service: [Services]
-}
-`;
+// type Query {
+//   service: [Services]
+// }
+// `;
 
 const resolvers = {
   Query: {

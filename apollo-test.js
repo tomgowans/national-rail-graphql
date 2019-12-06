@@ -1,5 +1,8 @@
 const { ApolloServer, gql } = require("apollo-server");
 
+const GetDepartureBoardResponse = require("./GetDepartureBoardRequest");
+const config = require("./config.json");
+
 const typeDefs = gql`
   type Station {
     crs: [String]
@@ -36,7 +39,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    GetStationBoardResult: GetStationBoardResults
+    GetStationBoardResult(crs: String): GetStationBoardResults
   }
 `;
 
@@ -132,21 +135,23 @@ const departures = {
   ]
 };
 
-// GetDepartureBoardResponse(
-//   {
-//     crs: "ECR"
-//   },
-//   tokenValue
-// ).then(result => console.dir(result));
-
 const resolvers = {
   Query: {
-    GetStationBoardResult: () =>
-      departures.GetDepartureBoardResponse[0].GetStationBoardResult[0]
+    GetStationBoardResult(obj, { crs }) {
+      return GetDepartureBoardResponse(
+        {
+          crs
+        },
+        config.tokenValue
+      );
+    }
   }
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers
+});
 
 server.listen().then(({ url }) => {
   console.log(`Server ready at ${url}`);
