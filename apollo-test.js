@@ -23,8 +23,20 @@ const typeDefs = gql`
     std: [String]
   }
 
+  type TrainServicesArray {
+    service: [Services]
+  }
+
+  type GetStationBoardResults {
+    crs: [String]
+    generatedAt: [String]
+    locationName: [String]
+    platformAvailable: [String]
+    trainServices: [TrainServicesArray]
+  }
+
   type Query {
-    GetDepartureBoardRequest: [Services]
+    GetStationBoardResult: GetStationBoardResults
   }
 `;
 
@@ -129,10 +141,8 @@ const departures = {
 
 const resolvers = {
   Query: {
-    GetDepartureBoardRequest: () =>
+    GetStationBoardResult: () =>
       departures.GetDepartureBoardResponse[0].GetStationBoardResult[0]
-        .trainServices[0].service
-    // GetDepartureBoardRequest: () => departures
   }
 };
 
