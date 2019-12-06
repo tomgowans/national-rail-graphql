@@ -15,6 +15,8 @@ const typeDefs = gql`
 
   type Services {
     destination: [Location]
+    cancelReason: [String]
+    delayReason: [String]
     etd: [String]
     length: [String]
     operator: [String]
@@ -30,10 +32,15 @@ const typeDefs = gql`
     service: [Services]
   }
 
+  type Messages {
+    message: [String]
+  }
+
   type GetStationBoardResults {
-    crs: [String]
     generatedAt: [String]
     locationName: [String]
+    crs: [String]
+    nrccMessages: [Messages]
     platformAvailable: [String]
     trainServices: [TrainServicesArray]
   }
