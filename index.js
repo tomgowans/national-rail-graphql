@@ -13,7 +13,7 @@ const typeDefs = gql`
     location: [Station]
   }
 
-  type Services {
+  type ServiceItem {
     destination: [Location]
     cancelReason: [String]
     delayReason: [String]
@@ -29,24 +29,28 @@ const typeDefs = gql`
   }
 
   type TrainServicesArray {
-    service: [Services]
+    service: [ServiceItem]
   }
 
   type Messages {
     message: [String]
   }
 
-  type GetStationBoardResults {
+  type StationBoard {
     generatedAt: [String]
     locationName: [String]
     crs: [String]
+    filterLocationName: [String]
+    filtercrs: [String]
+    filterType: [String]
     nrccMessages: [Messages]
     platformAvailable: [String]
+    areServicesAvailable: [String]
     trainServices: [TrainServicesArray]
   }
 
   type Query {
-    GetStationBoardResult(crs: String): GetStationBoardResults
+    GetStationBoardResult(crs: String): StationBoard
   }
 `;
 
