@@ -9,7 +9,7 @@ const fetchData = require("../fetchData");
  * @param {number || null} timeOffset (integer, between -120 and 120 exclusive): An offset in minutes against the current time to provide the station board for. Defaults to 0. Optional.
  * @param {number || null} timeWindow (integer, between -120 and 120 exclusive): How far into the future in minutes, relative to timeOffset, to return services for. Defaults to 120. Optional.
  */
-function GetDepartureBoardResponse(
+function GetDepartureBoardRequest(
   {
     numRows = null,
     crs,
@@ -39,4 +39,4 @@ function GetDepartureBoardResponse(
     .catch(err => console.error(err));
 }
 
-module.exports = GetDepartureBoardResponse;
+module.exports = GetDepartureBoardRequest;
