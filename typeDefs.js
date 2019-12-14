@@ -128,6 +128,8 @@ const typeDefs = gql`
     delayReason: [String]
     serviceID: [String]
     #adhocAlerts
+    previousCallingPoints: [CallingPointArray]
+    subsequentCallingPoints: [CallingPointArray]
     #formation
   }
 
@@ -177,11 +179,19 @@ const typeDefs = gql`
     etd: [String]
     atd: [String]
     #adhocAlerts
-    previousCallingPoints: [CallingPoint]
-    subsequentCallingPoints: [CallingPoint]
+    previousCallingPoints: [CallingPointArray]
+    subsequentCallingPoints: [CallingPointArray]
+  }
+
+  type CallingPointArray {
+    callingPointList: [CallingPoint]
   }
 
   type CallingPoint {
+    callingPoint: [CallingPointObject]
+  }
+
+  type CallingPointObject {
     locationName: [String]
     crs: [String]
     st: [String]

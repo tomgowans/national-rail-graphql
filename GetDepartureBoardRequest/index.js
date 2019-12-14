@@ -35,6 +35,7 @@ function GetDepartureBoardRequest(
   })
     .then(result => {
       return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
+      // console.dir(result);
     })
     .catch(err => console.error(err));
 }
