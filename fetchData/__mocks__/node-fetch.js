@@ -4,6 +4,7 @@ const GetDepartureBoardRequest = require("../../GetDepartureBoardRequest/respons
 const GetDepBoardWithDetailsRequest = require("../../GetDepBoardWithDetailsRequest/response");
 const GetArrivalBoardRequest = require("../../GetArrivalBoardRequest/response");
 const GetArrBoardWithDetailsRequest = require("../../GetArrBoardWithDetailsRequest/response");
+const GetArrDepBoardWithDetailsRequest = require("../../GetArrDepBoardWithDetailsRequest/response");
 
 const fetch = (url, args) => {
   return new Promise((resolve, reject) => {
@@ -21,6 +22,10 @@ const fetch = (url, args) => {
 
     if (args.body.includes("GetArrBoardWithDetailsRequest")) {
       resolve(GetArrBoardWithDetailsRequest);
+    }
+
+    if (args.body.includes("GetArrDepBoardWithDetailsRequest")) {
+      resolve(GetArrDepBoardWithDetailsRequest);
     }
 
     resolve(response);
