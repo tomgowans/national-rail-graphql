@@ -6,6 +6,10 @@ const GetArrivalBoardRequest = require("../../GetArrivalBoardRequest/response");
 const GetArrBoardWithDetailsRequest = require("../../GetArrBoardWithDetailsRequest/response");
 const GetArrDepBoardWithDetailsRequest = require("../../GetArrDepBoardWithDetailsRequest/response");
 const GetArrivalDepartureBoardRequest = require("../../GetArrivalDepartureBoardRequest/response");
+const GetNextDeparturesRequest = require("../../GetNextDeparturesRequest/response");
+const GetNextDeparturesWithDetailsRequest = require("../../GetNextDeparturesWithDetailsRequest/response");
+const GetFastestDeparturesWithDetailsRequest = require("../../GetFastestDeparturesWithDetailsRequest/response");
+const GetServiceDetailsRequest = require("../../GetServiceDetailsRequest/response");
 
 const fetch = (url, args) => {
   return new Promise((resolve, reject) => {
@@ -31,6 +35,22 @@ const fetch = (url, args) => {
 
     if (args.body.includes("GetArrivalDepartureBoardRequest")) {
       resolve(GetArrivalDepartureBoardRequest);
+    }
+
+    if (args.body.includes("GetNextDeparturesRequest")) {
+      resolve(GetNextDeparturesRequest);
+    }
+
+    if (args.body.includes("GetNextDeparturesWithDetailsRequest")) {
+      resolve(GetNextDeparturesWithDetailsRequest);
+    }
+
+    if (args.body.includes("GetFastestDeparturesWithDetailsRequest")) {
+      resolve(GetFastestDeparturesWithDetailsRequest);
+    }
+
+    if (args.body.includes("GetServiceDetailsRequest")) {
+      resolve(GetServiceDetailsRequest);
     }
 
     resolve(response);
