@@ -13,7 +13,7 @@ function GetNextDeparturesRequest(
   {
     numRows = null,
     crs,
-    filterCrs = null,
+    filterCrs = [],
     filterType = "to",
     timeOffset = 0,
     timeWindow = 120
@@ -24,12 +24,12 @@ function GetNextDeparturesRequest(
     body: `
       <ldb:GetNextDeparturesRequest>
         <ldb:crs>${crs}</ldb:crs>
-        ${filterCrs &&
-          `<ldb:filterCrs>
+        ${filterCrs.length &&
+          `<ldb:filterList>
           ${filterCrs.map(
             filterCrsItem => `<ldb:crs>${filterCrsItem}</ldb:crs>`
           )}
-        </ldb:filterCrs>`}
+        </ldb:filterList>`}
         <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetNextDeparturesRequest>
@@ -37,8 +37,8 @@ function GetNextDeparturesRequest(
     tokenValue
   })
     .then(result => {
+      // console.dir(result.GetNextDeparturesResponse[0].DeparturesBoard[0]);
       return result.GetNextDeparturesResponse[0].DeparturesBoard[0];
-      // console.dir(result);
     })
     .catch(err => console.error(err));
 }

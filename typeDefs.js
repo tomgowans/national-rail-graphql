@@ -133,9 +133,13 @@ const typeDefs = gql`
     #formation
   }
 
-  type DepartureItem {
-    crs: [String]
+  type Destination {
     service: [ServiceItem]
+    crs: [String]
+  }
+
+  type DepartureItem {
+    destination: [Destination]
   }
 
   type DepartureItemWithCallingPoints {

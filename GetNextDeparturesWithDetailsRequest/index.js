@@ -13,7 +13,7 @@ function GetNextDeparturesWithDetailsRequest(
   {
     numRows = null,
     crs,
-    filterCrs = null,
+    filterCrs = [],
     filterType = "to",
     timeOffset = 0,
     timeWindow = 120
@@ -24,10 +24,10 @@ function GetNextDeparturesWithDetailsRequest(
     body: `
       <ldb:GetNextDeparturesWithDetailsRequest>
       <ldb:crs>${crs}</ldb:crs>
-      ${filterCrs &&
-        `<ldb:filterCrs>
+      ${filterCrs.length &&
+        `<ldb:filterList>
         ${filterCrs.map(filterCrsItem => `<ldb:crs>${filterCrsItem}</ldb:crs>`)}
-      </ldb:filterCrs>`}
+      </ldb:filterList>`}
       <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
       <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
     </ldb:GetNextDeparturesWithDetailsRequest>
@@ -37,7 +37,10 @@ function GetNextDeparturesWithDetailsRequest(
   })
     .then(result => {
       return result.GetNextDeparturesWithDetailsResponse[0].DeparturesBoard[0];
-      // console.dir(result);
+      // console.dir(
+      //   result.GetNextDeparturesWithDetailsResponse[0].DeparturesBoard[0]
+      //     .departures[0].destination[0].service[0]
+      // );
     })
     .catch(err => console.error(err));
 }
