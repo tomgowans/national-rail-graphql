@@ -14,125 +14,102 @@ Object {
   "crs": Array [
     "ECR",
   ],
-  "generatedAt": Array [
-    "2019-11-20T21:09:59.5101527+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "platformAvailable": Array [
-    "true",
-  ],
-  "trainServices": Array [
+  "departures": Array [
     Object {
-      "service": Array [
+      "destination": Array [
         Object {
-          "destination": Array [
+          "$": Object {
+            "crs": "STP",
+          },
+          "service": Array [
             Object {
-              "location": Array [
+              "cancelReason": Array [
+                "This train has been cancelled because of a fault with the signalling system",
+              ],
+              "delayReason": Array [
+                "This train has been delayed by a fault with the signalling system",
+              ],
+              "destination": Array [
                 Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
+                  "location": Array [
+                    Object {
+                      "crs": Array [
+                        "PBO",
+                      ],
+                      "locationName": Array [
+                        "Peterborough",
+                      ],
+                    },
                   ],
                 },
               ],
-            },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "length": Array [
-            "12",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
+              "eta": Array [
+                "17:23",
+              ],
+              "etd": Array [
+                "17:24",
+              ],
+              "length": Array [
+                "12",
+              ],
+              "operator": Array [
+                "Thameslink",
+              ],
+              "operatorCode": Array [
+                "TL",
+              ],
+              "origin": Array [
                 Object {
-                  "crs": Array [
-                    "BDM",
-                  ],
-                  "locationName": Array [
-                    "Bedford",
+                  "location": Array [
+                    Object {
+                      "crs": Array [
+                        "HRH",
+                      ],
+                      "locationName": Array [
+                        "Horsham",
+                      ],
+                    },
                   ],
                 },
               ],
-            },
-          ],
-          "platform": Array [
-            "6",
-          ],
-          "serviceID": Array [
-            "8NvDNS9Gpylp0MOg/MmCxw==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:07",
-          ],
-        },
-        Object {
-          "destination": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                },
+              "platform": Array [
+                "1",
+              ],
+              "serviceID": Array [
+                "2tI4/cosU7DYIHRO7z0DLg==",
+              ],
+              "serviceType": Array [
+                "train",
+              ],
+              "sta": Array [
+                "17:15",
+              ],
+              "std": Array [
+                "17:15",
               ],
             },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                },
-              ],
-            },
-          ],
-          "platform": Array [
-            "3",
-          ],
-          "serviceID": Array [
-            "rkEPUnFHelVWfAllpJoHZA==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:08",
           ],
         },
       ],
     },
+  ],
+  "generatedAt": Array [
+    "2019-12-17T17:20:59.4669003+00:00",
+  ],
+  "locationName": Array [
+    "East Croydon",
+  ],
+  "nrccMessages": Array [
+    Object {
+      "message": Array [
+        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+        "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
+        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+      ],
+    },
+  ],
+  "platformAvailable": Array [
+    "true",
   ],
 }
 `;
