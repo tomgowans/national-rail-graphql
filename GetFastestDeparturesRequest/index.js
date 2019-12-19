@@ -30,8 +30,8 @@ function GetFastestDeparturesRequest(
     tokenValue
   })
     .then(result => {
-      return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
       // console.dir(result);
+      return result.GetFastestDeparturesResponse[0].DeparturesBoard[0];
     })
     .catch(err => console.error(err));
 }

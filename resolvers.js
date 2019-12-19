@@ -44,12 +44,10 @@ const resolvers = {
       );
     },
 
-    // TODO: Make work
     GetNextDepartures(obj, queryAttributes) {
       return GetNextDeparturesRequest(queryAttributes, config.tokenValue);
     },
 
-    // TODO: Make work
     GetNextDeparturesWithDetails(obj, queryAttributes) {
       return GetNextDeparturesWithDetailsRequest(
         queryAttributes,
@@ -57,12 +55,10 @@ const resolvers = {
       );
     },
 
-    // TODO: Make work
     GetFastestDepartures(obj, queryAttributes) {
       return GetFastestDeparturesRequest(queryAttributes, config.tokenValue);
     },
 
-    // TODO: Make work
     GetFastestDeparturesWithDetails(obj, queryAttributes) {
       return GetFastestDeparturesWithDetailsRequest(
         queryAttributes,

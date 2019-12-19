@@ -36,11 +36,8 @@ function GetNextDeparturesWithDetailsRequest(
     tokenValue
   })
     .then(result => {
+      // console.dir(result);
       return result.GetNextDeparturesWithDetailsResponse[0].DeparturesBoard[0];
-      // console.dir(
-      //   result.GetNextDeparturesWithDetailsResponse[0].DeparturesBoard[0]
-      //     .departures[0].destination[0].service[0]
-      // );
     })
     .catch(err => console.error(err));
 }
