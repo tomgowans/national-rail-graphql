@@ -1,5 +1,5 @@
 const { createTestClient } = require("apollo-server-testing");
-const gql = require("graphql-tag");
+// const gql = require("graphql-tag");
 // const nock = require('nock');
 
 // const GetArrBoardWithDetailsRequest = require("./GetArrBoardWithDetailsRequest");
