@@ -11,3 +11,5 @@ const server = new ApolloServer({
 server.listen().then(({ url }) => {
   console.log(`🚂 Server ready at ${url}`);
 });
+
+// TODO: Create entrypoint with tokenKey and production flag to switch off playground

@@ -2,15 +2,26 @@
   "scripts": {
     "test": "jest"
   },
+  "name": "national-rail-graphql",
+  "main": "index.js",
+  "version": "0.0.1",
+  "jest": {
+    "collectCoverage": true
+  },
   "dependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "@ovotech/apollo-datasource-soap": "^4.1.0",
     "apollo-server": "^2.9.12",
+    "apollo-server-testing": "^2.9.14",
     "babel-jest": "*",
     "enzyme": "^3.10.0",
+    "eslint": "^6.7.2",
     "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
     "jest": "^24.9.0",
+    "lodash": "^4.17.15",
+    "nock": "^11.7.0",
     "node-fetch": "^2.6.0",
     "soap": "^0.30.0",
     "xml2js": "^0.4.22"

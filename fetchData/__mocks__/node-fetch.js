@@ -13,7 +13,7 @@ const GetFastestDeparturesWithDetailsRequest = require("../../GetFastestDepartur
 const GetServiceDetailsRequest = require("../../GetServiceDetailsRequest/response");
 
 const fetch = (url, args) => {
-  return new Promise((resolve, reject) => {
+  return new Promise(resolve => {
     if (args.body.includes("GetDepartureBoardRequest")) {
       resolve(GetDepartureBoardRequest);
     }

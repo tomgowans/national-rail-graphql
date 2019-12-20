@@ -1,5 +1,5 @@
 const fetchData = require("../fetchData");
-const _ = require("lodash");
+// const _ = require("lodash");
 
 /**
  *
