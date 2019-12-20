@@ -1,6 +1,7488 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sends the request correctly 1`] = `
+exports[`sends a reques with minimal parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": Array [
+    "ECR",
+  ],
+  "generatedAt": Array [
+    "2019-12-16T07:20:28.6660564+00:00",
+  ],
+  "locationName": Array [
+    "East Croydon",
+  ],
+  "platformAvailable": Array [
+    "true",
+  ],
+  "trainServices": Array [
+    Object {
+      "service": Array [
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:17",
+          ],
+          "etd": Array [
+            "07:19",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "FbzyMg1G5AKa/6EVlRvHVQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:15",
+          ],
+          "std": Array [
+            "07:16",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "pJpM3tbOx4WIz++x3lVwVQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:18",
+          ],
+          "std": Array [
+            "07:18",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "AdARaoTM3RTWzLfXdENjFw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:18",
+          ],
+          "std": Array [
+            "07:19",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:20",
+          ],
+          "etd": Array [
+            "07:21",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HGS",
+                  ],
+                  "locationName": Array [
+                    "Hastings",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "3awVq2Mhn+5pEPLgbfSAUw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:18",
+          ],
+          "std": Array [
+            "07:19",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "ZOgeRHzJbbOfPGQ9PaFAAA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:19",
+          ],
+          "std": Array [
+            "07:20",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:22",
+          ],
+          "etd": Array [
+            "07:23",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "pXz+o8sgyREtAekq4qY8bw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:20",
+          ],
+          "std": Array [
+            "07:21",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "4",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "ctnzQ12jKXEW3ZvSfrDIYA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:22",
+          ],
+          "std": Array [
+            "07:22",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "4",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "oE0IYdO/dyiJGKr/lQK0yw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:21",
+          ],
+          "std": Array [
+            "07:22",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "tfHNN0kST79kIfB6zeN+rA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:23",
+          ],
+          "std": Array [
+            "07:24",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:26",
+          ],
+          "etd": Array [
+            "07:27",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "MBFVmupJMPhcdN0RDd2jmg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:24",
+          ],
+          "std": Array [
+            "07:25",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "n4zQfArQT3sOHYGyFvf5ig==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:24",
+          ],
+          "std": Array [
+            "07:25",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "4fQDEI27Png6s3XQVNQ3aQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:27",
+          ],
+          "std": Array [
+            "07:27",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "PMH",
+                  ],
+                  "locationName": Array [
+                    "Portsmouth Harbour",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "jKjPgXaRQYkd9VgXTGhjIw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:26",
+          ],
+          "std": Array [
+            "07:27",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "fxnxkxc1NoRQMNSz4lq+Ww==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:28",
+          ],
+          "std": Array [
+            "07:28",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "zW9qbBTgfLHyTx3lIqDg/A==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:29",
+          ],
+          "std": Array [
+            "07:30",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "Y0rAiHjHMxPmg32XSejHmQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:31",
+          ],
+          "std": Array [
+            "07:31",
+          ],
+        },
+        Object {
+          "delayReason": Array [
+            "This train has been delayed by a late running train being in front of this one",
+          ],
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:34",
+          ],
+          "etd": Array [
+            "07:35",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "gdIqv+3FojvLDAhkG+DNJQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:31",
+          ],
+          "std": Array [
+            "07:31",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EBN",
+                  ],
+                  "locationName": Array [
+                    "Eastbourne",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "4",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "CBGGRTGtm6jeRlTV47L7VQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:32",
+          ],
+          "std": Array [
+            "07:33",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "5vYNclFV2OmcLCD8PZFW5w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:32",
+          ],
+          "std": Array [
+            "07:33",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "YrfjJOpuChN0TWxdXSXqFg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:34",
+          ],
+          "std": Array [
+            "07:34",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "e/My1Gaicx8LzSI1qynATQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:38",
+          ],
+          "std": Array [
+            "07:38",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "IF8xNVY+XuJv5oEosyaJjg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:37",
+          ],
+          "std": Array [
+            "07:38",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:40",
+          ],
+          "etd": Array [
+            "07:41",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EBN",
+                  ],
+                  "locationName": Array [
+                    "Eastbourne",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "1cDazn15L31Kz/rJpXh78Q==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:37",
+          ],
+          "std": Array [
+            "07:38",
+          ],
+        },
+        Object {
+          "cancelReason": Array [
+            "This train has been cancelled because of this train being late from the depot",
+          ],
+          "delayReason": Array [
+            "This train has been delayed by this train being late from the depot",
+          ],
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:45",
+          ],
+          "etd": Array [
+            "07:45",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "wR48Wh5LTjZrayZW+O5hzg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:40",
+          ],
+          "std": Array [
+            "07:40",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "xSpbieukHZzzBN1X3AEjMw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:39",
+          ],
+          "std": Array [
+            "07:40",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "WFJ",
+                  ],
+                  "locationName": Array [
+                    "Watford Junction",
+                  ],
+                  "via": Array [
+                    "via Kensington Olympia",
+                  ],
+                },
+              ],
+            },
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "gHIJ1QZO7FN0POc7yKZ+6w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "std": Array [
+            "07:40",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "EXnzytpD4+WM5R/xudvYIA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:45",
+          ],
+          "std": Array [
+            "07:45",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "VgwuexGDDGCwsFz5GWMDnQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:46",
+          ],
+          "std": Array [
+            "07:46",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "07:48",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "IN6vz08QRrjYuiyMKdGasg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:46",
+          ],
+          "std": Array [
+            "07:46",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "k3mP3OW+vi1fQEktXHOo9g==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:48",
+          ],
+          "std": Array [
+            "07:48",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "qfsVdeSbFQ+RsLJEENTmKA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:48",
+          ],
+          "std": Array [
+            "07:49",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "5",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "5jFRmSkdu4ESCg5lZcCdTw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:49",
+          ],
+          "std": Array [
+            "07:50",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "SOU",
+                  ],
+                  "locationName": Array [
+                    "Southampton Central",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "yUCvAnyoWE30v3tVs/Zj1w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:52",
+          ],
+          "std": Array [
+            "07:52",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "07:54",
+          ],
+          "etd": Array [
+            "07:54",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "3Ubd11WZ+P2+WVIdZdefIA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:52",
+          ],
+          "std": Array [
+            "07:52",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "2NC2ooZTj1v2Nyucia1Piw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:54",
+          ],
+          "std": Array [
+            "07:55",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "uXVm4XKWTc9+ZtkKjHZ2oQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:54",
+          ],
+          "std": Array [
+            "07:55",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "PMH",
+                  ],
+                  "locationName": Array [
+                    "Portsmouth Harbour",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "/+bAP1sVGSDluVRj5/ZK3w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:54",
+          ],
+          "std": Array [
+            "07:55",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "OOF+gD/FaHZe0ySXhSnaEw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:57",
+          ],
+          "std": Array [
+            "07:57",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EBN",
+                  ],
+                  "locationName": Array [
+                    "Eastbourne",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "BzZwnn80udDLyu6THr6EbA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:57",
+          ],
+          "std": Array [
+            "07:57",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "KPg78D7/yl2k59+nvQKRTw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "07:58",
+          ],
+          "std": Array [
+            "07:58",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "cR/hilgP4kR60oPpNtitDQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:00",
+          ],
+          "std": Array [
+            "08:00",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "DK76Azr95Du2xn+lnmlVUA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:01",
+          ],
+          "std": Array [
+            "08:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "Td0Tiappwad8/9kHzSjjLw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:01",
+          ],
+          "std": Array [
+            "08:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "WFJ",
+                  ],
+                  "locationName": Array [
+                    "Watford Junction",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "WQu6j6J6awYJ4G7qnJzYBA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ORE",
+                  ],
+                  "locationName": Array [
+                    "Ore",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                  "via": Array [
+                    "via Hove & Worthing",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "vcsQ0S+dFeHZV7H1jsa9tQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:03",
+          ],
+          "std": Array [
+            "08:03",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "0wcc2BbQQLsZwO2ua3H8/g==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:04",
+          ],
+          "std": Array [
+            "08:04",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "qZI/z1ULvn1i8QIX/4/iAA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:03",
+          ],
+          "std": Array [
+            "08:04",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "ljth5MkTacbxMYh/BiqIGw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:08",
+          ],
+          "std": Array [
+            "08:08",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "6",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "gZvgcYKcoU73m0yO3GGxtw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:07",
+          ],
+          "std": Array [
+            "08:08",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "SEF",
+                  ],
+                  "locationName": Array [
+                    "Seaford",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "HGS",
+                  ],
+                  "locationName": Array [
+                    "Hastings",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "TN0jBvmzVfBcKYYjNwCtgg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:07",
+          ],
+          "std": Array [
+            "08:08",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "Xr+ueuDNKRXoJqXYsEe4bg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:09",
+          ],
+          "std": Array [
+            "08:10",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "NzMsU19wuzpcmISW+syzyQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:09",
+          ],
+          "std": Array [
+            "08:10",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "7/dP4HrS8HvpdhqrUxXBqA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:11",
+          ],
+          "std": Array [
+            "08:11",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "MKC",
+                  ],
+                  "locationName": Array [
+                    "Milton Keynes Central",
+                  ],
+                },
+              ],
+            },
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "dzzVtUDO4x/dcD8+LlIAzw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "std": Array [
+            "08:11",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "4bFZo9pW+n3bbPq8ASXdIw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:15",
+          ],
+          "std": Array [
+            "08:15",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "n1FcQXQaSJGcwv8bCux0Sw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:16",
+          ],
+          "std": Array [
+            "08:16",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "UZ0hX8flY4LTd1d3cIg/vQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:15",
+          ],
+          "std": Array [
+            "08:16",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "ej89nu99FoUupiV4cwgyRA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:18",
+          ],
+          "std": Array [
+            "08:18",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "KURzwvRWTvoY32+/mjRpQQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:18",
+          ],
+          "std": Array [
+            "08:19",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "TIIqdEk7TNHImIbMIpocZQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:19",
+          ],
+          "std": Array [
+            "08:20",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "naMmNTNPBXxBB1i6Refveg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:18",
+          ],
+          "std": Array [
+            "08:20",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "pKYE8ZRfNkv1neekSGIYiA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:20",
+          ],
+          "std": Array [
+            "08:21",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PMH",
+                  ],
+                  "locationName": Array [
+                    "Portsmouth Harbour",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "ia7idUkYvmkm1B28g63AjA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:22",
+          ],
+          "std": Array [
+            "08:22",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "vEnxG8QZv1m7SnqCZlk9gw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:21",
+          ],
+          "std": Array [
+            "08:22",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "bDezYxuULdxWhJfPC5LLPQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:23",
+          ],
+          "std": Array [
+            "08:24",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "I0jUEyhE1yWWv7R3KesqIw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:24",
+          ],
+          "std": Array [
+            "08:25",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "Blpt2ANtzEqTiqer6dZJCg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:24",
+          ],
+          "std": Array [
+            "08:25",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "SOU",
+                  ],
+                  "locationName": Array [
+                    "Southampton Central",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "zygz9xEw4vX4SVzssoT2ew==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:26",
+          ],
+          "std": Array [
+            "08:27",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "Y7BiVkNoyZNc2KcFgQtSiA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:27",
+          ],
+          "std": Array [
+            "08:28",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "JB31nL6o0Wd3ffjh2NJuRQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:28",
+          ],
+          "std": Array [
+            "08:28",
+          ],
+        },
+        Object {
+          "delayReason": Array [
+            "This train has been delayed by a shortage of train crew",
+          ],
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "tn6VFd8VMDfPDcN5anuAUw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:29",
+          ],
+          "std": Array [
+            "08:29",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "B6kEynu8pMx2npe95Xk21w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:31",
+          ],
+          "std": Array [
+            "08:31",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "9lqNBfbh78c8hqSB/oE2rA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:31",
+          ],
+          "std": Array [
+            "08:31",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "WFJ",
+                  ],
+                  "locationName": Array [
+                    "Watford Junction",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "A/1RadRpijiAve4EbM43zg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:31",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EBN",
+                  ],
+                  "locationName": Array [
+                    "Eastbourne",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "2eHq0DLsuFHVQ5enPHywUQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:33",
+          ],
+          "std": Array [
+            "08:33",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "pdKHjQgCzqPEt1mKR4pxmw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:34",
+          ],
+          "std": Array [
+            "08:34",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "fWM1RH/tQx3HFn8GNtVbQg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:33",
+          ],
+          "std": Array [
+            "08:34",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "TBD",
+                  ],
+                  "locationName": Array [
+                    "Three Bridges",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "s4096zaR6VGfWeCRVFiQow==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:36",
+          ],
+          "std": Array [
+            "08:37",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                  "via": Array [
+                    "via Hove & Worthing",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "ePAEmQQlbhAGfXxmr2ZrtA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:38",
+          ],
+          "std": Array [
+            "08:38",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "bsuK3yTdo3TvtwsGyP+vXQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:37",
+          ],
+          "std": Array [
+            "08:38",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EBN",
+                  ],
+                  "locationName": Array [
+                    "Eastbourne",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "lyjNFGO590NDbmvrUxraQQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:37",
+          ],
+          "std": Array [
+            "08:38",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "nec53QSnd19ti5hoGHWk0A==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:39",
+          ],
+          "std": Array [
+            "08:40",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "SPB",
+                  ],
+                  "locationName": Array [
+                    "Shepherds Bush",
+                  ],
+                },
+              ],
+            },
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "ngaQ5EI06cPZ4rh+ugWChw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "std": Array [
+            "08:40",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "DwKAuhsWBCpC7juBzDX8cg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:41",
+          ],
+          "std": Array [
+            "08:41",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "kMvuT621TLzolQA7x0y4WQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:42",
+          ],
+          "std": Array [
+            "08:43",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "dMHddhu3fG3QhyUH88ZHXQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:45",
+          ],
+          "std": Array [
+            "08:45",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "GyOQJqUwlTsGrosbCzudxg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:46",
+          ],
+          "std": Array [
+            "08:46",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "39rzhGxLdaH6hZU7t6TKZg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:45",
+          ],
+          "std": Array [
+            "08:46",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "vIGo5QJpGKGvg9ZhpYe9SA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:48",
+          ],
+          "std": Array [
+            "08:48",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "fturqzE2PLMIEv3uPHeYQA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:48",
+          ],
+          "std": Array [
+            "08:49",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "qSM1A4o5yyEhTGWK78Srdw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:48",
+          ],
+          "std": Array [
+            "08:50",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "rTyMsdyOJ1cLR1Z863Yzfw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:51",
+          ],
+          "std": Array [
+            "08:51",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "6",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "NEG03Ogh2QXYVvAJlQ+cSw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:51",
+          ],
+          "std": Array [
+            "08:52",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "SOU",
+                  ],
+                  "locationName": Array [
+                    "Southampton Central",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "O84QBBcrSJf4Odn46exEhg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:52",
+          ],
+          "std": Array [
+            "08:53",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "SOU",
+                  ],
+                  "locationName": Array [
+                    "Southampton Central",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "1",
+          ],
+          "serviceID": Array [
+            "wx2DIVBojz3TGB9ZCSoRHA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:54",
+          ],
+          "std": Array [
+            "08:54",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "EkI9MBi8b6J3gm1/L3y1uA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:54",
+          ],
+          "std": Array [
+            "08:55",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "mMGBmq9tp1LFjZicOeZC6Q==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:54",
+          ],
+          "std": Array [
+            "08:55",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "4",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "grFxcIBS5MygXS8zJXwAPw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:57",
+          ],
+          "std": Array [
+            "08:57",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "WFEnOTD1xyXlQc8CUeA0FA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:58",
+          ],
+          "std": Array [
+            "08:58",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "fMRULpdXXL9keF/nXgDYvQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "08:58",
+          ],
+          "std": Array [
+            "08:59",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                  "via": Array [
+                    "via London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "c/a6HgC+iOSRgrmzlJbhsg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:01",
+          ],
+          "std": Array [
+            "09:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "serviceID": Array [
+            "SOmLqViOYPmgxcn//bX0Nw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:01",
+          ],
+          "std": Array [
+            "09:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "MKC",
+                  ],
+                  "locationName": Array [
+                    "Milton Keynes Central",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "serviceID": Array [
+            "0li2QztVPrnrLRNc6xc1hw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:01",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ORE",
+                  ],
+                  "locationName": Array [
+                    "Ore",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                  "via": Array [
+                    "via Hove & Worthing",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "serviceID": Array [
+            "gxz4r6jwQIx9v1hWIbs0uQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:02",
+          ],
+          "std": Array [
+            "09:03",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "REI",
+                  ],
+                  "locationName": Array [
+                    "Reigate",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "Z7ZTkFJlDpA7w90MTbcyAA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:04",
+          ],
+          "std": Array [
+            "09:04",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "1H6a1tIc5mdlKKMJEhJP9w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:03",
+          ],
+          "std": Array [
+            "09:04",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "TBD",
+                  ],
+                  "locationName": Array [
+                    "Three Bridges",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "FLT",
+                  ],
+                  "locationName": Array [
+                    "Flitwick",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "serviceID": Array [
+            "vWOznRsDlb8JzoPMy+ZTwg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:06",
+          ],
+          "std": Array [
+            "09:07",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "4",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "UCK",
+                  ],
+                  "locationName": Array [
+                    "Uckfield",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "serviceID": Array [
+            "A+5l4LcQ2V3nb/WLxzTtvQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:07",
+          ],
+          "std": Array [
+            "09:08",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "TBD",
+                  ],
+                  "locationName": Array [
+                    "Three Bridges",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "X+CEz6w3JgThfdJ4HTEgRQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:08",
+          ],
+          "std": Array [
+            "09:08",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ORE",
+                  ],
+                  "locationName": Array [
+                    "Ore",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "Vy917KkcDBXUiLdkO9mwLw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:09",
+          ],
+          "std": Array [
+            "09:09",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "ptzABUYHLY9kseAc/kEiNA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:09",
+          ],
+          "std": Array [
+            "09:10",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "MKC",
+                  ],
+                  "locationName": Array [
+                    "Milton Keynes Central",
+                  ],
+                },
+              ],
+            },
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "GTDpv1KMVqIaax4XNRRRtA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "std": Array [
+            "09:10",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "BdLWymotqWZdnOFhJjACAg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:11",
+          ],
+          "std": Array [
+            "09:11",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "F1RNFiQy4bwpjnMkCzKhrQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:12",
+          ],
+          "std": Array [
+            "09:14",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "P46u5jbAOwO6eIQzogyYOw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:15",
+          ],
+          "std": Array [
+            "09:15",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "HRH",
+                  ],
+                  "locationName": Array [
+                    "Horsham",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "KHcCxSrGsmndWU443pDO0Q==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:14",
+          ],
+          "std": Array [
+            "09:16",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PBO",
+                  ],
+                  "locationName": Array [
+                    "Peterborough",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "xPESGRkRDw9J9ZbEJ+jreg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:15",
+          ],
+          "std": Array [
+            "09:16",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "3ENnb4Ql5MNRePf4OO2oUw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:18",
+          ],
+          "std": Array [
+            "09:18",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "9cXdQLGbPsZjpchPJyOSag==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:18",
+          ],
+          "std": Array [
+            "09:19",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "etd": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LIT",
+                  ],
+                  "locationName": Array [
+                    "Littlehampton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "8gVveFHKcccRVyY+aFA4Yg==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "09:18",
+          ],
+          "std": Array [
+            "09:19",
+          ],
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`sends a reques with more parameters correctly 1`] = `
 Object {
   "$": Object {
     "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",

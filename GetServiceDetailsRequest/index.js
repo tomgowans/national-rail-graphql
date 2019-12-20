@@ -5,7 +5,7 @@ const fetchData = require("../fetchData");
  * @param {string} serviceID (string): The LDBWS service ID of the service to request the details of. The service ID is obtained from a service listed in a StationBoard object returned from any other request.
  */
 
-function GetServiceDetailsRequest({ serviceID = null }, tokenValue) {
+function GetServiceDetailsRequest({ serviceID }, tokenValue) {
   return fetchData({
     body: `
       <ldb:GetServiceDetailsRequest>

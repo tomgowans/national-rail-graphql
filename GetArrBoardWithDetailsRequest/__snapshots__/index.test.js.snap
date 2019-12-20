@@ -1,6 +1,2256 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sends the request correctly 1`] = `
+exports[`sends a reques with minimal parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": Array [
+    "ECR",
+  ],
+  "generatedAt": Array [
+    "2019-12-15T13:57:39.4251321+00:00",
+  ],
+  "locationName": Array [
+    "East Croydon",
+  ],
+  "platformAvailable": Array [
+    "true",
+  ],
+  "trainServices": Array [
+    Object {
+      "service": Array [
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "EGR",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "East Grinstead",
+                      ],
+                      "st": Array [
+                        "13:12",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "DMS",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Dormans",
+                      ],
+                      "st": Array [
+                        "13:16",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "No report",
+                      ],
+                      "crs": Array [
+                        "LFD",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Lingfield",
+                      ],
+                      "st": Array [
+                        "13:19",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HUR",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Hurst Green",
+                      ],
+                      "st": Array [
+                        "13:26",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "OXT",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Oxted",
+                      ],
+                      "st": Array [
+                        "13:29",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "WOH",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Woldingham",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "UWL",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Upper Warlingham",
+                      ],
+                      "st": Array [
+                        "13:38",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "RDD",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Riddlesdown",
+                      ],
+                      "st": Array [
+                        "13:42",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:48",
+                      ],
+                      "crs": Array [
+                        "SNR",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Sanderstead",
+                      ],
+                      "st": Array [
+                        "13:46",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "zHN1qYqF7kZefiS0DIa3bw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "13:53",
+          ],
+        },
+        Object {
+          "cancelReason": Array [
+            "This train has been cancelled because of earlier engineering works not being finished on time",
+          ],
+          "delayReason": Array [
+            "This train has been delayed by earlier engineering works not being finished on time",
+          ],
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "PMH",
+                  ],
+                  "locationName": Array [
+                    "Portsmouth Harbour",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "BOG",
+                  ],
+                  "locationName": Array [
+                    "Bognor Regis",
+                  ],
+                  "via": Array [
+                    "via Horsham ",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "14:07",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "13:50",
+                      ],
+                      "crs": Array [
+                        "VIC",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "London Victoria",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:56",
+                      ],
+                      "crs": Array [
+                        "CLJ",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Clapham Junction",
+                      ],
+                      "st": Array [
+                        "13:42",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "rsid": Array [
+            "SN670303",
+          ],
+          "serviceID": Array [
+            "fYFNYyHSm4/9gwPfcyvIHA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "13:53",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "LBG",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "London Bridge",
+                      ],
+                      "st": Array [
+                        "13:24",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "NXG",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "New Cross Gate",
+                      ],
+                      "st": Array [
+                        "13:30",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "BCY",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Brockley",
+                      ],
+                      "st": Array [
+                        "13:33",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HPA",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Honor Oak Park",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "FOH",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Forest Hill",
+                      ],
+                      "st": Array [
+                        "13:38",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "SYD",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Sydenham",
+                      ],
+                      "st": Array [
+                        "13:41",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "PNW",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Penge West",
+                      ],
+                      "st": Array [
+                        "13:43",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "ANZ",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Anerley",
+                      ],
+                      "st": Array [
+                        "13:45",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "NWD",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Norwood Junction",
+                      ],
+                      "st": Array [
+                        "13:52",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "z26fuyfOxIItCpy1p9dj/w==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "13:56",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "ECR",
+                  ],
+                  "locationName": Array [
+                    "East Croydon",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "5",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "13:22",
+                      ],
+                      "crs": Array [
+                        "LBG",
+                      ],
+                      "locationName": Array [
+                        "London Bridge",
+                      ],
+                      "st": Array [
+                        "13:19",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:26",
+                      ],
+                      "crs": Array [
+                        "SBM",
+                      ],
+                      "locationName": Array [
+                        "South Bermondsey",
+                      ],
+                      "st": Array [
+                        "13:25",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "QRP",
+                      ],
+                      "locationName": Array [
+                        "Queens Road Peckham",
+                      ],
+                      "st": Array [
+                        "13:28",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "PMR",
+                      ],
+                      "locationName": Array [
+                        "Peckham Rye",
+                      ],
+                      "st": Array [
+                        "13:31",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "EDW",
+                      ],
+                      "locationName": Array [
+                        "East Dulwich",
+                      ],
+                      "st": Array [
+                        "13:34",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "NDL",
+                      ],
+                      "locationName": Array [
+                        "North Dulwich",
+                      ],
+                      "st": Array [
+                        "13:36",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "TUH",
+                      ],
+                      "locationName": Array [
+                        "Tulse Hill",
+                      ],
+                      "st": Array [
+                        "13:40",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "STE",
+                      ],
+                      "locationName": Array [
+                        "Streatham",
+                      ],
+                      "st": Array [
+                        "13:44",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "SRC",
+                      ],
+                      "locationName": Array [
+                        "Streatham Common",
+                      ],
+                      "st": Array [
+                        "13:47",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "NRB",
+                      ],
+                      "locationName": Array [
+                        "Norbury",
+                      ],
+                      "st": Array [
+                        "13:50",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "TTH",
+                      ],
+                      "locationName": Array [
+                        "Thornton Heath",
+                      ],
+                      "st": Array [
+                        "13:53",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "SRS",
+                      ],
+                      "locationName": Array [
+                        "Selhurst",
+                      ],
+                      "st": Array [
+                        "13:56",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "hCthuRaq4OnVdByqGoJVww==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "13:59",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LBG",
+                  ],
+                  "locationName": Array [
+                    "London Bridge",
+                  ],
+                  "via": Array [
+                    "via Forest Hill",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CAT",
+                  ],
+                  "locationName": Array [
+                    "Caterham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "TAT",
+                  ],
+                  "locationName": Array [
+                    "Tattenham Corner",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "CAT",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Caterham",
+                      ],
+                      "st": Array [
+                        "13:32",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "WHS",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Whyteleafe South",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:41",
+                      ],
+                      "crs": Array [
+                        "WHY",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Whyteleafe",
+                      ],
+                      "st": Array [
+                        "13:37",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:42",
+                      ],
+                      "crs": Array [
+                        "KLY",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Kenley",
+                      ],
+                      "st": Array [
+                        "13:40",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "PUR",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Purley",
+                      ],
+                      "st": Array [
+                        "13:52",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:56",
+                      ],
+                      "crs": Array [
+                        "PUO",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Purley Oaks",
+                      ],
+                      "st": Array [
+                        "13:54",
+                      ],
+                    },
+                    Object {
+                      "crs": Array [
+                        "SCY",
+                      ],
+                      "et": Array [
+                        "On time",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "South Croydon",
+                      ],
+                      "st": Array [
+                        "13:57",
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "No report",
+                      ],
+                      "crs": Array [
+                        "TAT",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Tattenham Corner",
+                      ],
+                      "st": Array [
+                        "13:20",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "No report",
+                      ],
+                      "crs": Array [
+                        "TAD",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Tadworth",
+                      ],
+                      "st": Array [
+                        "13:24",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "No report",
+                      ],
+                      "crs": Array [
+                        "KND",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Kingswood",
+                      ],
+                      "st": Array [
+                        "13:27",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "No report",
+                      ],
+                      "crs": Array [
+                        "CHP",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Chipstead",
+                      ],
+                      "st": Array [
+                        "13:33",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "WME",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Woodmansterne",
+                      ],
+                      "st": Array [
+                        "13:36",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "CDN",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Coulsdon Town",
+                      ],
+                      "st": Array [
+                        "13:40",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "RHM",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Reedham (Surrey)",
+                      ],
+                      "st": Array [
+                        "13:43",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "PUR",
+                      ],
+                      "length": Array [
+                        "5",
+                      ],
+                      "locationName": Array [
+                        "Purley",
+                      ],
+                      "st": Array [
+                        "13:52",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "Cw51+3CKU0TdJjZbIjTj3g==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:00",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "CBG",
+                  ],
+                  "locationName": Array [
+                    "Cambridge",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "GTW",
+                  ],
+                  "locationName": Array [
+                    "Gatwick Airport",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "GTW",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Gatwick Airport",
+                      ],
+                      "st": Array [
+                        "13:32",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HOR",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Horley",
+                      ],
+                      "st": Array [
+                        "13:34",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:40",
+                      ],
+                      "crs": Array [
+                        "SAF",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Salfords",
+                      ],
+                      "st": Array [
+                        "13:38",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "ELD",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Earlswood (Surrey)",
+                      ],
+                      "st": Array [
+                        "13:42",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "RDH",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Redhill",
+                      ],
+                      "st": Array [
+                        "13:46",
+                      ],
+                    },
+                    Object {
+                      "crs": Array [
+                        "PUR",
+                      ],
+                      "et": Array [
+                        "On time",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Purley",
+                      ],
+                      "st": Array [
+                        "13:57",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "I7lbgYlePQ8N38zoBmRXVQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:03",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "LWS",
+                  ],
+                  "locationName": Array [
+                    "Lewes",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "8",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "3",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "VIC",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "London Victoria",
+                      ],
+                      "st": Array [
+                        "13:46",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "CLJ",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Clapham Junction",
+                      ],
+                      "st": Array [
+                        "13:53",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "rsid": Array [
+            "SN377000",
+          ],
+          "serviceID": Array [
+            "a5ar7XL9XBf2EZuw4mOHpQ==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:03",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BTN",
+                  ],
+                  "locationName": Array [
+                    "Brighton",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Thameslink",
+          ],
+          "operatorCode": Array [
+            "TL",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BDM",
+                  ],
+                  "locationName": Array [
+                    "Bedford",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "6",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "BDM",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Bedford",
+                      ],
+                      "st": Array [
+                        "12:21",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "FLT",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Flitwick",
+                      ],
+                      "st": Array [
+                        "12:32",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HLN",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Harlington",
+                      ],
+                      "st": Array [
+                        "12:36",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "LEA",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Leagrave",
+                      ],
+                      "st": Array [
+                        "12:41",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "LUT",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Luton",
+                      ],
+                      "st": Array [
+                        "12:46",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "LTN",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Luton Airport Parkway",
+                      ],
+                      "st": Array [
+                        "12:49",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HPD",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Harpenden",
+                      ],
+                      "st": Array [
+                        "12:54",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "SAC",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "St Albans",
+                      ],
+                      "st": Array [
+                        "13:00",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "WHP",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "West Hampstead Thameslink",
+                      ],
+                      "st": Array [
+                        "13:15",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "STP",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "London St Pancras (Intl)",
+                      ],
+                      "st": Array [
+                        "13:26",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "ZFD",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Farringdon Underground",
+                      ],
+                      "st": Array [
+                        "13:30",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "BFR",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "London Blackfriars",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "rsid": Array [
+            "TL017000",
+          ],
+          "serviceID": Array [
+            "AKqlFj5Qc0WnNXf/L80eFw==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:06",
+          ],
+        },
+        Object {
+          "cancelReason": Array [
+            "This train has been cancelled because of earlier engineering works not being finished on time",
+          ],
+          "delayReason": Array [
+            "This train has been delayed by earlier engineering works not being finished on time",
+          ],
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "14:15",
+          ],
+          "length": Array [
+            "12",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "BAA",
+                  ],
+                  "locationName": Array [
+                    "Barnham",
+                  ],
+                },
+                Object {
+                  "crs": Array [
+                    "HAV",
+                  ],
+                  "locationName": Array [
+                    "Havant",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "2",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "Cancelled",
+                      ],
+                      "crs": Array [
+                        "BOG",
+                      ],
+                      "length": Array [
+                        "4",
+                      ],
+                      "locationName": Array [
+                        "Bognor Regis",
+                      ],
+                      "st": Array [
+                        "12:31",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "12:51",
+                      ],
+                      "crs": Array [
+                        "BAA",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Barnham",
+                      ],
+                      "st": Array [
+                        "12:45",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "12:57",
+                      ],
+                      "crs": Array [
+                        "FOD",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Ford",
+                      ],
+                      "st": Array [
+                        "12:49",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:01",
+                      ],
+                      "crs": Array [
+                        "ARU",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Arundel",
+                      ],
+                      "st": Array [
+                        "12:54",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:07",
+                      ],
+                      "crs": Array [
+                        "AMY",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Amberley",
+                      ],
+                      "st": Array [
+                        "12:58",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:13",
+                      ],
+                      "crs": Array [
+                        "PUL",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Pulborough",
+                      ],
+                      "st": Array [
+                        "13:04",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:21",
+                      ],
+                      "crs": Array [
+                        "BIG",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Billingshurst",
+                      ],
+                      "st": Array [
+                        "13:11",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:27",
+                      ],
+                      "crs": Array [
+                        "CHH",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Christs Hospital",
+                      ],
+                      "st": Array [
+                        "13:17",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:31",
+                      ],
+                      "crs": Array [
+                        "HRH",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Horsham",
+                      ],
+                      "st": Array [
+                        "13:21",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:40",
+                      ],
+                      "crs": Array [
+                        "CRW",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Crawley",
+                      ],
+                      "st": Array [
+                        "13:30",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:44",
+                      ],
+                      "crs": Array [
+                        "TBD",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Three Bridges",
+                      ],
+                      "st": Array [
+                        "13:35",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "13:50",
+                      ],
+                      "crs": Array [
+                        "GTW",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Gatwick Airport",
+                      ],
+                      "st": Array [
+                        "13:41",
+                      ],
+                    },
+                    Object {
+                      "crs": Array [
+                        "RDH",
+                      ],
+                      "et": Array [
+                        "14:02",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Redhill",
+                      ],
+                      "st": Array [
+                        "13:50",
+                      ],
+                    },
+                    Object {
+                      "crs": Array [
+                        "CDS",
+                      ],
+                      "et": Array [
+                        "14:09",
+                      ],
+                      "length": Array [
+                        "12",
+                      ],
+                      "locationName": Array [
+                        "Coulsdon South",
+                      ],
+                      "st": Array [
+                        "13:57",
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "Cancelled",
+                      ],
+                      "crs": Array [
+                        "PMH",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Portsmouth Harbour",
+                      ],
+                      "st": Array [
+                        "12:03",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "Cancelled",
+                      ],
+                      "crs": Array [
+                        "PMS",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Portsmouth & Southsea",
+                      ],
+                      "st": Array [
+                        "12:07",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "Cancelled",
+                      ],
+                      "crs": Array [
+                        "FTN",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Fratton",
+                      ],
+                      "st": Array [
+                        "12:11",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "HAV",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Havant",
+                      ],
+                      "st": Array [
+                        "12:19",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "EMS",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Emsworth",
+                      ],
+                      "st": Array [
+                        "12:23",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "SOB",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Southbourne",
+                      ],
+                      "st": Array [
+                        "12:26",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "On time",
+                      ],
+                      "crs": Array [
+                        "CCH",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Chichester",
+                      ],
+                      "st": Array [
+                        "12:33",
+                      ],
+                    },
+                    Object {
+                      "at": Array [
+                        "12:46",
+                      ],
+                      "crs": Array [
+                        "BAA",
+                      ],
+                      "length": Array [
+                        "8",
+                      ],
+                      "locationName": Array [
+                        "Barnham",
+                      ],
+                      "st": Array [
+                        "12:45",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "MoV6UHw+KZoomovkR+1ugA==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:06",
+          ],
+        },
+        Object {
+          "destination": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "EGR",
+                  ],
+                  "locationName": Array [
+                    "East Grinstead",
+                  ],
+                },
+              ],
+            },
+          ],
+          "eta": Array [
+            "On time",
+          ],
+          "length": Array [
+            "10",
+          ],
+          "operator": Array [
+            "Southern",
+          ],
+          "operatorCode": Array [
+            "SN",
+          ],
+          "origin": Array [
+            Object {
+              "location": Array [
+                Object {
+                  "crs": Array [
+                    "VIC",
+                  ],
+                  "locationName": Array [
+                    "London Victoria",
+                  ],
+                },
+              ],
+            },
+          ],
+          "platform": Array [
+            "4",
+          ],
+          "previousCallingPoints": Array [
+            Object {
+              "callingPointList": Array [
+                Object {
+                  "callingPoint": Array [
+                    Object {
+                      "at": Array [
+                        "13:54",
+                      ],
+                      "crs": Array [
+                        "VIC",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "London Victoria",
+                      ],
+                      "st": Array [
+                        "13:52",
+                      ],
+                    },
+                    Object {
+                      "crs": Array [
+                        "CLJ",
+                      ],
+                      "et": Array [
+                        "On time",
+                      ],
+                      "length": Array [
+                        "10",
+                      ],
+                      "locationName": Array [
+                        "Clapham Junction",
+                      ],
+                      "st": Array [
+                        "13:59",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          "serviceID": Array [
+            "53QvLeRfp5mbEXL/08Fw4Q==",
+          ],
+          "serviceType": Array [
+            "train",
+          ],
+          "sta": Array [
+            "14:10",
+          ],
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`sends a reques with more parameters correctly 1`] = `
 Object {
   "$": Object {
     "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
