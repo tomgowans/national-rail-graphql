@@ -10,66 +10,57 @@ const GetFastestDeparturesRequest = require("./GetFastestDeparturesRequest");
 const GetFastestDeparturesWithDetailsRequest = require("./GetFastestDeparturesWithDetailsRequest");
 const GetServiceDetailsRequest = require("./GetServiceDetailsRequest");
 
-const config = require("./config.json");
+const resolvers = ({ tokenValue }) => {
+  return {
+    Query: {
+      GetDepartureBoard(obj, queryAttributes) {
+        return GetDepartureBoardRequest(queryAttributes, tokenValue);
+      },
 
-const resolvers = {
-  Query: {
-    GetDepartureBoard(obj, queryAttributes) {
-      return GetDepartureBoardRequest(queryAttributes, config.tokenValue);
-    },
+      GetDepBoardWithDetails(obj, queryAttributes) {
+        return GetDepBoardWithDetailsRequest(queryAttributes, tokenValue);
+      },
 
-    GetDepBoardWithDetails(obj, queryAttributes) {
-      return GetDepBoardWithDetailsRequest(queryAttributes, config.tokenValue);
-    },
+      GetArrivalBoard(obj, queryAttributes) {
+        return GetArrivalBoardRequest(queryAttributes, tokenValue);
+      },
 
-    GetArrivalBoard(obj, queryAttributes) {
-      return GetArrivalBoardRequest(queryAttributes, config.tokenValue);
-    },
+      GetArrBoardWithDetails(obj, queryAttributes) {
+        return GetArrBoardWithDetailsRequest(queryAttributes, tokenValue);
+      },
 
-    GetArrBoardWithDetails(obj, queryAttributes) {
-      return GetArrBoardWithDetailsRequest(queryAttributes, config.tokenValue);
-    },
+      GetArrivalDepartureBoard(obj, queryAttributes) {
+        return GetArrivalDepartureBoardRequest(queryAttributes, tokenValue);
+      },
 
-    GetArrivalDepartureBoard(obj, queryAttributes) {
-      return GetArrivalDepartureBoardRequest(
-        queryAttributes,
-        config.tokenValue
-      );
-    },
+      GetArrDepBoardWithDetails(obj, queryAttributes) {
+        return GetArrDepBoardWithDetailsRequest(queryAttributes, tokenValue);
+      },
 
-    GetArrDepBoardWithDetails(obj, queryAttributes) {
-      return GetArrDepBoardWithDetailsRequest(
-        queryAttributes,
-        config.tokenValue
-      );
-    },
+      GetNextDepartures(obj, queryAttributes) {
+        return GetNextDeparturesRequest(queryAttributes, tokenValue);
+      },
 
-    GetNextDepartures(obj, queryAttributes) {
-      return GetNextDeparturesRequest(queryAttributes, config.tokenValue);
-    },
+      GetNextDeparturesWithDetails(obj, queryAttributes) {
+        return GetNextDeparturesWithDetailsRequest(queryAttributes, tokenValue);
+      },
 
-    GetNextDeparturesWithDetails(obj, queryAttributes) {
-      return GetNextDeparturesWithDetailsRequest(
-        queryAttributes,
-        config.tokenValue
-      );
-    },
+      GetFastestDepartures(obj, queryAttributes) {
+        return GetFastestDeparturesRequest(queryAttributes, tokenValue);
+      },
 
-    GetFastestDepartures(obj, queryAttributes) {
-      return GetFastestDeparturesRequest(queryAttributes, config.tokenValue);
-    },
+      GetFastestDeparturesWithDetails(obj, queryAttributes) {
+        return GetFastestDeparturesWithDetailsRequest(
+          queryAttributes,
+          tokenValue
+        );
+      },
 
-    GetFastestDeparturesWithDetails(obj, queryAttributes) {
-      return GetFastestDeparturesWithDetailsRequest(
-        queryAttributes,
-        config.tokenValue
-      );
-    },
-
-    GetServiceDetails(obj, queryAttributes) {
-      return GetServiceDetailsRequest(queryAttributes, config.tokenValue);
+      GetServiceDetails(obj, queryAttributes) {
+        return GetServiceDetailsRequest(queryAttributes, tokenValue);
+      }
     }
-  }
+  };
 };
 
 module.exports = resolvers;

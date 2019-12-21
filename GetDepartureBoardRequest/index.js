@@ -40,8 +40,8 @@ function GetDepartureBoardRequest(
     tokenValue
   })
     .then(result => {
-      return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
       // console.dir(result);
+      return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
     })
     .catch(err => console.error(err));
 }
