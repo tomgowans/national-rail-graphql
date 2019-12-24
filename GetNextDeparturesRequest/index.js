@@ -1,4 +1,5 @@
 const fetchData = require("../fetchData");
+const removeArrays = require("../removeArrays");
 
 /**
  *
@@ -29,7 +30,9 @@ function GetNextDeparturesRequest(
   })
     .then(result => {
       // console.dir(result.GetNextDeparturesResponse[0].DeparturesBoard[0]);
-      return result.GetNextDeparturesResponse[0].DeparturesBoard[0];
+      return removeArrays(
+        result.GetNextDeparturesResponse[0].DeparturesBoard[0]
+      );
     })
     .catch(err => console.error(err));
 }

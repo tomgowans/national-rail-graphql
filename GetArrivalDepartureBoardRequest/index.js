@@ -1,4 +1,5 @@
 const fetchData = require("../fetchData");
+const removeArrays = require("../removeArrays");
 
 /**
  *
@@ -39,9 +40,10 @@ function GetArrivalDepartureBoardRequest(
     tokenValue
   })
     .then(result => {
-      return result.GetArrivalDepartureBoardResponse[0]
-        .GetStationBoardResult[0];
       // console.dir(result);
+      return removeArrays(
+        result.GetArrivalDepartureBoardResponse[0].GetStationBoardResult[0]
+      );
     })
     .catch(err => console.error(err));
 }

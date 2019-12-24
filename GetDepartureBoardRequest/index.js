@@ -1,5 +1,5 @@
 const fetchData = require("../fetchData");
-// const _ = require("lodash");
+const removeArrays = require("../removeArrays");
 
 /**
  *
@@ -41,7 +41,9 @@ function GetDepartureBoardRequest(
   })
     .then(result => {
       // console.dir(result);
-      return result.GetDepartureBoardResponse[0].GetStationBoardResult[0];
+      return removeArrays(
+        result.GetDepartureBoardResponse[0].GetStationBoardResult[0]
+      );
     })
     .catch(err => console.error(err));
 }

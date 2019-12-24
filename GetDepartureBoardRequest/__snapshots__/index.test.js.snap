@@ -11,129 +11,65 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
-  "generatedAt": Array [
-    "2019-11-20T21:09:59.5101527+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "platformAvailable": Array [
-    "true",
-  ],
-  "trainServices": Array [
-    Object {
-      "service": Array [
-        Object {
-          "destination": Array [
+  "crs": "ECR",
+  "generatedAt": "2019-11-20T21:09:59.5101527+00:00",
+  "locationName": "East Croydon",
+  "platformAvailable": "true",
+  "trainServices": Object {
+    "service": Array [
+      Object {
+        "destination": Object {
+          "location": Array [
             Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                },
-              ],
+              "crs": "GTW",
+              "locationName": "Gatwick Airport",
             },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "length": Array [
-            "12",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "BDM",
-                  ],
-                  "locationName": Array [
-                    "Bedford",
-                  ],
-                },
-              ],
-            },
-          ],
-          "platform": Array [
-            "6",
-          ],
-          "serviceID": Array [
-            "8NvDNS9Gpylp0MOg/MmCxw==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:07",
           ],
         },
-        Object {
-          "destination": Array [
+        "etd": "On time",
+        "length": "12",
+        "operator": "Thameslink",
+        "operatorCode": "TL",
+        "origin": Object {
+          "location": Array [
             Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                },
-              ],
+              "crs": "BDM",
+              "locationName": "Bedford",
             },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                },
-              ],
-            },
-          ],
-          "platform": Array [
-            "3",
-          ],
-          "serviceID": Array [
-            "rkEPUnFHelVWfAllpJoHZA==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:08",
           ],
         },
-      ],
-    },
-  ],
+        "platform": "6",
+        "serviceID": "8NvDNS9Gpylp0MOg/MmCxw==",
+        "serviceType": "train",
+        "std": "21:07",
+      },
+      Object {
+        "destination": Object {
+          "location": Array [
+            Object {
+              "crs": "TBD",
+              "locationName": "Three Bridges",
+            },
+          ],
+        },
+        "etd": "On time",
+        "operator": "Thameslink",
+        "operatorCode": "TL",
+        "origin": Object {
+          "location": Array [
+            Object {
+              "crs": "LBG",
+              "locationName": "London Bridge",
+            },
+          ],
+        },
+        "platform": "3",
+        "serviceID": "rkEPUnFHelVWfAllpJoHZA==",
+        "serviceType": "train",
+        "std": "21:08",
+      },
+    ],
+  },
 }
 `;
 
@@ -148,128 +84,64 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
-  "generatedAt": Array [
-    "2019-11-20T21:09:59.5101527+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "platformAvailable": Array [
-    "true",
-  ],
-  "trainServices": Array [
-    Object {
-      "service": Array [
-        Object {
-          "destination": Array [
+  "crs": "ECR",
+  "generatedAt": "2019-11-20T21:09:59.5101527+00:00",
+  "locationName": "East Croydon",
+  "platformAvailable": "true",
+  "trainServices": Object {
+    "service": Array [
+      Object {
+        "destination": Object {
+          "location": Array [
             Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                },
-              ],
+              "crs": "GTW",
+              "locationName": "Gatwick Airport",
             },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "length": Array [
-            "12",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "BDM",
-                  ],
-                  "locationName": Array [
-                    "Bedford",
-                  ],
-                },
-              ],
-            },
-          ],
-          "platform": Array [
-            "6",
-          ],
-          "serviceID": Array [
-            "8NvDNS9Gpylp0MOg/MmCxw==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:07",
           ],
         },
-        Object {
-          "destination": Array [
+        "etd": "On time",
+        "length": "12",
+        "operator": "Thameslink",
+        "operatorCode": "TL",
+        "origin": Object {
+          "location": Array [
             Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                },
-              ],
+              "crs": "BDM",
+              "locationName": "Bedford",
             },
-          ],
-          "etd": Array [
-            "On time",
-          ],
-          "operator": Array [
-            "Thameslink",
-          ],
-          "operatorCode": Array [
-            "TL",
-          ],
-          "origin": Array [
-            Object {
-              "location": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                },
-              ],
-            },
-          ],
-          "platform": Array [
-            "3",
-          ],
-          "serviceID": Array [
-            "rkEPUnFHelVWfAllpJoHZA==",
-          ],
-          "serviceType": Array [
-            "train",
-          ],
-          "std": Array [
-            "21:08",
           ],
         },
-      ],
-    },
-  ],
+        "platform": "6",
+        "serviceID": "8NvDNS9Gpylp0MOg/MmCxw==",
+        "serviceType": "train",
+        "std": "21:07",
+      },
+      Object {
+        "destination": Object {
+          "location": Array [
+            Object {
+              "crs": "TBD",
+              "locationName": "Three Bridges",
+            },
+          ],
+        },
+        "etd": "On time",
+        "operator": "Thameslink",
+        "operatorCode": "TL",
+        "origin": Object {
+          "location": Array [
+            Object {
+              "crs": "LBG",
+              "locationName": "London Bridge",
+            },
+          ],
+        },
+        "platform": "3",
+        "serviceID": "rkEPUnFHelVWfAllpJoHZA==",
+        "serviceType": "train",
+        "std": "21:08",
+      },
+    ],
+  },
 }
 `;

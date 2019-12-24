@@ -11,9 +11,7 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
+  "crs": "ECR",
   "departures": Array [
     Object {
       "destination": Array [
@@ -93,12 +91,8 @@ Object {
       ],
     },
   ],
-  "generatedAt": Array [
-    "2019-12-17T17:20:59.4669003+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
+  "generatedAt": "2019-12-17T17:20:59.4669003+00:00",
+  "locationName": "East Croydon",
   "nrccMessages": Array [
     Object {
       "message": Array [
@@ -108,9 +102,7 @@ Object {
       ],
     },
   ],
-  "platformAvailable": Array [
-    "true",
-  ],
+  "platformAvailable": "true",
 }
 `;
 
@@ -125,9 +117,7 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
+  "crs": "ECR",
   "departures": Array [
     Object {
       "destination": Array [
@@ -207,12 +197,8 @@ Object {
       ],
     },
   ],
-  "generatedAt": Array [
-    "2019-12-17T17:20:59.4669003+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
+  "generatedAt": "2019-12-17T17:20:59.4669003+00:00",
+  "locationName": "East Croydon",
   "nrccMessages": Array [
     Object {
       "message": Array [
@@ -222,8 +208,6 @@ Object {
       ],
     },
   ],
-  "platformAvailable": Array [
-    "true",
-  ],
+  "platformAvailable": "true",
 }
 `;

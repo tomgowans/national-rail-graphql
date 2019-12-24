@@ -1,4 +1,5 @@
 const fetchData = require("../fetchData");
+const removeArrays = require("../removeArrays");
 
 /**
  *
@@ -15,8 +16,10 @@ function GetServiceDetailsRequest({ serviceID }, tokenValue) {
     tokenValue
   })
     .then(result => {
-      return result.GetServiceDetailsResponse[0].GetServiceDetailsResult[0];
       // console.dir(result);
+      return removeArrays(
+        result.GetServiceDetailsResponse[0].GetServiceDetailsResult[0]
+      );
     })
     .catch(err => console.error(err));
 }
