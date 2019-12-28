@@ -80,10 +80,10 @@ const typeDefs = gql`
 
   type ServiceItem {
     rsid: String
-    origin: [Location]
-    destination: [Location]
-    currentOrigins: [Location]
-    currentDestinations: [Location]
+    origin: Location
+    destination: Location
+    currentOrigins: Location
+    currentDestinations: Location
     sta: String
     eta: String
     std: String
@@ -106,10 +106,10 @@ const typeDefs = gql`
   }
 
   type ServiceItemWithCallingPoints {
-    origin: [Location]
-    destination: [Location]
-    currentOrigins: [Location]
-    currentDestinations: [Location]
+    origin: Location
+    destination: Location
+    currentOrigins: Location
+    currentDestinations: Location
     sta: String
     eta: String
     std: String
@@ -157,11 +157,11 @@ const typeDefs = gql`
   }
 
   type ServiceLocation {
-    locationName: [String]
-    crs: [String]
-    via: [String]
-    futureChangeTo: [String]
-    assocIsCancelled: [String]
+    locationName: String
+    crs: String
+    via: String
+    futureChangeTo: String
+    assocIsCancelled: String
   }
 
   type ServiceDetails {
