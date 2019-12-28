@@ -38,7 +38,9 @@ const removeArrays = values => {
     "destination",
     "origin",
     "previousCallingPoints",
-    "subsequentCallingPoints"
+    "subsequentCallingPoints",
+
+    "departures"
   ];
 
   keys.map(key => {
@@ -48,6 +50,24 @@ const removeArrays = values => {
   });
 
   const { service } = values.trainServices || [];
+
+  if (values.departures) {
+    _.set(values, "departures.destination", values.departures.destination[0]);
+
+    const destinationService = values.departures.destination.service;
+
+    for (let index1 = 0; index1 < destinationService.length; index1++) {
+      keys.map(key => {
+        if (values.departures.destination.service[index1][key]) {
+          _.set(
+            values,
+            `departures.destination.service[${index1}][${key}]`,
+            values.departures.destination.service[index1][key][0]
+          );
+        }
+      });
+    }
+  }
 
   if (_.isArray(service)) {
     for (let index1 = 0; index1 < service.length; index1++) {

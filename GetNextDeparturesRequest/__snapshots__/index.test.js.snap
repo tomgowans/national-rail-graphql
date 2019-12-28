@@ -12,76 +12,50 @@ Object {
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
   "crs": "ECR",
-  "departures": Array [
-    Object {
-      "destination": Array [
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
         Object {
-          "$": Object {
-            "crs": "STP",
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": Array [
+                  "CBG",
+                ],
+                "locationName": Array [
+                  "Cambridge",
+                ],
+              },
+            ],
           },
-          "service": Array [
-            Object {
-              "destination": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "CBG",
-                      ],
-                      "locationName": Array [
-                        "Cambridge",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "eta": Array [
-                "17:40",
-              ],
-              "etd": Array [
-                "17:40",
-              ],
-              "operator": Array [
-                "Thameslink",
-              ],
-              "operatorCode": Array [
-                "TL",
-              ],
-              "origin": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "BTN",
-                      ],
-                      "locationName": Array [
-                        "Brighton",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "platform": Array [
-                "1",
-              ],
-              "serviceID": Array [
-                "4dU8fydGLLMrBhZUs9E2Uw==",
-              ],
-              "serviceType": Array [
-                "train",
-              ],
-              "sta": Array [
-                "17:31",
-              ],
-              "std": Array [
-                "17:31",
-              ],
-            },
-          ],
+          "eta": "17:40",
+          "etd": "17:40",
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": Array [
+                  "BTN",
+                ],
+                "locationName": Array [
+                  "Brighton",
+                ],
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "4dU8fydGLLMrBhZUs9E2Uw==",
+          "serviceType": "train",
+          "sta": "17:31",
+          "std": "17:31",
         },
       ],
     },
-  ],
+  },
   "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
   "locationName": "East Croydon",
   "nrccMessages": Array [
@@ -108,76 +82,50 @@ Object {
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
   "crs": "ECR",
-  "departures": Array [
-    Object {
-      "destination": Array [
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
         Object {
-          "$": Object {
-            "crs": "STP",
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": Array [
+                  "CBG",
+                ],
+                "locationName": Array [
+                  "Cambridge",
+                ],
+              },
+            ],
           },
-          "service": Array [
-            Object {
-              "destination": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "CBG",
-                      ],
-                      "locationName": Array [
-                        "Cambridge",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "eta": Array [
-                "17:40",
-              ],
-              "etd": Array [
-                "17:40",
-              ],
-              "operator": Array [
-                "Thameslink",
-              ],
-              "operatorCode": Array [
-                "TL",
-              ],
-              "origin": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "BTN",
-                      ],
-                      "locationName": Array [
-                        "Brighton",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "platform": Array [
-                "1",
-              ],
-              "serviceID": Array [
-                "4dU8fydGLLMrBhZUs9E2Uw==",
-              ],
-              "serviceType": Array [
-                "train",
-              ],
-              "sta": Array [
-                "17:31",
-              ],
-              "std": Array [
-                "17:31",
-              ],
-            },
-          ],
+          "eta": "17:40",
+          "etd": "17:40",
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": Array [
+                  "BTN",
+                ],
+                "locationName": Array [
+                  "Brighton",
+                ],
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "4dU8fydGLLMrBhZUs9E2Uw==",
+          "serviceType": "train",
+          "sta": "17:31",
+          "std": "17:31",
         },
       ],
     },
-  ],
+  },
   "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
   "locationName": "East Croydon",
   "nrccMessages": Array [
