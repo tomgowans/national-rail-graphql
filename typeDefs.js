@@ -33,7 +33,7 @@ const typeDefs = gql`
     filterLocationName: String
     filtercrs: String
     filterType: String
-    nrccMessages: [Messages]
+    nrccMessages: Messages
     platformAvailable: String
     areServicesAvailable: String
     trainServices: ServiceItemArray
@@ -46,7 +46,7 @@ const typeDefs = gql`
     filterLocationName: String
     filtercrs: String
     filterType: String
-    nrccMessages: [Messages]
+    nrccMessages: Messages
     platformAvailable: String
     areServicesAvailable: String
     trainServices: ServiceItemWithCallingPointsArray
@@ -59,7 +59,7 @@ const typeDefs = gql`
     filterLocationName: String
     filtercrs: String
     filterType: String
-    nrccMessages: [Messages]
+    nrccMessages: Messages
     platformAvailable: String
     areServicesAvailable: String
     departures: DepartureItem
@@ -72,7 +72,7 @@ const typeDefs = gql`
     filterLocationName: String
     filtercrs: String
     filterType: String
-    nrccMessages: [Messages]
+    nrccMessages: Messages
     platformAvailable: String
     areServicesAvailable: String
     departures: DepartureItemWithCallingPoints
