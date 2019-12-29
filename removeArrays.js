@@ -39,7 +39,6 @@ const removeArrays = values => {
     "origin",
     "previousCallingPoints",
     "subsequentCallingPoints",
-
     "departures"
   ];
 
@@ -66,6 +65,108 @@ const removeArrays = values => {
           );
         }
       });
+
+      // origin
+      const departuresOriginLocation =
+        values.departures.destination.service[index1].origin.location || [];
+
+      for (let index2 = 0; index2 < departuresOriginLocation.length; index2++) {
+        keys.map(key => {
+          if (
+            values.departures.destination.service[index1].origin.location[
+              index2
+            ][key]
+          ) {
+            _.set(
+              values,
+              `departures.destination.service[${index1}].origin.location[${index2}][${key}]`,
+              values.departures.destination.service[index1].origin.location[
+                index2
+              ][key][0]
+            );
+          }
+        });
+      }
+
+      // destination
+      const departuresDestinationLocation =
+        values.departures.destination.service[index1].destination.location ||
+        [];
+
+      for (
+        let index2 = 0;
+        index2 < departuresDestinationLocation.length;
+        index2++
+      ) {
+        keys.map(key => {
+          if (
+            values.departures.destination.service[index1].destination.location[
+              index2
+            ][key]
+          ) {
+            _.set(
+              values,
+              `departures.destination.service[${index1}].destination.location[${index2}][${key}]`,
+              values.departures.destination.service[index1].destination
+                .location[index2][key][0]
+            );
+          }
+        });
+      }
+
+      if (values.departures.destination.service[index1].currentOrigins) {
+        // currentOrigins
+        const departuresCurrentOriginsLocation =
+          values.departures.destination.service[index1].currentOrigins
+            .location || [];
+
+        for (
+          let index2 = 0;
+          index2 < departuresCurrentOriginsLocation.length;
+          index2++
+        ) {
+          keys.map(key => {
+            if (
+              values.departures.destination.service[index1].currentOrigins
+                .location[index2][key]
+            ) {
+              _.set(
+                values,
+                `departures.destination.service[${index1}].currentOrigins.location[${index2}][${key}]`,
+                values.departures.destination.service[index1].currentOrigins
+                  .location[index2][key][0]
+              );
+            }
+          });
+        }
+      }
+
+      // currentDestinations
+      if (values.departures.destination.service[index1].currentDestinations) {
+        const departuresCurrentDestinationsLocation =
+          values.departures.destination.service[index1].currentDestinations
+            .location || [];
+
+        for (
+          let index2 = 0;
+          index2 < departuresCurrentDestinationsLocation.length;
+          index2++
+        ) {
+          keys.map(key => {
+            if (
+              values.departures.destination.service[index1].currentDestinations
+                .location[index2][key]
+            ) {
+              _.set(
+                values,
+                `departures.destination.service[${index1}].currentDestinations.location[${index2}][${key}]`,
+                values.departures.destination.service[index1]
+                  .currentDestinations.location[index2][key][0]
+              );
+            }
+          });
+        }
+      }
     }
   }
 

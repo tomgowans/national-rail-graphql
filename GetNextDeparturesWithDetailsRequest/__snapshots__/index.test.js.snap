@@ -22,12 +22,8 @@ Object {
           "destination": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "CBG",
-                ],
-                "locationName": Array [
-                  "Cambridge",
-                ],
+                "crs": "CBG",
+                "locationName": "Cambridge",
               },
             ],
           },
@@ -38,12 +34,8 @@ Object {
           "origin": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "BTN",
-                ],
-                "locationName": Array [
-                  "Brighton",
-                ],
+                "crs": "BTN",
+                "locationName": "Brighton",
               },
             ],
           },
@@ -282,12 +274,8 @@ Object {
           "destination": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "CBG",
-                ],
-                "locationName": Array [
-                  "Cambridge",
-                ],
+                "crs": "CBG",
+                "locationName": "Cambridge",
               },
             ],
           },
@@ -298,12 +286,8 @@ Object {
           "origin": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "BTN",
-                ],
-                "locationName": Array [
-                  "Brighton",
-                ],
+                "crs": "BTN",
+                "locationName": "Brighton",
               },
             ],
           },

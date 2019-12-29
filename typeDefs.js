@@ -62,7 +62,7 @@ const typeDefs = gql`
     nrccMessages: [Messages]
     platformAvailable: String
     areServicesAvailable: String
-    departures: [DepartureItem]
+    departures: DepartureItem
   }
 
   type DeparturesBoardWithDetails {
@@ -75,7 +75,7 @@ const typeDefs = gql`
     nrccMessages: [Messages]
     platformAvailable: String
     areServicesAvailable: String
-    departures: [DepartureItemWithCallingPoints]
+    departures: DepartureItemWithCallingPoints
   }
 
   type ServiceItem {
@@ -128,8 +128,8 @@ const typeDefs = gql`
     delayReason: String
     serviceID: String
     #adhocAlerts
-    previousCallingPoints: [CallingPointArray]
-    subsequentCallingPoints: [CallingPointArray]
+    previousCallingPoints: CallingPointArray
+    subsequentCallingPoints: CallingPointArray
     #formation
   }
 
@@ -139,7 +139,7 @@ const typeDefs = gql`
   }
 
   type DepartureItem {
-    destination: [Destination]
+    destination: Destination
   }
 
   type DestinationWithCallingPoints {
@@ -148,7 +148,7 @@ const typeDefs = gql`
   }
 
   type DepartureItemWithCallingPoints {
-    destination: [DestinationWithCallingPoints]
+    destination: DestinationWithCallingPoints
   }
 
   type FormationData {
@@ -192,7 +192,7 @@ const typeDefs = gql`
   }
 
   type CallingPointArray {
-    callingPointList: [CallingPoint]
+    callingPointList: CallingPoint
   }
 
   type CallingPoint {

@@ -24,12 +24,8 @@ Object {
           "destination": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "PBO",
-                ],
-                "locationName": Array [
-                  "Peterborough",
-                ],
+                "crs": "PBO",
+                "locationName": "Peterborough",
               },
             ],
           },
@@ -41,12 +37,8 @@ Object {
           "origin": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "HRH",
-                ],
-                "locationName": Array [
-                  "Horsham",
-                ],
+                "crs": "HRH",
+                "locationName": "Horsham",
               },
             ],
           },
@@ -98,12 +90,8 @@ Object {
           "destination": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "PBO",
-                ],
-                "locationName": Array [
-                  "Peterborough",
-                ],
+                "crs": "PBO",
+                "locationName": "Peterborough",
               },
             ],
           },
@@ -115,12 +103,8 @@ Object {
           "origin": Object {
             "location": Array [
               Object {
-                "crs": Array [
-                  "HRH",
-                ],
-                "locationName": Array [
-                  "Horsham",
-                ],
+                "crs": "HRH",
+                "locationName": "Horsham",
               },
             ],
           },
