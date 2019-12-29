@@ -50,14 +50,12 @@ Object {
   },
   "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
   "locationName": "East Croydon",
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
-      ],
-    },
-  ],
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
   "platformAvailable": "true",
 }
 `;
@@ -112,14 +110,12 @@ Object {
   },
   "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
   "locationName": "East Croydon",
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
-      ],
-    },
-  ],
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
   "platformAvailable": "true",
 }
 `;

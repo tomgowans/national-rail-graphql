@@ -39,7 +39,8 @@ const removeArrays = values => {
     "origin",
     "previousCallingPoints",
     "subsequentCallingPoints",
-    "departures"
+    "departures",
+    "nrccMessages"
   ];
 
   keys.map(key => {
@@ -162,6 +163,47 @@ const removeArrays = values => {
                 `departures.destination.service[${index1}].currentDestinations.location[${index2}][${key}]`,
                 values.departures.destination.service[index1]
                   .currentDestinations.location[index2][key][0]
+              );
+            }
+          });
+        }
+      }
+
+      // "subsequentCallingPoints": Object {
+      //   "callingPointList": Array [
+      //     Object {
+      //       "callingPoint": Array [
+      //         Object {
+
+      if (
+        values.departures.destination.service[index1].subsequentCallingPoints
+      ) {
+        _.set(
+          values,
+          `departures.destination.service[${index1}].subsequentCallingPoints.callingPointList`,
+          values.departures.destination.service[index1].subsequentCallingPoints
+            .callingPointList[0]
+        );
+
+        const callingPoint =
+          values.departures.destination.service[index1].subsequentCallingPoints
+            .callingPointList.callingPoint || [];
+
+        for (let index2 = 0; index2 < callingPoint.length; index2++) {
+          keys.map(key => {
+            if (
+              values.departures.destination.service[index1]
+                .subsequentCallingPoints.callingPointList.callingPoint[index2][
+                key
+              ]
+            ) {
+              _.set(
+                values,
+                `departures.destination.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
+                values.departures.destination.service[index1]
+                  .subsequentCallingPoints.callingPointList.callingPoint[
+                  index2
+                ][key][0]
               );
             }
           });

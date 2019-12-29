@@ -53,15 +53,13 @@ Object {
   },
   "generatedAt": "2019-12-17T17:20:59.4669003+00:00",
   "locationName": "East Croydon",
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
-      ],
-    },
-  ],
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
   "platformAvailable": "true",
 }
 `;
@@ -119,15 +117,13 @@ Object {
   },
   "generatedAt": "2019-12-17T17:20:59.4669003+00:00",
   "locationName": "East Croydon",
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
-      ],
-    },
-  ],
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
   "platformAvailable": "true",
 }
 `;
