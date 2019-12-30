@@ -165,30 +165,30 @@ const typeDefs = gql`
   }
 
   type ServiceDetails {
-    generatedAt: [String]
-    rsid: [String]
-    serviceType: [String]
-    locationName: [String]
-    crs: [String]
-    operator: [String]
-    operatorCode: [String]
-    isCancelled: [String]
-    cancelReason: [String]
-    delayReason: [String]
-    overdueMessage: [String]
-    length: [String]
-    detachFront: [String]
-    isReverseFormation: [String]
-    platform: [String]
-    sta: [String]
-    eta: [String]
-    ata: [String]
-    std: [String]
-    etd: [String]
-    atd: [String]
+    generatedAt: String
+    rsid: String
+    serviceType: String
+    locationName: String
+    crs: String
+    operator: String
+    operatorCode: String
+    isCancelled: String
+    cancelReason: String
+    delayReason: String
+    overdueMessage: String
+    length: String
+    detachFront: String
+    isReverseFormation: String
+    platform: String
+    sta: String
+    eta: String
+    ata: String
+    std: String
+    etd: String
+    atd: String
     #adhocAlerts
-    previousCallingPoints: [CallingPointArray]
-    subsequentCallingPoints: [CallingPointArray]
+    previousCallingPoints: CallingPointArray
+    subsequentCallingPoints: CallingPointArray
   }
 
   type CallingPointArray {
@@ -200,14 +200,14 @@ const typeDefs = gql`
   }
 
   type CallingPointObject {
-    locationName: [String]
-    crs: [String]
-    st: [String]
-    et: [String]
-    at: [String]
-    isCancelled: [String]
-    length: [String]
-    detachFront: [String]
+    locationName: String
+    crs: String
+    st: String
+    et: String
+    at: String
+    isCancelled: String
+    length: String
+    detachFront: String
     #adhocAlerts
   }
 
