@@ -108,29 +108,17 @@ Object {
         "sta": "08:08",
         "std": "08:08",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "08:30",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:23",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "GTW",
+                "et": "08:30",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:23",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -230,46 +218,24 @@ Object {
         "sta": "08:15",
         "std": "08:15",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CLJ",
-                  ],
-                  "et": Array [
-                    "08:31",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Clapham Junction",
-                  ],
-                  "st": Array [
-                    "08:27",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "VIC",
-                  ],
-                  "et": Array [
-                    "08:38",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Victoria",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CLJ",
+                "et": "08:31",
+                "length": "12",
+                "locationName": "Clapham Junction",
+                "st": "08:27",
+              },
+              Object {
+                "crs": "VIC",
+                "et": "08:38",
+                "length": "12",
+                "locationName": "London Victoria",
+                "st": "08:35",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -412,199 +378,87 @@ Object {
         "sta": "08:16",
         "std": "08:16",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CDS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Coulsdon South",
-                  ],
-                  "st": Array [
-                    "08:25",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "MHM",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Merstham",
-                  ],
-                  "st": Array [
-                    "08:31",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "RDH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Redhill",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HOR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Horley",
-                  ],
-                  "st": Array [
-                    "08:42",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                  "st": Array [
-                    "08:51",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CRW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Crawley",
-                  ],
-                  "st": Array [
-                    "08:56",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "IFI",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Ifield",
-                  ],
-                  "st": Array [
-                    "08:59",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FGT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Faygate",
-                  ],
-                  "st": Array [
-                    "09:03",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LVN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Littlehaven",
-                  ],
-                  "st": Array [
-                    "09:07",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HRH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Horsham",
-                  ],
-                  "st": Array [
-                    "09:11",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CDS",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Coulsdon South",
+                "st": "08:25",
+              },
+              Object {
+                "crs": "MHM",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Merstham",
+                "st": "08:31",
+              },
+              Object {
+                "crs": "RDH",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Redhill",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "HOR",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Horley",
+                "st": "08:42",
+              },
+              Object {
+                "crs": "GTW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "TBD",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Three Bridges",
+                "st": "08:51",
+              },
+              Object {
+                "crs": "CRW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Crawley",
+                "st": "08:56",
+              },
+              Object {
+                "crs": "IFI",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Ifield",
+                "st": "08:59",
+              },
+              Object {
+                "crs": "FGT",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Faygate",
+                "st": "09:03",
+              },
+              Object {
+                "crs": "LVN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Littlehaven",
+                "st": "09:07",
+              },
+              Object {
+                "crs": "HRH",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Horsham",
+                "st": "09:11",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -691,250 +545,108 @@ Object {
         "sta": "08:15",
         "std": "08:16",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "08:33",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BFR",
-                  ],
-                  "et": Array [
-                    "08:39",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Blackfriars",
-                  ],
-                  "st": Array [
-                    "08:36",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CTK",
-                  ],
-                  "et": Array [
-                    "08:41",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "City Thameslink",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ZFD",
-                  ],
-                  "et": Array [
-                    "08:43",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Farringdon Underground",
-                  ],
-                  "st": Array [
-                    "08:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "STP",
-                  ],
-                  "et": Array [
-                    "08:47",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London St Pancras (Intl)",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FPK",
-                  ],
-                  "et": Array [
-                    "08:54",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Finsbury Park",
-                  ],
-                  "st": Array [
-                    "08:52",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SVG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Stevenage",
-                  ],
-                  "st": Array [
-                    "09:13",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HIT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Hitchin",
-                  ],
-                  "st": Array [
-                    "09:19",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ARL",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Arlesey",
-                  ],
-                  "st": Array [
-                    "09:25",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BIW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Biggleswade",
-                  ],
-                  "st": Array [
-                    "09:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SDY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Sandy",
-                  ],
-                  "st": Array [
-                    "09:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SNO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "St Neots",
-                  ],
-                  "st": Array [
-                    "09:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HUN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Huntingdon",
-                  ],
-                  "st": Array [
-                    "09:48",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PBO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Peterborough",
-                  ],
-                  "st": Array [
-                    "10:05",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "08:33",
+                "length": "12",
+                "locationName": "London Bridge",
+                "st": "08:30",
+              },
+              Object {
+                "crs": "BFR",
+                "et": "08:39",
+                "length": "12",
+                "locationName": "London Blackfriars",
+                "st": "08:36",
+              },
+              Object {
+                "crs": "CTK",
+                "et": "08:41",
+                "length": "12",
+                "locationName": "City Thameslink",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "ZFD",
+                "et": "08:43",
+                "length": "12",
+                "locationName": "Farringdon Underground",
+                "st": "08:41",
+              },
+              Object {
+                "crs": "STP",
+                "et": "08:47",
+                "length": "12",
+                "locationName": "London St Pancras (Intl)",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "FPK",
+                "et": "08:54",
+                "length": "12",
+                "locationName": "Finsbury Park",
+                "st": "08:52",
+              },
+              Object {
+                "crs": "SVG",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Stevenage",
+                "st": "09:13",
+              },
+              Object {
+                "crs": "HIT",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Hitchin",
+                "st": "09:19",
+              },
+              Object {
+                "crs": "ARL",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Arlesey",
+                "st": "09:25",
+              },
+              Object {
+                "crs": "BIW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Biggleswade",
+                "st": "09:30",
+              },
+              Object {
+                "crs": "SDY",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Sandy",
+                "st": "09:34",
+              },
+              Object {
+                "crs": "SNO",
+                "et": "On time",
+                "length": "12",
+                "locationName": "St Neots",
+                "st": "09:41",
+              },
+              Object {
+                "crs": "HUN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Huntingdon",
+                "st": "09:48",
+              },
+              Object {
+                "crs": "PBO",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Peterborough",
+                "st": "10:05",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1024,29 +736,17 @@ Object {
         "sta": "08:18",
         "std": "08:18",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "On time",
+                "length": "10",
+                "locationName": "London Bridge",
+                "st": "08:34",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1175,131 +875,59 @@ Object {
         "sta": "08:18",
         "std": "08:19",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                  "st": Array [
-                    "08:39",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BAB",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Balcombe",
-                  ],
-                  "st": Array [
-                    "08:46",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HHE",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Haywards Heath",
-                  ],
-                  "st": Array [
-                    "08:51",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WVF",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Wivelsfield",
-                  ],
-                  "st": Array [
-                    "08:58",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BUG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Burgess Hill",
-                  ],
-                  "st": Array [
-                    "09:00",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BTN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Brighton",
-                  ],
-                  "st": Array [
-                    "09:12",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "GTW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:34",
+              },
+              Object {
+                "crs": "TBD",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Three Bridges",
+                "st": "08:39",
+              },
+              Object {
+                "crs": "BAB",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Balcombe",
+                "st": "08:46",
+              },
+              Object {
+                "crs": "HHE",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Haywards Heath",
+                "st": "08:51",
+              },
+              Object {
+                "crs": "WVF",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Wivelsfield",
+                "st": "08:58",
+              },
+              Object {
+                "crs": "BUG",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Burgess Hill",
+                "st": "09:00",
+              },
+              Object {
+                "crs": "BTN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Brighton",
+                "st": "09:12",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1347,110 +975,52 @@ Object {
         "sta": "08:19",
         "std": "08:20",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "SCY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "South Croydon",
-                  ],
-                  "st": Array [
-                    "08:22",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PUO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Purley Oaks",
-                  ],
-                  "st": Array [
-                    "08:26",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PUR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Purley",
-                  ],
-                  "st": Array [
-                    "08:29",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "KLY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Kenley",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WHY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Whyteleafe",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WHS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Whyteleafe South",
-                  ],
-                  "st": Array [
-                    "08:40",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CAT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Caterham",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "SCY",
+                "et": "On time",
+                "locationName": "South Croydon",
+                "st": "08:22",
+              },
+              Object {
+                "crs": "PUO",
+                "et": "On time",
+                "locationName": "Purley Oaks",
+                "st": "08:26",
+              },
+              Object {
+                "crs": "PUR",
+                "et": "On time",
+                "locationName": "Purley",
+                "st": "08:29",
+              },
+              Object {
+                "crs": "KLY",
+                "et": "On time",
+                "locationName": "Kenley",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "WHY",
+                "et": "On time",
+                "locationName": "Whyteleafe",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "WHS",
+                "et": "On time",
+                "locationName": "Whyteleafe South",
+                "st": "08:40",
+              },
+              Object {
+                "crs": "CAT",
+                "et": "On time",
+                "locationName": "Caterham",
+                "st": "08:45",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1592,46 +1162,24 @@ Object {
         "sta": "08:18",
         "std": "08:20",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CLJ",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Clapham Junction",
-                  ],
-                  "st": Array [
-                    "08:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "VIC",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Victoria",
-                  ],
-                  "st": Array [
-                    "08:37",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CLJ",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Clapham Junction",
+                "st": "08:30",
+              },
+              Object {
+                "crs": "VIC",
+                "et": "On time",
+                "length": "12",
+                "locationName": "London Victoria",
+                "st": "08:37",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1768,182 +1316,80 @@ Object {
         "sta": "08:20",
         "std": "08:21",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "08:38",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BFR",
-                  ],
-                  "et": Array [
-                    "08:45",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Blackfriars",
-                  ],
-                  "st": Array [
-                    "08:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CTK",
-                  ],
-                  "et": Array [
-                    "08:47",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "City Thameslink",
-                  ],
-                  "st": Array [
-                    "08:43",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ZFD",
-                  ],
-                  "et": Array [
-                    "08:50",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Farringdon Underground",
-                  ],
-                  "st": Array [
-                    "08:46",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "STP",
-                  ],
-                  "et": Array [
-                    "08:54",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London St Pancras (Intl)",
-                  ],
-                  "st": Array [
-                    "08:50",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LUT",
-                  ],
-                  "et": Array [
-                    "09:19",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Luton",
-                  ],
-                  "st": Array [
-                    "09:17",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LEA",
-                  ],
-                  "et": Array [
-                    "09:24",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Leagrave",
-                  ],
-                  "st": Array [
-                    "09:22",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HLN",
-                  ],
-                  "et": Array [
-                    "09:28",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Harlington",
-                  ],
-                  "st": Array [
-                    "09:26",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FLT",
-                  ],
-                  "et": Array [
-                    "09:32",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Flitwick",
-                  ],
-                  "st": Array [
-                    "09:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BDM",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Bedford",
-                  ],
-                  "st": Array [
-                    "09:42",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "08:38",
+                "length": "12",
+                "locationName": "London Bridge",
+                "st": "08:34",
+              },
+              Object {
+                "crs": "BFR",
+                "et": "08:45",
+                "length": "12",
+                "locationName": "London Blackfriars",
+                "st": "08:41",
+              },
+              Object {
+                "crs": "CTK",
+                "et": "08:47",
+                "length": "12",
+                "locationName": "City Thameslink",
+                "st": "08:43",
+              },
+              Object {
+                "crs": "ZFD",
+                "et": "08:50",
+                "length": "12",
+                "locationName": "Farringdon Underground",
+                "st": "08:46",
+              },
+              Object {
+                "crs": "STP",
+                "et": "08:54",
+                "length": "12",
+                "locationName": "London St Pancras (Intl)",
+                "st": "08:50",
+              },
+              Object {
+                "crs": "LUT",
+                "et": "09:19",
+                "length": "12",
+                "locationName": "Luton",
+                "st": "09:17",
+              },
+              Object {
+                "crs": "LEA",
+                "et": "09:24",
+                "length": "12",
+                "locationName": "Leagrave",
+                "st": "09:22",
+              },
+              Object {
+                "crs": "HLN",
+                "et": "09:28",
+                "length": "12",
+                "locationName": "Harlington",
+                "st": "09:26",
+              },
+              Object {
+                "crs": "FLT",
+                "et": "09:32",
+                "length": "12",
+                "locationName": "Flitwick",
+                "st": "09:30",
+              },
+              Object {
+                "crs": "BDM",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Bedford",
+                "st": "09:42",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -1987,182 +1433,80 @@ Object {
         "sta": "08:21",
         "std": "08:22",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "OXT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Oxted",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HUR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Hurst Green",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "EBT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Edenbridge Town",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HEV",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Hever",
-                  ],
-                  "st": Array [
-                    "08:49",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CWN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Cowden",
-                  ],
-                  "st": Array [
-                    "08:53",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "AHS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Ashurst",
-                  ],
-                  "st": Array [
-                    "08:57",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ERI",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Eridge",
-                  ],
-                  "st": Array [
-                    "09:03",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "COH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Crowborough",
-                  ],
-                  "st": Array [
-                    "09:09",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BXD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Buxted",
-                  ],
-                  "st": Array [
-                    "09:16",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "UCK",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Uckfield",
-                  ],
-                  "st": Array [
-                    "09:22",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "OXT",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Oxted",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "HUR",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Hurst Green",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "EBT",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Edenbridge Town",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "HEV",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Hever",
+                "st": "08:49",
+              },
+              Object {
+                "crs": "CWN",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Cowden",
+                "st": "08:53",
+              },
+              Object {
+                "crs": "AHS",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Ashurst",
+                "st": "08:57",
+              },
+              Object {
+                "crs": "ERI",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Eridge",
+                "st": "09:03",
+              },
+              Object {
+                "crs": "COH",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Crowborough",
+                "st": "09:09",
+              },
+              Object {
+                "crs": "BXD",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Buxted",
+                "st": "09:16",
+              },
+              Object {
+                "crs": "UCK",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Uckfield",
+                "st": "09:22",
+              },
+            ],
+          },
         },
       },
     ],
@@ -2278,29 +1622,17 @@ Object {
         "sta": "08:08",
         "std": "08:08",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "08:30",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:23",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "GTW",
+                "et": "08:30",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:23",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -2400,46 +1732,24 @@ Object {
         "sta": "08:15",
         "std": "08:15",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CLJ",
-                  ],
-                  "et": Array [
-                    "08:31",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Clapham Junction",
-                  ],
-                  "st": Array [
-                    "08:27",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "VIC",
-                  ],
-                  "et": Array [
-                    "08:38",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Victoria",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CLJ",
+                "et": "08:31",
+                "length": "12",
+                "locationName": "Clapham Junction",
+                "st": "08:27",
+              },
+              Object {
+                "crs": "VIC",
+                "et": "08:38",
+                "length": "12",
+                "locationName": "London Victoria",
+                "st": "08:35",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -2582,199 +1892,87 @@ Object {
         "sta": "08:16",
         "std": "08:16",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CDS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Coulsdon South",
-                  ],
-                  "st": Array [
-                    "08:25",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "MHM",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Merstham",
-                  ],
-                  "st": Array [
-                    "08:31",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "RDH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Redhill",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HOR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Horley",
-                  ],
-                  "st": Array [
-                    "08:42",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                  "st": Array [
-                    "08:51",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CRW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Crawley",
-                  ],
-                  "st": Array [
-                    "08:56",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "IFI",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Ifield",
-                  ],
-                  "st": Array [
-                    "08:59",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FGT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Faygate",
-                  ],
-                  "st": Array [
-                    "09:03",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LVN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Littlehaven",
-                  ],
-                  "st": Array [
-                    "09:07",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HRH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Horsham",
-                  ],
-                  "st": Array [
-                    "09:11",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CDS",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Coulsdon South",
+                "st": "08:25",
+              },
+              Object {
+                "crs": "MHM",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Merstham",
+                "st": "08:31",
+              },
+              Object {
+                "crs": "RDH",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Redhill",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "HOR",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Horley",
+                "st": "08:42",
+              },
+              Object {
+                "crs": "GTW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "TBD",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Three Bridges",
+                "st": "08:51",
+              },
+              Object {
+                "crs": "CRW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Crawley",
+                "st": "08:56",
+              },
+              Object {
+                "crs": "IFI",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Ifield",
+                "st": "08:59",
+              },
+              Object {
+                "crs": "FGT",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Faygate",
+                "st": "09:03",
+              },
+              Object {
+                "crs": "LVN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Littlehaven",
+                "st": "09:07",
+              },
+              Object {
+                "crs": "HRH",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Horsham",
+                "st": "09:11",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -2861,250 +2059,108 @@ Object {
         "sta": "08:15",
         "std": "08:16",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "08:33",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BFR",
-                  ],
-                  "et": Array [
-                    "08:39",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Blackfriars",
-                  ],
-                  "st": Array [
-                    "08:36",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CTK",
-                  ],
-                  "et": Array [
-                    "08:41",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "City Thameslink",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ZFD",
-                  ],
-                  "et": Array [
-                    "08:43",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Farringdon Underground",
-                  ],
-                  "st": Array [
-                    "08:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "STP",
-                  ],
-                  "et": Array [
-                    "08:47",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London St Pancras (Intl)",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FPK",
-                  ],
-                  "et": Array [
-                    "08:54",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Finsbury Park",
-                  ],
-                  "st": Array [
-                    "08:52",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SVG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Stevenage",
-                  ],
-                  "st": Array [
-                    "09:13",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HIT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Hitchin",
-                  ],
-                  "st": Array [
-                    "09:19",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ARL",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Arlesey",
-                  ],
-                  "st": Array [
-                    "09:25",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BIW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Biggleswade",
-                  ],
-                  "st": Array [
-                    "09:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SDY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Sandy",
-                  ],
-                  "st": Array [
-                    "09:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "SNO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "St Neots",
-                  ],
-                  "st": Array [
-                    "09:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HUN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Huntingdon",
-                  ],
-                  "st": Array [
-                    "09:48",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PBO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Peterborough",
-                  ],
-                  "st": Array [
-                    "10:05",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "08:33",
+                "length": "12",
+                "locationName": "London Bridge",
+                "st": "08:30",
+              },
+              Object {
+                "crs": "BFR",
+                "et": "08:39",
+                "length": "12",
+                "locationName": "London Blackfriars",
+                "st": "08:36",
+              },
+              Object {
+                "crs": "CTK",
+                "et": "08:41",
+                "length": "12",
+                "locationName": "City Thameslink",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "ZFD",
+                "et": "08:43",
+                "length": "12",
+                "locationName": "Farringdon Underground",
+                "st": "08:41",
+              },
+              Object {
+                "crs": "STP",
+                "et": "08:47",
+                "length": "12",
+                "locationName": "London St Pancras (Intl)",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "FPK",
+                "et": "08:54",
+                "length": "12",
+                "locationName": "Finsbury Park",
+                "st": "08:52",
+              },
+              Object {
+                "crs": "SVG",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Stevenage",
+                "st": "09:13",
+              },
+              Object {
+                "crs": "HIT",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Hitchin",
+                "st": "09:19",
+              },
+              Object {
+                "crs": "ARL",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Arlesey",
+                "st": "09:25",
+              },
+              Object {
+                "crs": "BIW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Biggleswade",
+                "st": "09:30",
+              },
+              Object {
+                "crs": "SDY",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Sandy",
+                "st": "09:34",
+              },
+              Object {
+                "crs": "SNO",
+                "et": "On time",
+                "length": "12",
+                "locationName": "St Neots",
+                "st": "09:41",
+              },
+              Object {
+                "crs": "HUN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Huntingdon",
+                "st": "09:48",
+              },
+              Object {
+                "crs": "PBO",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Peterborough",
+                "st": "10:05",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -3194,29 +2250,17 @@ Object {
         "sta": "08:18",
         "std": "08:18",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "On time",
+                "length": "10",
+                "locationName": "London Bridge",
+                "st": "08:34",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -3345,131 +2389,59 @@ Object {
         "sta": "08:18",
         "std": "08:19",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "GTW",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Gatwick Airport",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "TBD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Three Bridges",
-                  ],
-                  "st": Array [
-                    "08:39",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BAB",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Balcombe",
-                  ],
-                  "st": Array [
-                    "08:46",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HHE",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Haywards Heath",
-                  ],
-                  "st": Array [
-                    "08:51",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WVF",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Wivelsfield",
-                  ],
-                  "st": Array [
-                    "08:58",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BUG",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Burgess Hill",
-                  ],
-                  "st": Array [
-                    "09:00",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BTN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Brighton",
-                  ],
-                  "st": Array [
-                    "09:12",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "GTW",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Gatwick Airport",
+                "st": "08:34",
+              },
+              Object {
+                "crs": "TBD",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Three Bridges",
+                "st": "08:39",
+              },
+              Object {
+                "crs": "BAB",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Balcombe",
+                "st": "08:46",
+              },
+              Object {
+                "crs": "HHE",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Haywards Heath",
+                "st": "08:51",
+              },
+              Object {
+                "crs": "WVF",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Wivelsfield",
+                "st": "08:58",
+              },
+              Object {
+                "crs": "BUG",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Burgess Hill",
+                "st": "09:00",
+              },
+              Object {
+                "crs": "BTN",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Brighton",
+                "st": "09:12",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -3517,110 +2489,52 @@ Object {
         "sta": "08:19",
         "std": "08:20",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "SCY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "South Croydon",
-                  ],
-                  "st": Array [
-                    "08:22",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PUO",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Purley Oaks",
-                  ],
-                  "st": Array [
-                    "08:26",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "PUR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Purley",
-                  ],
-                  "st": Array [
-                    "08:29",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "KLY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Kenley",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WHY",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Whyteleafe",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "WHS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Whyteleafe South",
-                  ],
-                  "st": Array [
-                    "08:40",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CAT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "locationName": Array [
-                    "Caterham",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "SCY",
+                "et": "On time",
+                "locationName": "South Croydon",
+                "st": "08:22",
+              },
+              Object {
+                "crs": "PUO",
+                "et": "On time",
+                "locationName": "Purley Oaks",
+                "st": "08:26",
+              },
+              Object {
+                "crs": "PUR",
+                "et": "On time",
+                "locationName": "Purley",
+                "st": "08:29",
+              },
+              Object {
+                "crs": "KLY",
+                "et": "On time",
+                "locationName": "Kenley",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "WHY",
+                "et": "On time",
+                "locationName": "Whyteleafe",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "WHS",
+                "et": "On time",
+                "locationName": "Whyteleafe South",
+                "st": "08:40",
+              },
+              Object {
+                "crs": "CAT",
+                "et": "On time",
+                "locationName": "Caterham",
+                "st": "08:45",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -3762,46 +2676,24 @@ Object {
         "sta": "08:18",
         "std": "08:20",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "CLJ",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Clapham Junction",
-                  ],
-                  "st": Array [
-                    "08:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "VIC",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Victoria",
-                  ],
-                  "st": Array [
-                    "08:37",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "CLJ",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Clapham Junction",
+                "st": "08:30",
+              },
+              Object {
+                "crs": "VIC",
+                "et": "On time",
+                "length": "12",
+                "locationName": "London Victoria",
+                "st": "08:37",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -3938,182 +2830,80 @@ Object {
         "sta": "08:20",
         "std": "08:21",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "LBG",
-                  ],
-                  "et": Array [
-                    "08:38",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Bridge",
-                  ],
-                  "st": Array [
-                    "08:34",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BFR",
-                  ],
-                  "et": Array [
-                    "08:45",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London Blackfriars",
-                  ],
-                  "st": Array [
-                    "08:41",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CTK",
-                  ],
-                  "et": Array [
-                    "08:47",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "City Thameslink",
-                  ],
-                  "st": Array [
-                    "08:43",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ZFD",
-                  ],
-                  "et": Array [
-                    "08:50",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Farringdon Underground",
-                  ],
-                  "st": Array [
-                    "08:46",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "STP",
-                  ],
-                  "et": Array [
-                    "08:54",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "London St Pancras (Intl)",
-                  ],
-                  "st": Array [
-                    "08:50",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LUT",
-                  ],
-                  "et": Array [
-                    "09:19",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Luton",
-                  ],
-                  "st": Array [
-                    "09:17",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "LEA",
-                  ],
-                  "et": Array [
-                    "09:24",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Leagrave",
-                  ],
-                  "st": Array [
-                    "09:22",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HLN",
-                  ],
-                  "et": Array [
-                    "09:28",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Harlington",
-                  ],
-                  "st": Array [
-                    "09:26",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "FLT",
-                  ],
-                  "et": Array [
-                    "09:32",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Flitwick",
-                  ],
-                  "st": Array [
-                    "09:30",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BDM",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "12",
-                  ],
-                  "locationName": Array [
-                    "Bedford",
-                  ],
-                  "st": Array [
-                    "09:42",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "LBG",
+                "et": "08:38",
+                "length": "12",
+                "locationName": "London Bridge",
+                "st": "08:34",
+              },
+              Object {
+                "crs": "BFR",
+                "et": "08:45",
+                "length": "12",
+                "locationName": "London Blackfriars",
+                "st": "08:41",
+              },
+              Object {
+                "crs": "CTK",
+                "et": "08:47",
+                "length": "12",
+                "locationName": "City Thameslink",
+                "st": "08:43",
+              },
+              Object {
+                "crs": "ZFD",
+                "et": "08:50",
+                "length": "12",
+                "locationName": "Farringdon Underground",
+                "st": "08:46",
+              },
+              Object {
+                "crs": "STP",
+                "et": "08:54",
+                "length": "12",
+                "locationName": "London St Pancras (Intl)",
+                "st": "08:50",
+              },
+              Object {
+                "crs": "LUT",
+                "et": "09:19",
+                "length": "12",
+                "locationName": "Luton",
+                "st": "09:17",
+              },
+              Object {
+                "crs": "LEA",
+                "et": "09:24",
+                "length": "12",
+                "locationName": "Leagrave",
+                "st": "09:22",
+              },
+              Object {
+                "crs": "HLN",
+                "et": "09:28",
+                "length": "12",
+                "locationName": "Harlington",
+                "st": "09:26",
+              },
+              Object {
+                "crs": "FLT",
+                "et": "09:32",
+                "length": "12",
+                "locationName": "Flitwick",
+                "st": "09:30",
+              },
+              Object {
+                "crs": "BDM",
+                "et": "On time",
+                "length": "12",
+                "locationName": "Bedford",
+                "st": "09:42",
+              },
+            ],
+          },
         },
       },
       Object {
@@ -4157,182 +2947,80 @@ Object {
         "sta": "08:21",
         "std": "08:22",
         "subsequentCallingPoints": Object {
-          "callingPointList": Array [
-            Object {
-              "callingPoint": Array [
-                Object {
-                  "crs": Array [
-                    "OXT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Oxted",
-                  ],
-                  "st": Array [
-                    "08:35",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HUR",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Hurst Green",
-                  ],
-                  "st": Array [
-                    "08:38",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "EBT",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Edenbridge Town",
-                  ],
-                  "st": Array [
-                    "08:45",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "HEV",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Hever",
-                  ],
-                  "st": Array [
-                    "08:49",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "CWN",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Cowden",
-                  ],
-                  "st": Array [
-                    "08:53",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "AHS",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Ashurst",
-                  ],
-                  "st": Array [
-                    "08:57",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "ERI",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Eridge",
-                  ],
-                  "st": Array [
-                    "09:03",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "COH",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Crowborough",
-                  ],
-                  "st": Array [
-                    "09:09",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "BXD",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Buxted",
-                  ],
-                  "st": Array [
-                    "09:16",
-                  ],
-                },
-                Object {
-                  "crs": Array [
-                    "UCK",
-                  ],
-                  "et": Array [
-                    "On time",
-                  ],
-                  "length": Array [
-                    "10",
-                  ],
-                  "locationName": Array [
-                    "Uckfield",
-                  ],
-                  "st": Array [
-                    "09:22",
-                  ],
-                },
-              ],
-            },
-          ],
+          "callingPointList": Object {
+            "callingPoint": Array [
+              Object {
+                "crs": "OXT",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Oxted",
+                "st": "08:35",
+              },
+              Object {
+                "crs": "HUR",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Hurst Green",
+                "st": "08:38",
+              },
+              Object {
+                "crs": "EBT",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Edenbridge Town",
+                "st": "08:45",
+              },
+              Object {
+                "crs": "HEV",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Hever",
+                "st": "08:49",
+              },
+              Object {
+                "crs": "CWN",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Cowden",
+                "st": "08:53",
+              },
+              Object {
+                "crs": "AHS",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Ashurst",
+                "st": "08:57",
+              },
+              Object {
+                "crs": "ERI",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Eridge",
+                "st": "09:03",
+              },
+              Object {
+                "crs": "COH",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Crowborough",
+                "st": "09:09",
+              },
+              Object {
+                "crs": "BXD",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Buxted",
+                "st": "09:16",
+              },
+              Object {
+                "crs": "UCK",
+                "et": "On time",
+                "length": "10",
+                "locationName": "Uckfield",
+                "st": "09:22",
+              },
+            ],
+          },
         },
       },
     ],

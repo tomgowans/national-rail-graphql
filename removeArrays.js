@@ -233,6 +233,15 @@ const removeArrays = values => {
         );
       }
 
+      if (values.trainServices.service[index1].subsequentCallingPoints) {
+        _.set(
+          values,
+          `trainServices.service[${index1}].subsequentCallingPoints.callingPointList`,
+          values.trainServices.service[index1].subsequentCallingPoints
+            .callingPointList[0]
+        );
+      }
+
       const destinationLocation = service[index1].destination.location || [];
 
       for (let index2 = 0; index2 < destinationLocation.length; index2++) {
@@ -285,6 +294,27 @@ const removeArrays = values => {
                 values,
                 `trainServices.service[${index1}].previousCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
                 values.trainServices.service[index1].previousCallingPoints
+                  .callingPointList.callingPoint[index2][key][0]
+              );
+            }
+          });
+        }
+      }
+
+      if (service[index1].subsequentCallingPoints) {
+        const { callingPoint } =
+          service[index1].subsequentCallingPoints.callingPointList || [];
+
+        for (let index2 = 0; index2 < callingPoint.length; index2++) {
+          keys.map(key => {
+            if (
+              values.trainServices.service[index1].subsequentCallingPoints
+                .callingPointList.callingPoint[index2][key]
+            ) {
+              _.set(
+                values,
+                `trainServices.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
+                values.trainServices.service[index1].subsequentCallingPoints
                   .callingPointList.callingPoint[index2][key][0]
               );
             }
