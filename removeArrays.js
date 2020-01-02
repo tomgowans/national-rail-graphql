@@ -169,12 +169,7 @@ const removeArrays = values => {
         }
       }
 
-      // "subsequentCallingPoints": Object {
-      //   "callingPointList": Array [
-      //     Object {
-      //       "callingPoint": Array [
-      //         Object {
-
+      // subsequentCallingPoints
       if (
         values.departures.destination.service[index1].subsequentCallingPoints
       ) {
