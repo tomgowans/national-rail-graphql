@@ -1,4 +1,5 @@
 const fetchData = require("../fetchData");
+const removeArrays = require("../removeArrays");
 
 /**
  *
@@ -13,7 +14,7 @@ function GetArrivalDepartureBoardRequest(
   {
     numRows = null,
     crs,
-    filterCrs = null,
+    filterCrs = [],
     filterType = "to",
     timeOffset = 0,
     timeWindow = 120
@@ -25,7 +26,12 @@ function GetArrivalDepartureBoardRequest(
       <ldb:GetArrivalDepartureBoardRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
-        ${filterCrs && `<ldb:filterCrs>${filterCrs}</ldb:filterCrs>`}
+        ${filterCrs.length &&
+          `<ldb:filterList>
+          ${filterCrs.map(
+            filterCrsItem => `<ldb:crs>${filterCrsItem}</ldb:crs>`
+          )}
+        </ldb:filterList>`}
         <ldb:filterType>${filterType}</ldb:filterType>
         <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
@@ -34,9 +40,10 @@ function GetArrivalDepartureBoardRequest(
     tokenValue
   })
     .then(result => {
-      return result.GetArrivalDepartureBoardResponse[0]
-        .GetStationBoardResult[0];
       // console.dir(result);
+      return removeArrays(
+        result.GetArrivalDepartureBoardResponse[0].GetStationBoardResult[0]
+      );
     })
     .catch(err => console.error(err));
 }

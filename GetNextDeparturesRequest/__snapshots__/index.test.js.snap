@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sends the request correctly 1`] = `
+exports[`sends a reques with minimal parameters correctly 1`] = `
 Object {
   "$": Object {
     "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
@@ -11,95 +11,111 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
-  "departures": Array [
-    Object {
-      "destination": Array [
+  "crs": "ECR",
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
         Object {
-          "$": Object {
-            "crs": "STP",
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": "CBG",
+                "locationName": "Cambridge",
+              },
+            ],
           },
-          "service": Array [
-            Object {
-              "destination": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "CBG",
-                      ],
-                      "locationName": Array [
-                        "Cambridge",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "eta": Array [
-                "17:40",
-              ],
-              "etd": Array [
-                "17:40",
-              ],
-              "operator": Array [
-                "Thameslink",
-              ],
-              "operatorCode": Array [
-                "TL",
-              ],
-              "origin": Array [
-                Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "BTN",
-                      ],
-                      "locationName": Array [
-                        "Brighton",
-                      ],
-                    },
-                  ],
-                },
-              ],
-              "platform": Array [
-                "1",
-              ],
-              "serviceID": Array [
-                "4dU8fydGLLMrBhZUs9E2Uw==",
-              ],
-              "serviceType": Array [
-                "train",
-              ],
-              "sta": Array [
-                "17:31",
-              ],
-              "std": Array [
-                "17:31",
-              ],
-            },
-          ],
+          "eta": "17:40",
+          "etd": "17:40",
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": "BTN",
+                "locationName": "Brighton",
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "4dU8fydGLLMrBhZUs9E2Uw==",
+          "serviceType": "train",
+          "sta": "17:31",
+          "std": "17:31",
         },
       ],
     },
-  ],
-  "generatedAt": Array [
-    "2019-12-17T17:36:22.4902476+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+  },
+  "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
+  "locationName": "East Croydon",
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
+  "platformAvailable": true,
+}
+`;
+
+exports[`sends a reques with more parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": "ECR",
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
+        Object {
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": "CBG",
+                "locationName": "Cambridge",
+              },
+            ],
+          },
+          "eta": "17:40",
+          "etd": "17:40",
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": "BTN",
+                "locationName": "Brighton",
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "4dU8fydGLLMrBhZUs9E2Uw==",
+          "serviceType": "train",
+          "sta": "17:31",
+          "std": "17:31",
+        },
       ],
     },
-  ],
-  "platformAvailable": Array [
-    "true",
-  ],
+  },
+  "generatedAt": "2019-12-17T17:36:22.4902476+00:00",
+  "locationName": "East Croydon",
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
+  "platformAvailable": true,
 }
 `;

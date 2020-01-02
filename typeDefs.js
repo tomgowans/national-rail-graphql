@@ -27,120 +27,128 @@ const typeDefs = gql`
   }
 
   type StationBoard {
-    generatedAt: [String]
-    locationName: [String]
-    crs: [String]
-    filterLocationName: [String]
-    filtercrs: [String]
-    filterType: [String]
-    nrccMessages: [Messages]
-    platformAvailable: [String]
-    areServicesAvailable: [String]
-    trainServices: [ServiceItemArray]
+    generatedAt: String
+    locationName: String
+    crs: String
+    filterLocationName: String
+    filtercrs: String
+    filterType: String
+    nrccMessages: Messages
+    platformAvailable: String
+    areServicesAvailable: String
+    trainServices: ServiceItemArray
   }
 
   type StationBoardWithDetails {
-    generatedAt: [String]
-    locationName: [String]
-    crs: [String]
-    filterLocationName: [String]
-    filtercrs: [String]
-    filterType: [String]
-    nrccMessages: [Messages]
-    platformAvailable: [String]
-    areServicesAvailable: [String]
-    trainServices: [ServiceItemWithCallingPointsArray]
+    generatedAt: String
+    locationName: String
+    crs: String
+    filterLocationName: String
+    filtercrs: String
+    filterType: String
+    nrccMessages: Messages
+    platformAvailable: String
+    areServicesAvailable: String
+    trainServices: ServiceItemWithCallingPointsArray
   }
 
   type DeparturesBoard {
-    generatedAt: [String]
-    locationName: [String]
-    crs: [String]
-    filterLocationName: [String]
-    filtercrs: [String]
-    filterType: [String]
-    nrccMessages: [Messages]
-    platformAvailable: [String]
-    areServicesAvailable: [String]
-    departures: [DepartureItem]
+    generatedAt: String
+    locationName: String
+    crs: String
+    filterLocationName: String
+    filtercrs: String
+    filterType: String
+    nrccMessages: Messages
+    platformAvailable: String
+    areServicesAvailable: String
+    departures: DepartureItem
   }
 
   type DeparturesBoardWithDetails {
-    generatedAt: [String]
-    locationName: [String]
-    crs: [String]
-    filterLocationName: [String]
-    filtercrs: [String]
-    filterType: [String]
-    nrccMessages: [Messages]
-    platformAvailable: [String]
-    areServicesAvailable: [String]
-    departures: [DepartureItemWithCallingPoints]
+    generatedAt: String
+    locationName: String
+    crs: String
+    filterLocationName: String
+    filtercrs: String
+    filterType: String
+    nrccMessages: Messages
+    platformAvailable: String
+    areServicesAvailable: String
+    departures: DepartureItemWithCallingPoints
   }
 
   type ServiceItem {
-    rsid: [String]
-    origin: [Location]
-    destination: [Location]
-    currentOrigins: [Location]
-    currentDestinations: [Location]
-    sta: [String]
-    eta: [String]
-    std: [String]
-    etd: [String]
-    platform: [String]
-    operator: [String]
-    operatorCode: [String]
-    isCircularRoute: [String]
-    isCancelled: [String]
-    filterLocationCancelled: [String]
-    serviceType: [String]
-    length: [String]
-    detachFront: [String]
-    isReverseFormation: [String]
-    cancelReason: [String]
-    delayReason: [String]
-    serviceID: [String]
+    rsid: String
+    origin: Location
+    destination: Location
+    currentOrigins: Location
+    currentDestinations: Location
+    sta: String
+    eta: String
+    std: String
+    etd: String
+    platform: String
+    operator: String
+    operatorCode: String
+    isCircularRoute: String
+    isCancelled: String
+    filterLocationCancelled: String
+    serviceType: String
+    length: String
+    detachFront: String
+    isReverseFormation: String
+    cancelReason: String
+    delayReason: String
+    serviceID: String
     #adhocAlerts
     #formation
   }
 
   type ServiceItemWithCallingPoints {
-    origin: [Location]
-    destination: [Location]
-    currentOrigins: [Location]
-    currentDestinations: [Location]
-    sta: [String]
-    eta: [String]
-    std: [String]
-    etd: [String]
-    platform: [String]
-    operator: [String]
-    operatorCode: [String]
-    isCircularRoute: [String]
-    isCancelled: [String]
-    filterLocationCancelled: [String]
-    serviceType: [String]
-    length: [String]
-    detachFront: [String]
-    isReverseFormation: [String]
-    cancelReason: [String]
-    delayReason: [String]
-    serviceID: [String]
+    origin: Location
+    destination: Location
+    currentOrigins: Location
+    currentDestinations: Location
+    sta: String
+    eta: String
+    std: String
+    etd: String
+    platform: String
+    operator: String
+    operatorCode: String
+    isCircularRoute: String
+    isCancelled: String
+    filterLocationCancelled: String
+    serviceType: String
+    length: String
+    detachFront: String
+    isReverseFormation: String
+    cancelReason: String
+    delayReason: String
+    serviceID: String
     #adhocAlerts
-    previousCallingPoints: [CallingPointArray]
-    subsequentCallingPoints: [CallingPointArray]
+    previousCallingPoints: CallingPointArray
+    subsequentCallingPoints: CallingPointArray
     #formation
   }
 
-  type DepartureItem {
-    crs: [String]
+  type Destination {
     service: [ServiceItem]
+    crs: String
+  }
+
+  type DepartureItem {
+    destination: Destination
+  }
+
+  type DestinationWithCallingPoints {
+    crs: String
+    service: [ServiceItemWithCallingPoints]
   }
 
   type DepartureItemWithCallingPoints {
-    crs: [String]
-    service: [ServiceItemWithCallingPoints]
+    destination: DestinationWithCallingPoints
   }
 
   type FormationData {
@@ -149,42 +157,42 @@ const typeDefs = gql`
   }
 
   type ServiceLocation {
-    locationName: [String]
-    crs: [String]
-    via: [String]
-    futureChangeTo: [String]
-    assocIsCancelled: [String]
+    locationName: String
+    crs: String
+    via: String
+    futureChangeTo: String
+    assocIsCancelled: String
   }
 
   type ServiceDetails {
-    generatedAt: [String]
-    rsid: [String]
-    serviceType: [String]
-    locationName: [String]
-    crs: [String]
-    operator: [String]
-    operatorCode: [String]
-    isCancelled: [String]
-    cancelReason: [String]
-    delayReason: [String]
-    overdueMessage: [String]
-    length: [String]
-    detachFront: [String]
-    isReverseFormation: [String]
-    platform: [String]
-    sta: [String]
-    eta: [String]
-    ata: [String]
-    std: [String]
-    etd: [String]
-    atd: [String]
+    generatedAt: String
+    rsid: String
+    serviceType: String
+    locationName: String
+    crs: String
+    operator: String
+    operatorCode: String
+    isCancelled: String
+    cancelReason: String
+    delayReason: String
+    overdueMessage: String
+    length: String
+    detachFront: String
+    isReverseFormation: String
+    platform: String
+    sta: String
+    eta: String
+    ata: String
+    std: String
+    etd: String
+    atd: String
     #adhocAlerts
-    previousCallingPoints: [CallingPointArray]
-    subsequentCallingPoints: [CallingPointArray]
+    previousCallingPoints: CallingPointArray
+    subsequentCallingPoints: CallingPointArray
   }
 
   type CallingPointArray {
-    callingPointList: [CallingPoint]
+    callingPointList: CallingPoint
   }
 
   type CallingPoint {
@@ -192,14 +200,14 @@ const typeDefs = gql`
   }
 
   type CallingPointObject {
-    locationName: [String]
-    crs: [String]
-    st: [String]
-    et: [String]
-    at: [String]
-    isCancelled: [String]
-    length: [String]
-    detachFront: [String]
+    locationName: String
+    crs: String
+    st: String
+    et: String
+    at: String
+    isCancelled: String
+    length: String
+    detachFront: String
     #adhocAlerts
   }
 

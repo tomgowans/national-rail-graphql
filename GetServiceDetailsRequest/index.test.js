@@ -6,7 +6,7 @@ it("sends the request correctly", () => {
   return expect(
     GetDepartureBoardResponse(
       {
-        crs: "ECR"
+        serviceID: "ABC123"
       },
       "TOKEN_VALUE"
     )

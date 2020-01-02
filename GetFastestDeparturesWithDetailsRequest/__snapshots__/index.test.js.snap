@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sends the request correctly 1`] = `
+exports[`sends a reques with minimal parameters correctly 1`] = `
 Object {
   "$": Object {
     "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
@@ -11,353 +11,327 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "crs": Array [
-    "ECR",
-  ],
-  "departures": Array [
-    Object {
-      "destination": Array [
+  "crs": "ECR",
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
         Object {
-          "$": Object {
-            "crs": "STP",
+          "cancelReason": "This train has been cancelled because of a fault with the signalling system earlier today",
+          "delayReason": "This train has been delayed by a fault with the signalling system earlier today",
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": "PBO",
+                "locationName": "Peterborough",
+              },
+            ],
           },
-          "service": Array [
-            Object {
-              "cancelReason": Array [
-                "This train has been cancelled because of a fault with the signalling system earlier today",
-              ],
-              "delayReason": Array [
-                "This train has been delayed by a fault with the signalling system earlier today",
-              ],
-              "destination": Array [
+          "eta": "17:27",
+          "etd": "17:27",
+          "length": 12,
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": "HRH",
+                "locationName": "Horsham",
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "2tI4/cosU7DYIHRO7z0DLg==",
+          "serviceType": "train",
+          "sta": "17:15",
+          "std": "17:15",
+          "subsequentCallingPoints": Object {
+            "callingPointList": Object {
+              "callingPoint": Array [
                 Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "PBO",
-                      ],
-                      "locationName": Array [
-                        "Peterborough",
-                      ],
-                    },
-                  ],
+                  "crs": "LBG",
+                  "et": "17:41",
+                  "length": 12,
+                  "locationName": "London Bridge",
+                  "st": "17:30",
                 },
-              ],
-              "eta": Array [
-                "17:27",
-              ],
-              "etd": Array [
-                "17:27",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "operator": Array [
-                "Thameslink",
-              ],
-              "operatorCode": Array [
-                "TL",
-              ],
-              "origin": Array [
                 Object {
-                  "location": Array [
-                    Object {
-                      "crs": Array [
-                        "HRH",
-                      ],
-                      "locationName": Array [
-                        "Horsham",
-                      ],
-                    },
-                  ],
+                  "crs": "BFR",
+                  "et": "17:47",
+                  "length": 12,
+                  "locationName": "London Blackfriars",
+                  "st": "17:36",
                 },
-              ],
-              "platform": Array [
-                "1",
-              ],
-              "serviceID": Array [
-                "2tI4/cosU7DYIHRO7z0DLg==",
-              ],
-              "serviceType": Array [
-                "train",
-              ],
-              "sta": Array [
-                "17:15",
-              ],
-              "std": Array [
-                "17:15",
-              ],
-              "subsequentCallingPoints": Array [
                 Object {
-                  "callingPointList": Array [
-                    Object {
-                      "callingPoint": Array [
-                        Object {
-                          "crs": Array [
-                            "LBG",
-                          ],
-                          "et": Array [
-                            "17:41",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "London Bridge",
-                          ],
-                          "st": Array [
-                            "17:30",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "BFR",
-                          ],
-                          "et": Array [
-                            "17:47",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "London Blackfriars",
-                          ],
-                          "st": Array [
-                            "17:36",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "CTK",
-                          ],
-                          "et": Array [
-                            "17:49",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "City Thameslink",
-                          ],
-                          "st": Array [
-                            "17:38",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "ZFD",
-                          ],
-                          "et": Array [
-                            "17:51",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Farringdon Underground",
-                          ],
-                          "st": Array [
-                            "17:41",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "STP",
-                          ],
-                          "et": Array [
-                            "17:55",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "London St Pancras (Intl)",
-                          ],
-                          "st": Array [
-                            "17:45",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "FPK",
-                          ],
-                          "et": Array [
-                            "18:02",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Finsbury Park",
-                          ],
-                          "st": Array [
-                            "17:52",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "SVG",
-                          ],
-                          "et": Array [
-                            "18:22",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Stevenage",
-                          ],
-                          "st": Array [
-                            "18:13",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "HIT",
-                          ],
-                          "et": Array [
-                            "18:27",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Hitchin",
-                          ],
-                          "st": Array [
-                            "18:19",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "ARL",
-                          ],
-                          "et": Array [
-                            "18:33",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Arlesey",
-                          ],
-                          "st": Array [
-                            "18:25",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "BIW",
-                          ],
-                          "et": Array [
-                            "18:38",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Biggleswade",
-                          ],
-                          "st": Array [
-                            "18:30",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "SDY",
-                          ],
-                          "et": Array [
-                            "18:41",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Sandy",
-                          ],
-                          "st": Array [
-                            "18:34",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "SNO",
-                          ],
-                          "et": Array [
-                            "18:48",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "St Neots",
-                          ],
-                          "st": Array [
-                            "18:41",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "HUN",
-                          ],
-                          "et": Array [
-                            "18:55",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Huntingdon",
-                          ],
-                          "st": Array [
-                            "18:48",
-                          ],
-                        },
-                        Object {
-                          "crs": Array [
-                            "PBO",
-                          ],
-                          "et": Array [
-                            "19:10",
-                          ],
-                          "length": Array [
-                            "12",
-                          ],
-                          "locationName": Array [
-                            "Peterborough",
-                          ],
-                          "st": Array [
-                            "19:05",
-                          ],
-                        },
-                      ],
-                    },
-                  ],
+                  "crs": "CTK",
+                  "et": "17:49",
+                  "length": 12,
+                  "locationName": "City Thameslink",
+                  "st": "17:38",
+                },
+                Object {
+                  "crs": "ZFD",
+                  "et": "17:51",
+                  "length": 12,
+                  "locationName": "Farringdon Underground",
+                  "st": "17:41",
+                },
+                Object {
+                  "crs": "STP",
+                  "et": "17:55",
+                  "length": 12,
+                  "locationName": "London St Pancras (Intl)",
+                  "st": "17:45",
+                },
+                Object {
+                  "crs": "FPK",
+                  "et": "18:02",
+                  "length": 12,
+                  "locationName": "Finsbury Park",
+                  "st": "17:52",
+                },
+                Object {
+                  "crs": "SVG",
+                  "et": "18:22",
+                  "length": 12,
+                  "locationName": "Stevenage",
+                  "st": "18:13",
+                },
+                Object {
+                  "crs": "HIT",
+                  "et": "18:27",
+                  "length": 12,
+                  "locationName": "Hitchin",
+                  "st": "18:19",
+                },
+                Object {
+                  "crs": "ARL",
+                  "et": "18:33",
+                  "length": 12,
+                  "locationName": "Arlesey",
+                  "st": "18:25",
+                },
+                Object {
+                  "crs": "BIW",
+                  "et": "18:38",
+                  "length": 12,
+                  "locationName": "Biggleswade",
+                  "st": "18:30",
+                },
+                Object {
+                  "crs": "SDY",
+                  "et": "18:41",
+                  "length": 12,
+                  "locationName": "Sandy",
+                  "st": "18:34",
+                },
+                Object {
+                  "crs": "SNO",
+                  "et": "18:48",
+                  "length": 12,
+                  "locationName": "St Neots",
+                  "st": "18:41",
+                },
+                Object {
+                  "crs": "HUN",
+                  "et": "18:55",
+                  "length": 12,
+                  "locationName": "Huntingdon",
+                  "st": "18:48",
+                },
+                Object {
+                  "crs": "PBO",
+                  "et": "19:10",
+                  "length": 12,
+                  "locationName": "Peterborough",
+                  "st": "19:05",
                 },
               ],
             },
-          ],
+          },
         },
       ],
     },
-  ],
-  "generatedAt": Array [
-    "2019-12-17T17:27:28.1271088+00:00",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "nrccMessages": Array [
-    Object {
-      "message": Array [
-        "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
-        "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
-        "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+  },
+  "generatedAt": "2019-12-17T17:27:28.1271088+00:00",
+  "locationName": "East Croydon",
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
+  "platformAvailable": true,
+}
+`;
+
+exports[`sends a reques with more parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": "ECR",
+  "departures": Object {
+    "destination": Object {
+      "$": Object {
+        "crs": "STP",
+      },
+      "service": Array [
+        Object {
+          "cancelReason": "This train has been cancelled because of a fault with the signalling system earlier today",
+          "delayReason": "This train has been delayed by a fault with the signalling system earlier today",
+          "destination": Object {
+            "location": Array [
+              Object {
+                "crs": "PBO",
+                "locationName": "Peterborough",
+              },
+            ],
+          },
+          "eta": "17:27",
+          "etd": "17:27",
+          "length": 12,
+          "operator": "Thameslink",
+          "operatorCode": "TL",
+          "origin": Object {
+            "location": Array [
+              Object {
+                "crs": "HRH",
+                "locationName": "Horsham",
+              },
+            ],
+          },
+          "platform": "1",
+          "serviceID": "2tI4/cosU7DYIHRO7z0DLg==",
+          "serviceType": "train",
+          "sta": "17:15",
+          "std": "17:15",
+          "subsequentCallingPoints": Object {
+            "callingPointList": Object {
+              "callingPoint": Array [
+                Object {
+                  "crs": "LBG",
+                  "et": "17:41",
+                  "length": 12,
+                  "locationName": "London Bridge",
+                  "st": "17:30",
+                },
+                Object {
+                  "crs": "BFR",
+                  "et": "17:47",
+                  "length": 12,
+                  "locationName": "London Blackfriars",
+                  "st": "17:36",
+                },
+                Object {
+                  "crs": "CTK",
+                  "et": "17:49",
+                  "length": 12,
+                  "locationName": "City Thameslink",
+                  "st": "17:38",
+                },
+                Object {
+                  "crs": "ZFD",
+                  "et": "17:51",
+                  "length": 12,
+                  "locationName": "Farringdon Underground",
+                  "st": "17:41",
+                },
+                Object {
+                  "crs": "STP",
+                  "et": "17:55",
+                  "length": 12,
+                  "locationName": "London St Pancras (Intl)",
+                  "st": "17:45",
+                },
+                Object {
+                  "crs": "FPK",
+                  "et": "18:02",
+                  "length": 12,
+                  "locationName": "Finsbury Park",
+                  "st": "17:52",
+                },
+                Object {
+                  "crs": "SVG",
+                  "et": "18:22",
+                  "length": 12,
+                  "locationName": "Stevenage",
+                  "st": "18:13",
+                },
+                Object {
+                  "crs": "HIT",
+                  "et": "18:27",
+                  "length": 12,
+                  "locationName": "Hitchin",
+                  "st": "18:19",
+                },
+                Object {
+                  "crs": "ARL",
+                  "et": "18:33",
+                  "length": 12,
+                  "locationName": "Arlesey",
+                  "st": "18:25",
+                },
+                Object {
+                  "crs": "BIW",
+                  "et": "18:38",
+                  "length": 12,
+                  "locationName": "Biggleswade",
+                  "st": "18:30",
+                },
+                Object {
+                  "crs": "SDY",
+                  "et": "18:41",
+                  "length": 12,
+                  "locationName": "Sandy",
+                  "st": "18:34",
+                },
+                Object {
+                  "crs": "SNO",
+                  "et": "18:48",
+                  "length": 12,
+                  "locationName": "St Neots",
+                  "st": "18:41",
+                },
+                Object {
+                  "crs": "HUN",
+                  "et": "18:55",
+                  "length": 12,
+                  "locationName": "Huntingdon",
+                  "st": "18:48",
+                },
+                Object {
+                  "crs": "PBO",
+                  "et": "19:10",
+                  "length": 12,
+                  "locationName": "Peterborough",
+                  "st": "19:05",
+                },
+              ],
+            },
+          },
+        },
       ],
     },
-  ],
-  "platformAvailable": Array [
-    "true",
-  ],
+  },
+  "generatedAt": "2019-12-17T17:27:28.1271088+00:00",
+  "locationName": "East Croydon",
+  "nrccMessages": Object {
+    "message": Array [
+      "Major disruption between London and Stevenage. More details can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238310.aspx\\">Latest Travel News.</A>",
+      "A passenger has been taken ill on a train at St Albans City and as a result some lins are blocked.  More information can be found in<A href=\\"http://nationalrail.co.uk/service_disruptions/238335.aspx\\"> Latest Travel News.</A>",
+      "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
+    ],
+  },
+  "platformAvailable": true,
 }
 `;

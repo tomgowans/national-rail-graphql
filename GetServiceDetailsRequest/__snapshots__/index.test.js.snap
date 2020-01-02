@@ -11,217 +11,93 @@ Object {
     "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
     "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
   },
-  "ata": Array [
-    "08:13",
-  ],
-  "atd": Array [
-    "08:14",
-  ],
-  "crs": Array [
-    "ECR",
-  ],
-  "delayReason": Array [
-    "This train has been delayed by a late running train being in front of this one",
-  ],
-  "generatedAt": Array [
-    "2019-12-17T08:22:05.3113816+00:00",
-  ],
-  "length": Array [
-    "12",
-  ],
-  "locationName": Array [
-    "East Croydon",
-  ],
-  "operator": Array [
-    "Thameslink",
-  ],
-  "operatorCode": Array [
-    "TL",
-  ],
-  "platform": Array [
-    "3",
-  ],
-  "previousCallingPoints": Array [
-    Object {
-      "callingPointList": Array [
+  "ata": "08:13",
+  "atd": "08:14",
+  "crs": "ECR",
+  "delayReason": "This train has been delayed by a late running train being in front of this one",
+  "generatedAt": "2019-12-17T08:22:05.3113816+00:00",
+  "length": 12,
+  "locationName": "East Croydon",
+  "operator": "Thameslink",
+  "operatorCode": "TL",
+  "platform": "3",
+  "previousCallingPoints": Object {
+    "callingPointList": Object {
+      "callingPoint": Array [
         Object {
-          "callingPoint": Array [
-            Object {
-              "at": Array [
-                "06:54",
-              ],
-              "crs": Array [
-                "BDM",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "Bedford",
-              ],
-              "st": Array [
-                "06:52",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:11",
-              ],
-              "crs": Array [
-                "LUT",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "Luton",
-              ],
-              "st": Array [
-                "07:09",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:25",
-              ],
-              "crs": Array [
-                "SAC",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "St Albans",
-              ],
-              "st": Array [
-                "07:18",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:44",
-              ],
-              "crs": Array [
-                "STP",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "London St Pancras (Intl)",
-              ],
-              "st": Array [
-                "07:40",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:49",
-              ],
-              "crs": Array [
-                "ZFD",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "Farringdon Underground",
-              ],
-              "st": Array [
-                "07:44",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:52",
-              ],
-              "crs": Array [
-                "CTK",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "City Thameslink",
-              ],
-              "st": Array [
-                "07:46",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:54",
-              ],
-              "crs": Array [
-                "BFR",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "London Blackfriars",
-              ],
-              "st": Array [
-                "07:49",
-              ],
-            },
-            Object {
-              "at": Array [
-                "07:59",
-              ],
-              "crs": Array [
-                "LBG",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "London Bridge",
-              ],
-              "st": Array [
-                "07:55",
-              ],
-            },
-          ],
+          "at": "06:54",
+          "crs": "BDM",
+          "length": 12,
+          "locationName": "Bedford",
+          "st": "06:52",
+        },
+        Object {
+          "at": "07:11",
+          "crs": "LUT",
+          "length": 12,
+          "locationName": "Luton",
+          "st": "07:09",
+        },
+        Object {
+          "at": "07:25",
+          "crs": "SAC",
+          "length": 12,
+          "locationName": "St Albans",
+          "st": "07:18",
+        },
+        Object {
+          "at": "07:44",
+          "crs": "STP",
+          "length": 12,
+          "locationName": "London St Pancras (Intl)",
+          "st": "07:40",
+        },
+        Object {
+          "at": "07:49",
+          "crs": "ZFD",
+          "length": 12,
+          "locationName": "Farringdon Underground",
+          "st": "07:44",
+        },
+        Object {
+          "at": "07:52",
+          "crs": "CTK",
+          "length": 12,
+          "locationName": "City Thameslink",
+          "st": "07:46",
+        },
+        Object {
+          "at": "07:54",
+          "crs": "BFR",
+          "length": 12,
+          "locationName": "London Blackfriars",
+          "st": "07:49",
+        },
+        Object {
+          "at": "07:59",
+          "crs": "LBG",
+          "length": 12,
+          "locationName": "London Bridge",
+          "st": "07:55",
         },
       ],
     },
-  ],
-  "serviceType": Array [
-    "train",
-  ],
-  "sta": Array [
-    "08:08",
-  ],
-  "std": Array [
-    "08:08",
-  ],
-  "subsequentCallingPoints": Array [
-    Object {
-      "callingPointList": Array [
+  },
+  "serviceType": "train",
+  "sta": "08:08",
+  "std": "08:08",
+  "subsequentCallingPoints": Object {
+    "callingPointList": Object {
+      "callingPoint": Array [
         Object {
-          "callingPoint": Array [
-            Object {
-              "crs": Array [
-                "GTW",
-              ],
-              "et": Array [
-                "08:28",
-              ],
-              "length": Array [
-                "12",
-              ],
-              "locationName": Array [
-                "Gatwick Airport",
-              ],
-              "st": Array [
-                "08:23",
-              ],
-            },
-          ],
+          "crs": "GTW",
+          "et": "08:28",
+          "length": 12,
+          "locationName": "Gatwick Airport",
+          "st": "08:23",
         },
       ],
     },
-  ],
+  },
 }
 `;

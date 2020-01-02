@@ -8,11 +8,12 @@ const GetArrDepBoardWithDetailsRequest = require("../../GetArrDepBoardWithDetail
 const GetArrivalDepartureBoardRequest = require("../../GetArrivalDepartureBoardRequest/response");
 const GetNextDeparturesRequest = require("../../GetNextDeparturesRequest/response");
 const GetNextDeparturesWithDetailsRequest = require("../../GetNextDeparturesWithDetailsRequest/response");
+const GetFastestDeparturesRequest = require("../../GetFastestDeparturesRequest/response");
 const GetFastestDeparturesWithDetailsRequest = require("../../GetFastestDeparturesWithDetailsRequest/response");
 const GetServiceDetailsRequest = require("../../GetServiceDetailsRequest/response");
 
 const fetch = (url, args) => {
-  return new Promise((resolve, reject) => {
+  return new Promise(resolve => {
     if (args.body.includes("GetDepartureBoardRequest")) {
       resolve(GetDepartureBoardRequest);
     }
@@ -43,6 +44,10 @@ const fetch = (url, args) => {
 
     if (args.body.includes("GetNextDeparturesWithDetailsRequest")) {
       resolve(GetNextDeparturesWithDetailsRequest);
+    }
+
+    if (args.body.includes("GetFastestDeparturesRequest")) {
+      resolve(GetFastestDeparturesRequest);
     }
 
     if (args.body.includes("GetFastestDeparturesWithDetailsRequest")) {

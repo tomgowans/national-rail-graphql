@@ -20,7 +20,7 @@ const fetchData = ({ body, tokenValue }) => {
               </soap:Envelope>`
     })
       .then(response => response.text())
-      .then(response => response.replace(/(\<\/?)(\w*:)/gm, "$1"))
+      .then(response => response.replace(/(<\/?)(\w*:)/gm, "$1"))
       .then(response => {
         parseString(response, (error, result) => {
           if (error) {
