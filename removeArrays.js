@@ -43,11 +43,15 @@ const removeArrays = values => {
     "nrccMessages"
   ];
 
-  keys.map(key => {
-    if (values[key]) {
-      _.set(values, key, values[key][0]);
-    }
-  });
+  const replaceKeys = (path, newValue) => {
+    keys.map(key => {
+      if (newValue[key]) {
+        _.set(values, `${path}[${key}]`, newValue[key][0]);
+      }
+    });
+  };
+
+  replaceKeys(``, values);
 
   const { service } = values.trainServices || [];
 
@@ -57,36 +61,20 @@ const removeArrays = values => {
     const destinationService = values.departures.destination.service;
 
     for (let index1 = 0; index1 < destinationService.length; index1++) {
-      keys.map(key => {
-        if (values.departures.destination.service[index1][key]) {
-          _.set(
-            values,
-            `departures.destination.service[${index1}][${key}]`,
-            values.departures.destination.service[index1][key][0]
-          );
-        }
-      });
+      replaceKeys(
+        `departures.destination.service[${index1}]`,
+        values.departures.destination.service[index1]
+      );
 
       // origin
       const departuresOriginLocation =
         values.departures.destination.service[index1].origin.location || [];
 
       for (let index2 = 0; index2 < departuresOriginLocation.length; index2++) {
-        keys.map(key => {
-          if (
-            values.departures.destination.service[index1].origin.location[
-              index2
-            ][key]
-          ) {
-            _.set(
-              values,
-              `departures.destination.service[${index1}].origin.location[${index2}][${key}]`,
-              values.departures.destination.service[index1].origin.location[
-                index2
-              ][key][0]
-            );
-          }
-        });
+        replaceKeys(
+          `departures.destination.service[${index1}].origin.location[${index2}]`,
+          values.departures.destination.service[index1].origin.location[index2]
+        );
       }
 
       // destination
@@ -99,20 +87,12 @@ const removeArrays = values => {
         index2 < departuresDestinationLocation.length;
         index2++
       ) {
-        keys.map(key => {
-          if (
-            values.departures.destination.service[index1].destination.location[
-              index2
-            ][key]
-          ) {
-            _.set(
-              values,
-              `departures.destination.service[${index1}].destination.location[${index2}][${key}]`,
-              values.departures.destination.service[index1].destination
-                .location[index2][key][0]
-            );
-          }
-        });
+        replaceKeys(
+          `departures.destination.service[${index1}].destination.location[${index2}]`,
+          values.departures.destination.service[index1].destination.location[
+            index2
+          ]
+        );
       }
 
       if (values.departures.destination.service[index1].currentOrigins) {
@@ -126,19 +106,11 @@ const removeArrays = values => {
           index2 < departuresCurrentOriginsLocation.length;
           index2++
         ) {
-          keys.map(key => {
-            if (
-              values.departures.destination.service[index1].currentOrigins
-                .location[index2][key]
-            ) {
-              _.set(
-                values,
-                `departures.destination.service[${index1}].currentOrigins.location[${index2}][${key}]`,
-                values.departures.destination.service[index1].currentOrigins
-                  .location[index2][key][0]
-              );
-            }
-          });
+          replaceKeys(
+            `departures.destination.service[${index1}].currentOrigins.location[${index2}]`,
+            values.departures.destination.service[index1].currentOrigins
+              .location[index2]
+          );
         }
       }
 
@@ -153,19 +125,11 @@ const removeArrays = values => {
           index2 < departuresCurrentDestinationsLocation.length;
           index2++
         ) {
-          keys.map(key => {
-            if (
-              values.departures.destination.service[index1].currentDestinations
-                .location[index2][key]
-            ) {
-              _.set(
-                values,
-                `departures.destination.service[${index1}].currentDestinations.location[${index2}][${key}]`,
-                values.departures.destination.service[index1]
-                  .currentDestinations.location[index2][key][0]
-              );
-            }
-          });
+          replaceKeys(
+            `departures.destination.service[${index1}].currentDestinations.location[${index2}]`,
+            values.departures.destination.service[index1].currentDestinations
+              .location[index2]
+          );
         }
       }
 
@@ -185,23 +149,11 @@ const removeArrays = values => {
             .callingPointList.callingPoint || [];
 
         for (let index2 = 0; index2 < callingPoint.length; index2++) {
-          keys.map(key => {
-            if (
-              values.departures.destination.service[index1]
-                .subsequentCallingPoints.callingPointList.callingPoint[index2][
-                key
-              ]
-            ) {
-              _.set(
-                values,
-                `departures.destination.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-                values.departures.destination.service[index1]
-                  .subsequentCallingPoints.callingPointList.callingPoint[
-                  index2
-                ][key][0]
-              );
-            }
-          });
+          replaceKeys(
+            `departures.destination.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}]`,
+            values.departures.destination.service[index1]
+              .subsequentCallingPoints.callingPointList.callingPoint[index2]
+          );
         }
       }
     }
@@ -219,21 +171,10 @@ const removeArrays = values => {
       values.previousCallingPoints.callingPointList.callingPoint || [];
 
     for (let index2 = 0; index2 < callingPoint.length; index2++) {
-      keys.map(key => {
-        if (
-          values.previousCallingPoints.callingPointList.callingPoint[index2][
-            key
-          ]
-        ) {
-          _.set(
-            values,
-            `previousCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-            values.previousCallingPoints.callingPointList.callingPoint[index2][
-              key
-            ][0]
-          );
-        }
-      });
+      replaceKeys(
+        `previousCallingPoints.callingPointList.callingPoint[${index2}]`,
+        values.previousCallingPoints.callingPointList.callingPoint[index2]
+      );
     }
   }
 
@@ -248,35 +189,19 @@ const removeArrays = values => {
       values.subsequentCallingPoints.callingPointList.callingPoint || [];
 
     for (let index2 = 0; index2 < callingPoint.length; index2++) {
-      keys.map(key => {
-        if (
-          values.subsequentCallingPoints.callingPointList.callingPoint[index2][
-            key
-          ]
-        ) {
-          _.set(
-            values,
-            `subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-            values.subsequentCallingPoints.callingPointList.callingPoint[
-              index2
-            ][key][0]
-          );
-        }
-      });
+      replaceKeys(
+        `subsequentCallingPoints.callingPointList.callingPoint[${index2}]`,
+        values.subsequentCallingPoints.callingPointList.callingPoint[index2]
+      );
     }
   }
 
   if (_.isArray(service)) {
     for (let index1 = 0; index1 < service.length; index1++) {
-      keys.map(key => {
-        if (values.trainServices.service[index1][key]) {
-          _.set(
-            values,
-            `trainServices.service[${index1}][${key}]`,
-            values.trainServices.service[index1][key][0]
-          );
-        }
-      });
+      replaceKeys(
+        `trainServices.service[${index1}]`,
+        values.trainServices.service[index1]
+      );
 
       if (values.trainServices.service[index1].previousCallingPoints) {
         _.set(
@@ -299,39 +224,19 @@ const removeArrays = values => {
       const destinationLocation = service[index1].destination.location || [];
 
       for (let index2 = 0; index2 < destinationLocation.length; index2++) {
-        keys.map(key => {
-          if (
-            values.trainServices.service[index1].destination.location[index2][
-              key
-            ]
-          ) {
-            _.set(
-              values,
-              `trainServices.service[${index1}].destination.location[${index2}][${key}]`,
-              values.trainServices.service[index1].destination.location[index2][
-                key
-              ][0]
-            );
-          }
-        });
+        replaceKeys(
+          `trainServices.service[${index1}].destination.location[${index2}]`,
+          values.trainServices.service[index1].destination.location[index2]
+        );
       }
 
       const originLocation = service[index1].origin.location || [];
 
       for (let index2 = 0; index2 < originLocation.length; index2++) {
-        keys.map(key => {
-          if (
-            values.trainServices.service[index1].origin.location[index2][key]
-          ) {
-            _.set(
-              values,
-              `trainServices.service[${index1}].origin.location[${index2}][${key}]`,
-              values.trainServices.service[index1].origin.location[index2][
-                key
-              ][0]
-            );
-          }
-        });
+        replaceKeys(
+          `trainServices.service[${index1}].origin.location[${index2}]`,
+          values.trainServices.service[index1].origin.location[index2]
+        );
       }
 
       if (service[index1].previousCallingPoints) {
@@ -339,19 +244,11 @@ const removeArrays = values => {
           service[index1].previousCallingPoints.callingPointList || [];
 
         for (let index2 = 0; index2 < callingPoint.length; index2++) {
-          keys.map(key => {
-            if (
-              values.trainServices.service[index1].previousCallingPoints
-                .callingPointList.callingPoint[index2][key]
-            ) {
-              _.set(
-                values,
-                `trainServices.service[${index1}].previousCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-                values.trainServices.service[index1].previousCallingPoints
-                  .callingPointList.callingPoint[index2][key][0]
-              );
-            }
-          });
+          replaceKeys(
+            `trainServices.service[${index1}].previousCallingPoints.callingPointList.callingPoint[${index2}]`,
+            values.trainServices.service[index1].previousCallingPoints
+              .callingPointList.callingPoint[index2]
+          );
         }
       }
 
@@ -360,19 +257,11 @@ const removeArrays = values => {
           service[index1].subsequentCallingPoints.callingPointList || [];
 
         for (let index2 = 0; index2 < callingPoint.length; index2++) {
-          keys.map(key => {
-            if (
-              values.trainServices.service[index1].subsequentCallingPoints
-                .callingPointList.callingPoint[index2][key]
-            ) {
-              _.set(
-                values,
-                `trainServices.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-                values.trainServices.service[index1].subsequentCallingPoints
-                  .callingPointList.callingPoint[index2][key][0]
-              );
-            }
-          });
+          replaceKeys(
+            `trainServices.service[${index1}].subsequentCallingPoints.callingPointList.callingPoint[${index2}]`,
+            values.trainServices.service[index1].subsequentCallingPoints
+              .callingPointList.callingPoint[index2]
+          );
         }
       }
     }
