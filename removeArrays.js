@@ -207,6 +207,65 @@ const removeArrays = values => {
     }
   }
 
+  // Service Details
+  if (values.previousCallingPoints) {
+    _.set(
+      values,
+      `previousCallingPoints.callingPointList`,
+      values.previousCallingPoints.callingPointList[0]
+    );
+
+    const callingPoint =
+      values.previousCallingPoints.callingPointList.callingPoint || [];
+
+    for (let index2 = 0; index2 < callingPoint.length; index2++) {
+      keys.map(key => {
+        if (
+          values.previousCallingPoints.callingPointList.callingPoint[index2][
+            key
+          ]
+        ) {
+          _.set(
+            values,
+            `previousCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
+            values.previousCallingPoints.callingPointList.callingPoint[index2][
+              key
+            ][0]
+          );
+        }
+      });
+    }
+  }
+
+  if (values.subsequentCallingPoints) {
+    _.set(
+      values,
+      `subsequentCallingPoints.callingPointList`,
+      values.subsequentCallingPoints.callingPointList[0]
+    );
+
+    const callingPoint =
+      values.subsequentCallingPoints.callingPointList.callingPoint || [];
+
+    for (let index2 = 0; index2 < callingPoint.length; index2++) {
+      keys.map(key => {
+        if (
+          values.subsequentCallingPoints.callingPointList.callingPoint[index2][
+            key
+          ]
+        ) {
+          _.set(
+            values,
+            `subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
+            values.subsequentCallingPoints.callingPointList.callingPoint[
+              index2
+            ][key][0]
+          );
+        }
+      });
+    }
+  }
+
   if (_.isArray(service)) {
     for (let index1 = 0; index1 < service.length; index1++) {
       keys.map(key => {
@@ -316,65 +375,6 @@ const removeArrays = values => {
           });
         }
       }
-    }
-  }
-
-  // Service Details
-  if (values.previousCallingPoints) {
-    _.set(
-      values,
-      `previousCallingPoints.callingPointList`,
-      values.previousCallingPoints.callingPointList[0]
-    );
-
-    const callingPoint =
-      values.previousCallingPoints.callingPointList.callingPoint || [];
-
-    for (let index2 = 0; index2 < callingPoint.length; index2++) {
-      keys.map(key => {
-        if (
-          values.previousCallingPoints.callingPointList.callingPoint[index2][
-            key
-          ]
-        ) {
-          _.set(
-            values,
-            `previousCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-            values.previousCallingPoints.callingPointList.callingPoint[index2][
-              key
-            ][0]
-          );
-        }
-      });
-    }
-  }
-
-  if (values.subsequentCallingPoints) {
-    _.set(
-      values,
-      `subsequentCallingPoints.callingPointList`,
-      values.subsequentCallingPoints.callingPointList[0]
-    );
-
-    const callingPoint =
-      values.subsequentCallingPoints.callingPointList.callingPoint || [];
-
-    for (let index2 = 0; index2 < callingPoint.length; index2++) {
-      keys.map(key => {
-        if (
-          values.subsequentCallingPoints.callingPointList.callingPoint[index2][
-            key
-          ]
-        ) {
-          _.set(
-            values,
-            `subsequentCallingPoints.callingPointList.callingPoint[${index2}][${key}]`,
-            values.subsequentCallingPoints.callingPointList.callingPoint[
-              index2
-            ][key][0]
-          );
-        }
-      });
     }
   }
 
