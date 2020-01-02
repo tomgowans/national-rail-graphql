@@ -140,7 +140,7 @@ Object {
       "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
     ],
   },
-  "platformAvailable": "true",
+  "platformAvailable": true,
 }
 `;
 
@@ -284,6 +284,6 @@ Object {
       "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
     ],
   },
-  "platformAvailable": "true",
+  "platformAvailable": true,
 }
 `;

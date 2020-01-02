@@ -31,7 +31,7 @@ Object {
           },
           "eta": "17:23",
           "etd": "17:24",
-          "length": "12",
+          "length": 12,
           "operator": "Thameslink",
           "operatorCode": "TL",
           "origin": Object {
@@ -60,7 +60,7 @@ Object {
       "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
     ],
   },
-  "platformAvailable": "true",
+  "platformAvailable": true,
 }
 `;
 
@@ -95,7 +95,7 @@ Object {
           },
           "eta": "17:23",
           "etd": "17:24",
-          "length": "12",
+          "length": 12,
           "operator": "Thameslink",
           "operatorCode": "TL",
           "origin": Object {
@@ -124,6 +124,6 @@ Object {
       "Disruption through Redhill. More information can be found in <A href=\\"http://nationalrail.co.uk/service_disruptions/238336.aspx\\">Latest Travel News.</A>",
     ],
   },
-  "platformAvailable": "true",
+  "platformAvailable": true,
 }
 `;

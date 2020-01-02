@@ -14,7 +14,7 @@ Object {
   "crs": "ECR",
   "generatedAt": "2019-11-20T21:09:59.5101527+00:00",
   "locationName": "East Croydon",
-  "platformAvailable": "true",
+  "platformAvailable": true,
   "trainServices": Object {
     "service": Array [
       Object {
@@ -27,7 +27,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -87,7 +87,7 @@ Object {
   "crs": "ECR",
   "generatedAt": "2019-11-20T21:09:59.5101527+00:00",
   "locationName": "East Croydon",
-  "platformAvailable": "true",
+  "platformAvailable": true,
   "trainServices": Object {
     "service": Array [
       Object {
@@ -100,7 +100,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {

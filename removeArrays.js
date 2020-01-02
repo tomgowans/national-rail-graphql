@@ -48,6 +48,32 @@ const removeArrays = values => {
       if (newValue[key]) {
         _.set(values, `${path}[${key}]`, newValue[key][0]);
       }
+
+      if (key === "length" && newValue["length"]) {
+        if (_.isString(newValue.length[0])) {
+          _.set(values, `${path}[length]`, _.toNumber(newValue.length));
+        }
+      }
+
+      if (key === "platformAvailable" && newValue["platformAvailable"]) {
+        if (_.isString(newValue.platformAvailable[0])) {
+          _.set(
+            values,
+            `${path}[platformAvailable]`,
+            newValue.platformAvailable === "true"
+          );
+        }
+      }
+
+      if (key === "isCancelled" && newValue["isCancelled"]) {
+        if (_.isString(newValue.isCancelled[0])) {
+          _.set(
+            values,
+            `${path}[isCancelled]`,
+            newValue.isCancelled === "true"
+          );
+        }
+      }
     });
   };
 

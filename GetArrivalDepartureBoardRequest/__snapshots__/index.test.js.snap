@@ -14,7 +14,7 @@ Object {
   "crs": "ECR",
   "generatedAt": "2019-12-16T07:20:28.6660564+00:00",
   "locationName": "East Croydon",
-  "platformAvailable": "true",
+  "platformAvailable": true,
   "trainServices": Object {
     "service": Array [
       Object {
@@ -28,7 +28,7 @@ Object {
         },
         "eta": "07:17",
         "etd": "07:19",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -56,7 +56,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -88,7 +88,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -116,7 +116,7 @@ Object {
         },
         "eta": "07:20",
         "etd": "07:21",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -152,7 +152,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -181,7 +181,7 @@ Object {
         },
         "eta": "07:22",
         "etd": "07:23",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -210,7 +210,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -238,7 +238,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -266,7 +266,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -295,7 +295,7 @@ Object {
         },
         "eta": "07:26",
         "etd": "07:27",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -323,7 +323,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -355,7 +355,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -383,7 +383,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -415,7 +415,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -447,7 +447,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -476,7 +476,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -505,7 +505,7 @@ Object {
         },
         "eta": "07:34",
         "etd": "07:35",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -533,7 +533,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -565,7 +565,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -593,7 +593,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -625,7 +625,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -653,7 +653,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -681,7 +681,7 @@ Object {
         },
         "eta": "07:40",
         "etd": "07:41",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -712,7 +712,7 @@ Object {
         },
         "eta": "07:45",
         "etd": "07:45",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -740,7 +740,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -768,7 +768,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -795,7 +795,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -823,7 +823,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -851,7 +851,7 @@ Object {
         },
         "eta": "On time",
         "etd": "07:48",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -879,7 +879,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -911,7 +911,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -939,7 +939,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "5",
+        "length": 5,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -973,7 +973,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1001,7 +1001,7 @@ Object {
         },
         "eta": "07:54",
         "etd": "07:54",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1030,7 +1030,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1058,7 +1058,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1086,7 +1086,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1122,7 +1122,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1150,7 +1150,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1178,7 +1178,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1210,7 +1210,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1239,7 +1239,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1267,7 +1267,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1294,7 +1294,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1326,7 +1326,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1354,7 +1354,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1390,7 +1390,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1418,7 +1418,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1446,7 +1446,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "6",
+        "length": 6,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1474,7 +1474,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1507,7 +1507,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1535,7 +1535,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1563,7 +1563,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1590,7 +1590,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1617,7 +1617,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1645,7 +1645,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1673,7 +1673,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1701,7 +1701,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1733,7 +1733,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1788,7 +1788,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1817,7 +1817,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1851,7 +1851,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1879,7 +1879,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1907,7 +1907,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -1936,7 +1936,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1964,7 +1964,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -1992,7 +1992,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2028,7 +2028,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2056,7 +2056,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2117,7 +2117,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2145,7 +2145,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2172,7 +2172,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2199,7 +2199,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2227,7 +2227,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2263,7 +2263,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2291,7 +2291,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2320,7 +2320,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2348,7 +2348,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2376,7 +2376,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2404,7 +2404,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2431,7 +2431,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2458,7 +2458,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2513,7 +2513,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2541,7 +2541,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2569,7 +2569,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2597,7 +2597,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2629,7 +2629,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2657,7 +2657,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2686,7 +2686,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2714,7 +2714,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "6",
+        "length": 6,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2748,7 +2748,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2776,7 +2776,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2809,7 +2809,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2837,7 +2837,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2865,7 +2865,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2893,7 +2893,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -2925,7 +2925,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2954,7 +2954,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -2982,7 +2982,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3009,7 +3009,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3041,7 +3041,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3069,7 +3069,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3105,7 +3105,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3133,7 +3133,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3161,7 +3161,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3189,7 +3189,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3216,7 +3216,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3243,7 +3243,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3269,7 +3269,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3295,7 +3295,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3348,7 +3348,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3375,7 +3375,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3402,7 +3402,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3429,7 +3429,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3460,7 +3460,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3487,7 +3487,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3522,7 +3522,7 @@ Object {
   "crs": "ECR",
   "generatedAt": "2019-12-16T07:20:28.6660564+00:00",
   "locationName": "East Croydon",
-  "platformAvailable": "true",
+  "platformAvailable": true,
   "trainServices": Object {
     "service": Array [
       Object {
@@ -3536,7 +3536,7 @@ Object {
         },
         "eta": "07:17",
         "etd": "07:19",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3564,7 +3564,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3596,7 +3596,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3624,7 +3624,7 @@ Object {
         },
         "eta": "07:20",
         "etd": "07:21",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3660,7 +3660,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3689,7 +3689,7 @@ Object {
         },
         "eta": "07:22",
         "etd": "07:23",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3718,7 +3718,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3746,7 +3746,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3774,7 +3774,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3803,7 +3803,7 @@ Object {
         },
         "eta": "07:26",
         "etd": "07:27",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3831,7 +3831,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3863,7 +3863,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3891,7 +3891,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3923,7 +3923,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -3955,7 +3955,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -3984,7 +3984,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4013,7 +4013,7 @@ Object {
         },
         "eta": "07:34",
         "etd": "07:35",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4041,7 +4041,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4073,7 +4073,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4101,7 +4101,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4133,7 +4133,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4161,7 +4161,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4189,7 +4189,7 @@ Object {
         },
         "eta": "07:40",
         "etd": "07:41",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4220,7 +4220,7 @@ Object {
         },
         "eta": "07:45",
         "etd": "07:45",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4248,7 +4248,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4276,7 +4276,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4303,7 +4303,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4331,7 +4331,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4359,7 +4359,7 @@ Object {
         },
         "eta": "On time",
         "etd": "07:48",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4387,7 +4387,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4419,7 +4419,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4447,7 +4447,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "5",
+        "length": 5,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4481,7 +4481,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4509,7 +4509,7 @@ Object {
         },
         "eta": "07:54",
         "etd": "07:54",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4538,7 +4538,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4566,7 +4566,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4594,7 +4594,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4630,7 +4630,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4658,7 +4658,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4686,7 +4686,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4718,7 +4718,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4747,7 +4747,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4775,7 +4775,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4802,7 +4802,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4834,7 +4834,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4862,7 +4862,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4898,7 +4898,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4926,7 +4926,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -4954,7 +4954,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "6",
+        "length": 6,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -4982,7 +4982,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5015,7 +5015,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5043,7 +5043,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5071,7 +5071,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5098,7 +5098,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5125,7 +5125,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5153,7 +5153,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5181,7 +5181,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5209,7 +5209,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5241,7 +5241,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5296,7 +5296,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5325,7 +5325,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5359,7 +5359,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5387,7 +5387,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5415,7 +5415,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5444,7 +5444,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5472,7 +5472,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5500,7 +5500,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5536,7 +5536,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5564,7 +5564,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5625,7 +5625,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5653,7 +5653,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5680,7 +5680,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5707,7 +5707,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5735,7 +5735,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5771,7 +5771,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5799,7 +5799,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5828,7 +5828,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -5856,7 +5856,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5884,7 +5884,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5912,7 +5912,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5939,7 +5939,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -5966,7 +5966,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6021,7 +6021,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6049,7 +6049,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6077,7 +6077,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6105,7 +6105,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6137,7 +6137,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6165,7 +6165,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6194,7 +6194,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6222,7 +6222,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "6",
+        "length": 6,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6256,7 +6256,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6284,7 +6284,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6317,7 +6317,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6345,7 +6345,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6373,7 +6373,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6401,7 +6401,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6433,7 +6433,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6462,7 +6462,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6490,7 +6490,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6517,7 +6517,7 @@ Object {
           ],
         },
         "eta": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6549,7 +6549,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6577,7 +6577,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6613,7 +6613,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6641,7 +6641,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6669,7 +6669,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "4",
+        "length": 4,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6697,7 +6697,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6724,7 +6724,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6751,7 +6751,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6777,7 +6777,7 @@ Object {
           ],
         },
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6803,7 +6803,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6856,7 +6856,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6883,7 +6883,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6910,7 +6910,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6937,7 +6937,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "10",
+        "length": 10,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
@@ -6968,7 +6968,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "12",
+        "length": 12,
         "operator": "Thameslink",
         "operatorCode": "TL",
         "origin": Object {
@@ -6995,7 +6995,7 @@ Object {
         },
         "eta": "On time",
         "etd": "On time",
-        "length": "8",
+        "length": 8,
         "operator": "Southern",
         "operatorCode": "SN",
         "origin": Object {
