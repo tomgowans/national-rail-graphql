@@ -58,6 +58,18 @@ const fetch = (url, args) => {
       resolve(GetServiceDetailsRequest);
     }
 
+    if (args.body.includes("RespondWithXMLError")) {
+      resolve({
+        text: () => {
+          return `<xml><malformedxml/>`;
+        }
+      });
+    }
+
+    if (args.body.includes("RespondWithFetchError")) {
+      resolve("<xml><malformedxml/>");
+    }
+
     resolve(response);
   });
 };
