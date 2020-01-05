@@ -14,8 +14,9 @@ function GetFastestDeparturesRequest(
   { crs, filterCrs = [], timeOffset = 0, timeWindow = 120 },
   tokenValue
 ) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetFastestDeparturesRequest>
         <ldb:crs>${crs}</ldb:crs>
         ${filterCrs.length &&
@@ -28,15 +29,18 @@ function GetFastestDeparturesRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetFastestDeparturesRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // console.dir(result);
-      return removeArrays(
-        result.GetFastestDeparturesResponse[0].DeparturesBoard[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // console.dir(result);
+        resolve(
+          removeArrays(
+            result.GetFastestDeparturesResponse[0].DeparturesBoard[0]
+          )
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetFastestDeparturesRequest;

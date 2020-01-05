@@ -7,21 +7,25 @@ const removeArrays = require("../removeArrays");
  */
 
 function GetServiceDetailsRequest({ serviceID }, tokenValue) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetServiceDetailsRequest>
         ${serviceID && `<ldb:serviceID>${serviceID}</ldb:serviceID>`}
       </ldb:GetServiceDetailsRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // console.dir(result);
-      return removeArrays(
-        result.GetServiceDetailsResponse[0].GetServiceDetailsResult[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // console.dir(result);
+        resolve(
+          removeArrays(
+            result.GetServiceDetailsResponse[0].GetServiceDetailsResult[0]
+          )
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetServiceDetailsRequest;

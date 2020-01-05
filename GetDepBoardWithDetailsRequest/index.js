@@ -21,8 +21,9 @@ function GetDepBoardWithDetailsRequest(
   },
   tokenValue
 ) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetDepBoardWithDetailsRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
@@ -37,16 +38,19 @@ function GetDepBoardWithDetailsRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetDepBoardWithDetailsRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // return result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0];
-
-      return removeArrays(
-        result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // return result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0];
+
+        resolve(
+          removeArrays(
+            result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0]
+          )
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetDepBoardWithDetailsRequest;

@@ -21,8 +21,9 @@ function GetDepartureBoardRequest(
   },
   tokenValue
 ) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetDepartureBoardRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
@@ -37,15 +38,18 @@ function GetDepartureBoardRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetDepartureBoardRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // console.dir(result);
-      return removeArrays(
-        result.GetDepartureBoardResponse[0].GetStationBoardResult[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // console.dir(result);
+        resolve(
+          removeArrays(
+            result.GetDepartureBoardResponse[0].GetStationBoardResult[0]
+          )
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetDepartureBoardRequest;

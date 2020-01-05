@@ -12,8 +12,9 @@ function GetNextDeparturesRequest(
   { crs, filterCrs = [], timeOffset = 0, timeWindow = 120 },
   tokenValue
 ) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetNextDeparturesRequest>
         <ldb:crs>${crs}</ldb:crs>
         ${filterCrs.length &&
@@ -26,15 +27,16 @@ function GetNextDeparturesRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetNextDeparturesRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // console.dir(result.GetNextDeparturesResponse[0].DeparturesBoard[0]);
-      return removeArrays(
-        result.GetNextDeparturesResponse[0].DeparturesBoard[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // console.dir(result.GetNextDeparturesResponse[0].DeparturesBoard[0]);
+        resolve(
+          removeArrays(result.GetNextDeparturesResponse[0].DeparturesBoard[0])
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetNextDeparturesRequest;

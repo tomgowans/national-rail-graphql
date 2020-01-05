@@ -21,8 +21,9 @@ function GetArrBoardWithDetailsRequest(
   },
   tokenValue
 ) {
-  return fetchData({
-    body: `
+  return new Promise((resolve, reject) => {
+    fetchData({
+      body: `
       <ldb:GetArrBoardWithDetailsRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
@@ -37,16 +38,18 @@ function GetArrBoardWithDetailsRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetArrBoardWithDetailsRequest>
       `,
-    tokenValue
-  })
-    .then(result => {
-      // console.dir(result);
-
-      return removeArrays(
-        result.GetArrBoardWithDetailsResponse[0].GetStationBoardResult[0]
-      );
+      tokenValue
     })
-    .catch(err => console.error(err));
+      .then(result => {
+        // console.dir(result);
+        resolve(
+          removeArrays(
+            result.GetArrBoardWithDetailsResponse[0].GetStationBoardResult[0]
+          )
+        );
+      })
+      .catch(err => reject(err));
+  });
 }
 
 module.exports = GetArrBoardWithDetailsRequest;

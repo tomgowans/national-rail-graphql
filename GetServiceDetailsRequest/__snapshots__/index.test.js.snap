@@ -1,6 +1,108 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sends the request correctly 1`] = `
+exports[`GetServiceDetailsRequest sends a request with minimal parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "ata": "08:13",
+  "atd": "08:14",
+  "crs": "ECR",
+  "delayReason": "This train has been delayed by a late running train being in front of this one",
+  "generatedAt": "2019-12-17T08:22:05.3113816+00:00",
+  "length": 12,
+  "locationName": "East Croydon",
+  "operator": "Thameslink",
+  "operatorCode": "TL",
+  "platform": "3",
+  "previousCallingPoints": Object {
+    "callingPointList": Object {
+      "callingPoint": Array [
+        Object {
+          "at": "06:54",
+          "crs": "BDM",
+          "length": 12,
+          "locationName": "Bedford",
+          "st": "06:52",
+        },
+        Object {
+          "at": "07:11",
+          "crs": "LUT",
+          "length": 12,
+          "locationName": "Luton",
+          "st": "07:09",
+        },
+        Object {
+          "at": "07:25",
+          "crs": "SAC",
+          "length": 12,
+          "locationName": "St Albans",
+          "st": "07:18",
+        },
+        Object {
+          "at": "07:44",
+          "crs": "STP",
+          "length": 12,
+          "locationName": "London St Pancras (Intl)",
+          "st": "07:40",
+        },
+        Object {
+          "at": "07:49",
+          "crs": "ZFD",
+          "length": 12,
+          "locationName": "Farringdon Underground",
+          "st": "07:44",
+        },
+        Object {
+          "at": "07:52",
+          "crs": "CTK",
+          "length": 12,
+          "locationName": "City Thameslink",
+          "st": "07:46",
+        },
+        Object {
+          "at": "07:54",
+          "crs": "BFR",
+          "length": 12,
+          "locationName": "London Blackfriars",
+          "st": "07:49",
+        },
+        Object {
+          "at": "07:59",
+          "crs": "LBG",
+          "length": 12,
+          "locationName": "London Bridge",
+          "st": "07:55",
+        },
+      ],
+    },
+  },
+  "serviceType": "train",
+  "sta": "08:08",
+  "std": "08:08",
+  "subsequentCallingPoints": Object {
+    "callingPointList": Object {
+      "callingPoint": Array [
+        Object {
+          "crs": "GTW",
+          "et": "08:28",
+          "length": 12,
+          "locationName": "Gatwick Airport",
+          "st": "08:23",
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`GetServiceDetailsRequest sends a request with more parameters correctly 1`] = `
 Object {
   "$": Object {
     "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",

@@ -1,29 +1,40 @@
-const GetResponse = require("./index");
+const GetFastestDeparturesWithDetailsRequest = require("./index");
 
-it("sends a reques with minimal parameters correctly", () => {
-  expect.assertions(1);
+describe("GetFastestDeparturesWithDetailsRequest", () => {
+  it("sends a request with minimal parameters correctly", async () => {
+    expect.assertions(1);
 
-  return expect(
-    GetResponse(
+    const result = await GetFastestDeparturesWithDetailsRequest(
       {
         crs: "ECR"
       },
       "TOKEN_VALUE"
-    )
-  ).resolves.toMatchSnapshot();
-});
+    );
+    expect(result).toMatchSnapshot();
+  });
 
-it("sends a reques with more parameters correctly", () => {
-  expect.assertions(1);
+  it("sends a request with minimal parameters and fail", async () => {
+    expect.assertions(1);
 
-  return expect(
-    GetResponse(
-      {
-        numRows: "12",
-        crs: "ECR",
-        filterCrs: ["STP"]
-      },
-      "TOKEN_VALUE"
-    )
-  ).resolves.toMatchSnapshot();
+    await expect(
+      GetFastestDeparturesWithDetailsRequest({
+        crs: "ECR"
+      })
+    ).rejects.toThrow("Error with credentials");
+  });
+
+  it("sends a request with more parameters correctly", () => {
+    expect.assertions(1);
+
+    return expect(
+      GetFastestDeparturesWithDetailsRequest(
+        {
+          numRows: "12",
+          crs: "ECR",
+          filterCrs: ["STP"]
+        },
+        "TOKEN_VALUE"
+      )
+    ).resolves.toMatchSnapshot();
+  });
 });
