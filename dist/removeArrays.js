@@ -7,12 +7,6 @@ var isArray_1 = __importDefault(require("lodash/isArray"));
 var isString_1 = __importDefault(require("lodash/isString"));
 var set_1 = __importDefault(require("lodash/set"));
 var toNumber_1 = __importDefault(require("lodash/toNumber"));
-// type Values = {
-//   trainServices: {
-//     service: Array<any>;
-//   };
-//   departures: any;
-// };
 var removeArrays = function (values) {
     var keys = [
         "crs",
@@ -78,7 +72,7 @@ var removeArrays = function (values) {
         });
     };
     replaceKeys("", values);
-    var service = (values.trainServices || []).service;
+    var service = values.trainServices.service || [];
     if (values.departures) {
         set_1.default(values, "departures.destination", values.departures.destination[0]);
         var destinationService = values.departures.destination.service;

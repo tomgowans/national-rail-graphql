@@ -5,15 +5,9 @@ import _isString from "lodash/isString";
 import _set from "lodash/set";
 import _toNumber from "lodash/toNumber";
 
-// type Values = {
-//   trainServices: {
-//     service: Array<any>;
-//   };
+import { Result } from "./types";
 
-//   departures: any;
-// };
-
-const removeArrays = (values: any) => {
+const removeArrays = (values: Result) => {
   const keys = [
     "crs",
     "generatedAt",
@@ -56,7 +50,7 @@ const removeArrays = (values: any) => {
     "nrccMessages"
   ];
 
-  const replaceKeys = (path, newValue) => {
+  const replaceKeys = (path: string, newValue: Result) => {
     keys.map(key => {
       if (newValue[key]) {
         _set(values, `${path}[${key}]`, newValue[key][0]);
@@ -88,7 +82,7 @@ const removeArrays = (values: any) => {
 
   replaceKeys(``, values);
 
-  const { service } = values.trainServices || [];
+  const service = values.trainServices.service || [];
 
   if (values.departures) {
     _set(values, "departures.destination", values.departures.destination[0]);

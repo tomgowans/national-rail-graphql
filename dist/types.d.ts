@@ -7,15 +7,16 @@ export declare type Attributes = {
     timeWindow?: number;
 };
 declare type GetArrBoardWithDetailsResponse = {
-    GetStationBoardResult: Array<Object>;
+    GetStationBoardResult: Array<any>;
 };
 declare type GetServiceDetailsResult = {
-    GetServiceDetailsResult: Array<Object>;
+    GetServiceDetailsResult: Array<any>;
 };
 declare type DeparturesBoard = {
-    DeparturesBoard: Array<Object>;
+    DeparturesBoard: Array<any>;
 };
 export declare type Result = {
+    departures: any;
     GetArrBoardWithDetailsResponse: Array<GetArrBoardWithDetailsResponse>;
     GetArrDepBoardWithDetailsResponse: Array<GetArrBoardWithDetailsResponse>;
     GetArrivalBoardResponse: Array<GetArrBoardWithDetailsResponse>;
@@ -27,5 +28,13 @@ export declare type Result = {
     GetFastestDeparturesWithDetailsResponse: Array<DeparturesBoard>;
     GetNextDeparturesResponse: Array<DeparturesBoard>;
     GetNextDeparturesWithDetailsResponse: Array<DeparturesBoard>;
+    length: String;
+    isCancelled: String;
+    platformAvailable: String;
+    previousCallingPoints: any;
+    subsequentCallingPoints: any;
+    trainServices: {
+        service: Array<any>;
+    };
 };
 export {};
