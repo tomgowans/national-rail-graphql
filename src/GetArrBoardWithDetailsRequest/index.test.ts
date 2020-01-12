@@ -17,9 +17,12 @@ describe("GetArrBoardWithDetailsRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetArrBoardWithDetailsRequest({
-        crs: "ECR"
-      })
+      GetArrBoardWithDetailsRequest(
+        {
+          crs: "ECR"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -29,7 +32,7 @@ describe("GetArrBoardWithDetailsRequest", () => {
     return expect(
       GetArrBoardWithDetailsRequest(
         {
-          numRows: "12",
+          numRows: 12,
           crs: "ECR",
           filterCrs: ["STP"]
         },

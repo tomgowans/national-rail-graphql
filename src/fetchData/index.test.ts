@@ -12,7 +12,8 @@ describe("fetchData", () => {
   it("should fail with incorrect credentials", () => {
     return expect(
       fetchData({
-        body: "body items"
+        body: "body items",
+        tokenValue: null
       })
     ).rejects.toThrow("Error with credentials");
   });

@@ -13,8 +13,10 @@
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "@ovotech/apollo-datasource-soap": "^4.1.0",
+    "@types/jest": "^24.0.25",
     "@types/lodash": "^4.14.149",
     "@types/node-fetch": "^2.5.4",
+    "@types/xml2js": "^0.4.5",
     "apollo-server": "^2.9.12",
     "apollo-server-testing": "^2.9.14",
     "babel-jest": "*",
@@ -29,5 +31,8 @@
     "soap": "^0.30.0",
     "typescript": "^3.7.4",
     "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "ts-jest": "^24.3.0"
   }
 }

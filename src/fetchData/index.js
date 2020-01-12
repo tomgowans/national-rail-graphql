@@ -1,5 +1,5 @@
 const parseString = require("xml2js").parseString;
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 const fetchData = ({ body, tokenValue }) => {
   return new Promise((resolve, reject) => {
@@ -41,4 +41,4 @@ const fetchData = ({ body, tokenValue }) => {
   });
 };
 
-export default fetchData;
+module.exports = fetchData;

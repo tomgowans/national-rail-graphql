@@ -1,12 +1,12 @@
-const GetServiceDetailsRequest = require("./index");
+import GetNextDeparturesWithDetailsRequest from "./index";
 
-describe("GetServiceDetailsRequest", () => {
+describe("GetNextDeparturesWithDetailsRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
     expect.assertions(1);
 
-    const result = await GetServiceDetailsRequest(
+    const result = await GetNextDeparturesWithDetailsRequest(
       {
-        serviceID: "ABC123"
+        crs: "ECR"
       },
       "TOKEN_VALUE"
     );
@@ -17,9 +17,12 @@ describe("GetServiceDetailsRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetServiceDetailsRequest({
-        serviceID: "ABC123"
-      })
+      GetNextDeparturesWithDetailsRequest(
+        {
+          crs: "ECR"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -27,10 +30,10 @@ describe("GetServiceDetailsRequest", () => {
     expect.assertions(1);
 
     return expect(
-      GetServiceDetailsRequest(
+      GetNextDeparturesWithDetailsRequest(
         {
-          numRows: "12",
-          serviceID: "ABC123",
+          numRows: 12,
+          crs: "ECR",
           filterCrs: ["STP"]
         },
         "TOKEN_VALUE"

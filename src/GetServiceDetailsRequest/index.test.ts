@@ -1,12 +1,12 @@
-const GetArrDepBoardWithDetailsRequest = require("./index");
+import GetServiceDetailsRequest from "./index";
 
-describe("GetArrDepBoardWithDetailsRequest", () => {
+describe("GetServiceDetailsRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
     expect.assertions(1);
 
-    const result = await GetArrDepBoardWithDetailsRequest(
+    const result = await GetServiceDetailsRequest(
       {
-        crs: "ECR"
+        serviceID: "ABC123"
       },
       "TOKEN_VALUE"
     );
@@ -17,9 +17,12 @@ describe("GetArrDepBoardWithDetailsRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetArrDepBoardWithDetailsRequest({
-        crs: "ECR"
-      })
+      GetServiceDetailsRequest(
+        {
+          serviceID: "ABC123"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -27,11 +30,9 @@ describe("GetArrDepBoardWithDetailsRequest", () => {
     expect.assertions(1);
 
     return expect(
-      GetArrDepBoardWithDetailsRequest(
+      GetServiceDetailsRequest(
         {
-          numRows: "12",
-          crs: "ECR",
-          filterCrs: ["STP"]
+          serviceID: "ABC123"
         },
         "TOKEN_VALUE"
       )

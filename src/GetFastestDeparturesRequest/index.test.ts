@@ -1,4 +1,4 @@
-const GetFastestDeparturesRequest = require("./index");
+import GetFastestDeparturesRequest from "./index";
 
 describe("GetFastestDeparturesRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
@@ -17,9 +17,12 @@ describe("GetFastestDeparturesRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetFastestDeparturesRequest({
-        crs: "ECR"
-      })
+      GetFastestDeparturesRequest(
+        {
+          crs: "ECR"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -29,7 +32,7 @@ describe("GetFastestDeparturesRequest", () => {
     return expect(
       GetFastestDeparturesRequest(
         {
-          numRows: "12",
+          numRows: 12,
           crs: "ECR",
           filterCrs: ["STP"]
         },

@@ -1,10 +1,5 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 var parseString = require("xml2js").parseString;
-var node_fetch_1 = __importDefault(require("node-fetch"));
+var fetch = require("node-fetch");
 var fetchData = function (_a) {
     var body = _a.body, tokenValue = _a.tokenValue;
     return new Promise(function (resolve, reject) {
@@ -12,7 +7,7 @@ var fetchData = function (_a) {
             reject(new Error("Error with credentials"));
         }
         else {
-            node_fetch_1.default("https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx", {
+            fetch("https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx", {
                 method: "POST",
                 headers: {
                     "Content-Type": "text/xml"
@@ -38,4 +33,4 @@ var fetchData = function (_a) {
         }
     });
 };
-exports.default = fetchData;
+module.exports = fetchData;

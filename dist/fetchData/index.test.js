@@ -54,7 +54,8 @@ describe("fetchData", function () {
     }); });
     it("should fail with incorrect credentials", function () {
         return expect(fetchData({
-            body: "body items"
+            body: "body items",
+            tokenValue: null
         })).rejects.toThrow("Error with credentials");
     });
     it("should fail with a malformed XML response", function () {

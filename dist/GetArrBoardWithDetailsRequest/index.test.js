@@ -60,7 +60,7 @@ describe("GetArrBoardWithDetailsRequest", function () {
                     expect.assertions(1);
                     return [4 /*yield*/, expect(GetArrBoardWithDetailsRequest({
                             crs: "ECR"
-                        })).rejects.toThrow("Error with credentials")];
+                        }, "")).rejects.toThrow("Error with credentials")];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];
@@ -70,7 +70,7 @@ describe("GetArrBoardWithDetailsRequest", function () {
     it("sends a request with more parameters correctly", function () {
         expect.assertions(1);
         return expect(GetArrBoardWithDetailsRequest({
-            numRows: "12",
+            numRows: 12,
             crs: "ECR",
             filterCrs: ["STP"]
         }, "TOKEN_VALUE")).resolves.toMatchSnapshot();

@@ -1,10 +1,10 @@
-const GetDepBoardWithDetailsRequest = require("./index");
+import GetFastestDeparturesWithDetailsRequest from "./index";
 
-describe("GetDepBoardWithDetailsRequest", () => {
+describe("GetFastestDeparturesWithDetailsRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
     expect.assertions(1);
 
-    const result = await GetDepBoardWithDetailsRequest(
+    const result = await GetFastestDeparturesWithDetailsRequest(
       {
         crs: "ECR"
       },
@@ -17,9 +17,12 @@ describe("GetDepBoardWithDetailsRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetDepBoardWithDetailsRequest({
-        crs: "ECR"
-      })
+      GetFastestDeparturesWithDetailsRequest(
+        {
+          crs: "ECR"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -27,9 +30,9 @@ describe("GetDepBoardWithDetailsRequest", () => {
     expect.assertions(1);
 
     return expect(
-      GetDepBoardWithDetailsRequest(
+      GetFastestDeparturesWithDetailsRequest(
         {
-          numRows: "12",
+          numRows: 12,
           crs: "ECR",
           filterCrs: ["STP"]
         },
