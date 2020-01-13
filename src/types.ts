@@ -1,7 +1,8 @@
 export type Attributes = {
   numRows?: number;
   crs: string;
-  filterCrs?: Array<string>;
+  filterCrs?: string;
+  filterList?: Array<string>;
   filterType?: string;
   timeOffset?: number;
   timeWindow?: number;

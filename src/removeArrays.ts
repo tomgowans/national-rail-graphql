@@ -62,6 +62,12 @@ const removeArrays = (values: Result) => {
         }
       }
 
+      if (key === "platform" && newValue["platform"]) {
+        if (_.isString(newValue.platform[0])) {
+          _.set(values, `${path}[platform]`, _.toNumber(newValue.platform));
+        }
+      }
+
       if (key === "platformAvailable" && newValue["platformAvailable"]) {
         if (_isString(newValue.platformAvailable[0])) {
           _set(
@@ -75,6 +81,16 @@ const removeArrays = (values: Result) => {
       if (key === "isCancelled" && newValue["isCancelled"]) {
         if (_isString(newValue.isCancelled[0])) {
           _set(values, `${path}[isCancelled]`, newValue.isCancelled === "true");
+        }
+      }
+
+      if (key === "isCircularRoute" && newValue["isCircularRoute"]) {
+        if (_.isString(newValue.isCircularRoute[0])) {
+          _.set(
+            values,
+            `${path}[isCircularRoute]`,
+            newValue.isCircularRoute === "true"
+          );
         }
       }
     });

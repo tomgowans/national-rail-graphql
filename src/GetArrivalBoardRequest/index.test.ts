@@ -34,7 +34,7 @@ describe("GetArrivalBoardRequest", () => {
         {
           numRows: 12,
           crs: "ECR",
-          filterCrs: ["STP"]
+          filterCrs: "STP"
         },
         "TOKEN_VALUE"
       )

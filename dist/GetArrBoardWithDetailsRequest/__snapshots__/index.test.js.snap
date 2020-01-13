@@ -38,7 +38,7 @@ Object {
             },
           ],
         },
-        "platform": "2",
+        "platform": 2,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -141,7 +141,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -192,7 +192,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -286,7 +286,7 @@ Object {
             },
           ],
         },
-        "platform": "5",
+        "platform": 5,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -395,7 +395,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -476,7 +476,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -550,7 +550,7 @@ Object {
             },
           ],
         },
-        "platform": "3",
+        "platform": 3,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -597,7 +597,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -720,7 +720,7 @@ Object {
             },
           ],
         },
-        "platform": "2",
+        "platform": 2,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -850,7 +850,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -918,7 +918,7 @@ Object {
             },
           ],
         },
-        "platform": "2",
+        "platform": 2,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1021,7 +1021,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1072,7 +1072,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1166,7 +1166,7 @@ Object {
             },
           ],
         },
-        "platform": "5",
+        "platform": 5,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1275,7 +1275,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1356,7 +1356,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1430,7 +1430,7 @@ Object {
             },
           ],
         },
-        "platform": "3",
+        "platform": 3,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1477,7 +1477,7 @@ Object {
             },
           ],
         },
-        "platform": "6",
+        "platform": 6,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1600,7 +1600,7 @@ Object {
             },
           ],
         },
-        "platform": "2",
+        "platform": 2,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
@@ -1730,7 +1730,7 @@ Object {
             },
           ],
         },
-        "platform": "4",
+        "platform": 4,
         "previousCallingPoints": Object {
           "callingPointList": Object {
             "callingPoint": Array [
