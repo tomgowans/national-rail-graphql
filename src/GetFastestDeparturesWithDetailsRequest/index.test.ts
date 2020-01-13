@@ -34,7 +34,7 @@ describe("GetFastestDeparturesWithDetailsRequest", () => {
         {
           numRows: 12,
           crs: "ECR",
-          filterCrs: ["STP"]
+          filterList: ["STP"]
         },
         "TOKEN_VALUE"
       )

@@ -9,54 +9,55 @@ import GetNextDeparturesWithDetailsRequest from "./GetNextDeparturesWithDetailsR
 import GetFastestDeparturesRequest from "./GetFastestDeparturesRequest";
 import GetFastestDeparturesWithDetailsRequest from "./GetFastestDeparturesWithDetailsRequest";
 import GetServiceDetailsRequest from "./GetServiceDetailsRequest";
+import { Attributes, ServiceAttributes, ServiceProps } from "./types";
 
-const resolvers = ({ tokenValue }) => {
+const resolvers = ({ tokenValue }: ServiceProps) => {
   return {
     Query: {
-      GetDepartureBoard(obj, queryAttributes) {
+      GetDepartureBoard(obj: any, queryAttributes: Attributes) {
         return GetDepartureBoardRequest(queryAttributes, tokenValue);
       },
 
-      GetDepBoardWithDetails(obj, queryAttributes) {
+      GetDepBoardWithDetails(obj: any, queryAttributes: Attributes) {
         return GetDepBoardWithDetailsRequest(queryAttributes, tokenValue);
       },
 
-      GetArrivalBoard(obj, queryAttributes) {
+      GetArrivalBoard(obj: any, queryAttributes: Attributes) {
         return GetArrivalBoardRequest(queryAttributes, tokenValue);
       },
 
-      GetArrBoardWithDetails(obj, queryAttributes) {
+      GetArrBoardWithDetails(obj: any, queryAttributes: Attributes) {
         return GetArrBoardWithDetailsRequest(queryAttributes, tokenValue);
       },
 
-      GetArrivalDepartureBoard(obj, queryAttributes) {
+      GetArrivalDepartureBoard(obj: any, queryAttributes: Attributes) {
         return GetArrivalDepartureBoardRequest(queryAttributes, tokenValue);
       },
 
-      GetArrDepBoardWithDetails(obj, queryAttributes) {
+      GetArrDepBoardWithDetails(obj: any, queryAttributes: Attributes) {
         return GetArrDepBoardWithDetailsRequest(queryAttributes, tokenValue);
       },
 
-      GetNextDepartures(obj, queryAttributes) {
+      GetNextDepartures(obj: any, queryAttributes: Attributes) {
         return GetNextDeparturesRequest(queryAttributes, tokenValue);
       },
 
-      GetNextDeparturesWithDetails(obj, queryAttributes) {
+      GetNextDeparturesWithDetails(obj: any, queryAttributes: Attributes) {
         return GetNextDeparturesWithDetailsRequest(queryAttributes, tokenValue);
       },
 
-      GetFastestDepartures(obj, queryAttributes) {
+      GetFastestDepartures(obj: any, queryAttributes: Attributes) {
         return GetFastestDeparturesRequest(queryAttributes, tokenValue);
       },
 
-      GetFastestDeparturesWithDetails(obj, queryAttributes) {
+      GetFastestDeparturesWithDetails(obj: any, queryAttributes: Attributes) {
         return GetFastestDeparturesWithDetailsRequest(
           queryAttributes,
           tokenValue
         );
       },
 
-      GetServiceDetails(obj, queryAttributes) {
+      GetServiceDetails(obj: any, queryAttributes: ServiceAttributes) {
         return GetServiceDetailsRequest(queryAttributes, tokenValue);
       }
     }

@@ -1,10 +1,20 @@
 export declare type Attributes = {
-    numRows?: number;
     crs: string;
-    filterCrs?: Array<string>;
+    filterCrs?: string | null;
+    filterList?: Array<string>;
     filterType?: string;
-    timeOffset?: number;
-    timeWindow?: number;
+    numRows?: number | null;
+    timeOffset?: number | null;
+    timeWindow?: number | null;
+};
+export declare type ServiceAttributes = {
+    serviceID: string;
+};
+export declare type ServiceProps = {
+    tokenValue: string;
+};
+export declare type ServerProps = {
+    url: string;
 };
 declare type GetArrBoardWithDetailsResponse = {
     GetStationBoardResult: Array<any>;
@@ -23,13 +33,15 @@ export declare type Result = {
     GetArrivalDepartureBoardResponse: Array<GetArrBoardWithDetailsResponse>;
     GetDepartureBoardResponse: Array<GetArrBoardWithDetailsResponse>;
     GetDepBoardWithDetailsResponse: Array<GetArrBoardWithDetailsResponse>;
-    GetServiceDetailsResponse: Array<GetServiceDetailsResult>;
     GetFastestDeparturesResponse: Array<DeparturesBoard>;
     GetFastestDeparturesWithDetailsResponse: Array<DeparturesBoard>;
     GetNextDeparturesResponse: Array<DeparturesBoard>;
     GetNextDeparturesWithDetailsResponse: Array<DeparturesBoard>;
-    length: String;
+    GetServiceDetailsResponse: Array<GetServiceDetailsResult>;
     isCancelled: String;
+    isCircularRoute: String;
+    length: String;
+    platform: String | Array<String>;
     platformAvailable: String;
     previousCallingPoints: any;
     subsequentCallingPoints: any;

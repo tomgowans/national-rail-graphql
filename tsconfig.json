@@ -6,7 +6,6 @@
     "target": "ES5",
     "strict": false,
     "esModuleInterop": true
-    // "strict": true
   },
   "include": ["src"]
 }

@@ -40,7 +40,7 @@ function GetFastestDeparturesRequest(
           )
         );
       })
-      .catch(err => reject(err));
+      .catch((err: Error) => reject(err));
   });
 }
 

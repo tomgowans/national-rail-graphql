@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,14 +35,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
-var fetchData = require("./index");
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var index_1 = __importDefault(require("./index"));
 describe("fetchData", function () {
-    test("should fetch the data correctly", function () { return __awaiter(_this, void 0, void 0, function () {
+    test("should fetch the data correctly", function () { return __awaiter(void 0, void 0, void 0, function () {
         var result;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, fetchData({
+                case 0: return [4 /*yield*/, index_1.default({
                         body: "body items",
                         tokenValue: "ABC-123"
                     })];
@@ -53,19 +57,19 @@ describe("fetchData", function () {
         });
     }); });
     it("should fail with incorrect credentials", function () {
-        return expect(fetchData({
+        return expect(index_1.default({
             body: "body items",
             tokenValue: null
         })).rejects.toThrow("Error with credentials");
     });
     it("should fail with a malformed XML response", function () {
-        return expect(fetchData({
+        return expect(index_1.default({
             body: "RespondWithXMLError",
             tokenValue: "ABC-123"
         })).rejects.toThrow("Unclosed root tag\nLine: 0\nColumn: 20\nChar: ");
     });
     it("should fail with a malformed Fetch response", function () {
-        return expect(fetchData({
+        return expect(index_1.default({
             body: "RespondWithFetchError",
             tokenValue: "ABC-123"
         })).rejects.toThrow("response.text is not a function");

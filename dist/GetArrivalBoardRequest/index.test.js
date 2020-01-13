@@ -76,7 +76,7 @@ describe("GetArrivalBoardRequest", function () {
         return expect(index_1.default({
             numRows: 12,
             crs: "ECR",
-            filterCrs: ["STP"]
+            filterCrs: "STP"
         }, "TOKEN_VALUE")).resolves.toMatchSnapshot();
     });
 });

@@ -1,1 +1,1 @@
-declare const GetNextDeparturesRequest: any;
+export {};

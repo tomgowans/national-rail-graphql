@@ -76,7 +76,7 @@ describe("GetFastestDeparturesWithDetailsRequest", function () {
         return expect(index_1.default({
             numRows: 12,
             crs: "ECR",
-            filterCrs: ["STP"]
+            filterList: ["STP"]
         }, "TOKEN_VALUE")).resolves.toMatchSnapshot();
     });
 });

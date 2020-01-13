@@ -1,4 +1,5 @@
-const { createTestClient } = require("apollo-server-testing");
+import { createTestClient } from "apollo-server-testing";
+
 // const gql = require("graphql-tag");
 // const nock = require('nock');
 
@@ -9,10 +10,10 @@ const { createTestClient } = require("apollo-server-testing");
 //   resolvers
 // });
 
-const { ApolloServer } = require("apollo-server");
+import { ApolloServer } from "apollo-server";
 
-const typeDefs = require("./typeDefs");
-const resolvers = require("./resolvers");
+import typeDefs from "./typeDefs";
+import resolvers from "./resolvers";
 
 // server.listen().then(({ url }) => {
 //   console.log(`🚂 Server ready at ${url}`);
@@ -34,7 +35,7 @@ describe.skip("Queries", () => {
   it("fetches the correct data", async () => {
     const server = new ApolloServer({
       typeDefs,
-      resolvers
+      resolvers: resolvers({ tokenValue: "" })
     });
 
     const { query } = createTestClient(server);

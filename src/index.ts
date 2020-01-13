@@ -2,16 +2,8 @@ import { ApolloServer } from "apollo-server";
 
 import typeDefs from "./typeDefs";
 import resolvers from "./resolvers";
+import { ServiceProps, ServerProps } from "./types";
 
-type ServiceProps = {
-  tokenValue: string;
-};
-
-type ServerProps = {
-  url: string;
-};
-
-// Add production flag
 const service = ({ tokenValue }: ServiceProps) => {
   const server = new ApolloServer({
     typeDefs,

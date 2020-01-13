@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,8 +35,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
-var createTestClient = require("apollo-server-testing").createTestClient;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var apollo_server_testing_1 = require("apollo-server-testing");
 // const gql = require("graphql-tag");
 // const nock = require('nock');
 // const GetArrBoardWithDetailsRequest = require("./GetArrBoardWithDetailsRequest");
@@ -43,24 +47,24 @@ var createTestClient = require("apollo-server-testing").createTestClient;
 //   typeDefs,
 //   resolvers
 // });
-var ApolloServer = require("apollo-server").ApolloServer;
-var typeDefs = require("./typeDefs");
-var resolvers = require("./resolvers");
+var apollo_server_1 = require("apollo-server");
+var typeDefs_1 = __importDefault(require("./typeDefs"));
+var resolvers_1 = __importDefault(require("./resolvers"));
 // server.listen().then(({ url }) => {
 //   console.log(`🚂 Server ready at ${url}`);
 // });
 var GET_NEXT_DEPARTURES = "\n  query GetNextDepartures(crs: \"ECR\") {\n    crs\n    nrccMessages {\n      message\n    }\n    generatedAt\n    locationName\n    platformAvailable\n  }\n";
 describe.skip("Queries", function () {
-    it("fetches the correct data", function () { return __awaiter(_this, void 0, void 0, function () {
+    it("fetches the correct data", function () { return __awaiter(void 0, void 0, void 0, function () {
         var server, query, res;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    server = new ApolloServer({
-                        typeDefs: typeDefs,
-                        resolvers: resolvers
+                    server = new apollo_server_1.ApolloServer({
+                        typeDefs: typeDefs_1.default,
+                        resolvers: resolvers_1.default({ tokenValue: "" })
                     });
-                    query = createTestClient(server).query;
+                    query = apollo_server_testing_1.createTestClient(server).query;
                     return [4 /*yield*/, query({ query: GET_NEXT_DEPARTURES })];
                 case 1:
                     res = _a.sent();

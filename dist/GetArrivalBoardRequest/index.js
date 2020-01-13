@@ -15,11 +15,10 @@ var removeArrays_1 = __importDefault(require("../removeArrays"));
  * @param {number || null} timeWindow (integer, between -120 and 120 exclusive): How far into the future in minutes, relative to timeOffset, to return services for. Defaults to 120. Optional.
  */
 function GetArrivalBoardRequest(_a, tokenValue) {
-    var _b = _a.numRows, numRows = _b === void 0 ? null : _b, crs = _a.crs, _c = _a.filterCrs, filterCrs = _c === void 0 ? [] : _c, _d = _a.filterType, filterType = _d === void 0 ? "to" : _d, _e = _a.timeOffset, timeOffset = _e === void 0 ? 0 : _e, _f = _a.timeWindow, timeWindow = _f === void 0 ? 120 : _f;
+    var _b = _a.numRows, numRows = _b === void 0 ? null : _b, crs = _a.crs, _c = _a.filterCrs, filterCrs = _c === void 0 ? null : _c, _d = _a.filterType, filterType = _d === void 0 ? "to" : _d, _e = _a.timeOffset, timeOffset = _e === void 0 ? 0 : _e, _f = _a.timeWindow, timeWindow = _f === void 0 ? 120 : _f;
     return new Promise(function (resolve, reject) {
         fetchData_1.default({
-            body: "\n      <ldb:GetArrivalBoardRequest>\n        " + (numRows && "<ldb:numRows>" + numRows + "</ldb:numRows>") + "\n        <ldb:crs>" + crs + "</ldb:crs>\n        " + (filterCrs.length &&
-                "<ldb:filterList>\n          " + filterCrs.map(function (filterCrsItem) { return "<ldb:crs>" + filterCrsItem + "</ldb:crs>"; }) + "\n        </ldb:filterList>") + "\n        <ldb:filterType>" + filterType + "</ldb:filterType>\n        <ldb:timeOffset>" + timeOffset + "</ldb:timeOffset>\n        <ldb:timeWindow>" + timeWindow + "</ldb:timeWindow>\n      </ldb:GetArrivalBoardRequest>\n      ",
+            body: "\n      <ldb:GetArrivalBoardRequest>\n        " + (numRows && "<ldb:numRows>" + numRows + "</ldb:numRows>") + "\n        <ldb:crs>" + crs + "</ldb:crs>\n        " + (filterCrs && "<ldb:filterCrs>" + filterCrs + "</ldb:filterCrs>") + "\n        <ldb:filterType>" + filterType + "</ldb:filterType>\n        <ldb:timeOffset>" + timeOffset + "</ldb:timeOffset>\n        <ldb:timeWindow>" + timeWindow + "</ldb:timeWindow>\n      </ldb:GetArrivalBoardRequest>\n      ",
             tokenValue: tokenValue
         })
             .then(function (result) {

@@ -1,4 +1,4 @@
-const GetNextDeparturesRequest = require("./index");
+import GetNextDeparturesRequest from "./index";
 
 describe("GetNextDeparturesRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
@@ -17,9 +17,12 @@ describe("GetNextDeparturesRequest", () => {
     expect.assertions(1);
 
     await expect(
-      GetNextDeparturesRequest({
-        crs: "ECR"
-      })
+      GetNextDeparturesRequest(
+        {
+          crs: "ECR"
+        },
+        ""
+      )
     ).rejects.toThrow("Error with credentials");
   });
 
@@ -29,9 +32,9 @@ describe("GetNextDeparturesRequest", () => {
     return expect(
       GetNextDeparturesRequest(
         {
-          numRows: "12",
+          numRows: 12,
           crs: "ECR",
-          filterCrs: ["STP"]
+          filterList: ["STP"]
         },
         "TOKEN_VALUE"
       )

@@ -34,7 +34,7 @@ describe("GetNextDeparturesWithDetailsRequest", () => {
         {
           numRows: 12,
           crs: "ECR",
-          filterCrs: ["STP"]
+          filterList: ["STP"]
         },
         "TOKEN_VALUE"
       )

@@ -50,7 +50,7 @@ const removeArrays = (values: Result) => {
     "nrccMessages"
   ];
 
-  const replaceKeys = (path: string, newValue: Result) => {
+  const replaceKeys = (path: string, newValue: any) => {
     keys.map(key => {
       if (newValue[key]) {
         _set(values, `${path}[${key}]`, newValue[key][0]);

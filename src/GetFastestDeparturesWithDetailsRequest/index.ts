@@ -39,7 +39,7 @@ function GetFastestDeparturesWithDetailsRequest(
         );
         // console.dir(result);
       })
-      .catch(err => reject(err));
+      .catch((err: Error) => reject(err));
   });
 }
 

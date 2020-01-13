@@ -37,7 +37,7 @@ function GetNextDeparturesRequest(
           removeArrays(result.GetNextDeparturesResponse[0].DeparturesBoard[0])
         );
       })
-      .catch(err => reject(err));
+      .catch((err: Error) => reject(err));
   });
 }
 

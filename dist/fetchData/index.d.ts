@@ -1,5 +1,5 @@
-export = fetchData;
-declare function fetchData({ body, tokenValue }: {
+declare const fetchData: ({ body, tokenValue }: {
     body: any;
     tokenValue: any;
-}): Promise<any>;
+}) => Promise<unknown>;
+export default fetchData;

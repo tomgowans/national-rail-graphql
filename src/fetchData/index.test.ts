@@ -1,4 +1,4 @@
-const fetchData = require("./index");
+import fetchData from "./index";
 
 describe("fetchData", () => {
   test("should fetch the data correctly", async () => {

@@ -1,1 +1,1 @@
-declare const fetchData: any;
+export {};

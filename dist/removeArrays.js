@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var lodash_1 = __importDefault(require("lodash"));
 var isArray_1 = __importDefault(require("lodash/isArray"));
 var isString_1 = __importDefault(require("lodash/isString"));
 var set_1 = __importDefault(require("lodash/set"));
@@ -59,6 +60,11 @@ var removeArrays = function (values) {
                     set_1.default(values, path + "[length]", toNumber_1.default(newValue.length));
                 }
             }
+            if (key === "platform" && newValue["platform"]) {
+                if (lodash_1.default.isString(newValue.platform[0])) {
+                    lodash_1.default.set(values, path + "[platform]", lodash_1.default.toNumber(newValue.platform));
+                }
+            }
             if (key === "platformAvailable" && newValue["platformAvailable"]) {
                 if (isString_1.default(newValue.platformAvailable[0])) {
                     set_1.default(values, path + "[platformAvailable]", newValue.platformAvailable === "true");
@@ -67,6 +73,11 @@ var removeArrays = function (values) {
             if (key === "isCancelled" && newValue["isCancelled"]) {
                 if (isString_1.default(newValue.isCancelled[0])) {
                     set_1.default(values, path + "[isCancelled]", newValue.isCancelled === "true");
+                }
+            }
+            if (key === "isCircularRoute" && newValue["isCircularRoute"]) {
+                if (lodash_1.default.isString(newValue.isCircularRoute[0])) {
+                    lodash_1.default.set(values, path + "[isCircularRoute]", newValue.isCircularRoute === "true");
                 }
             }
         });

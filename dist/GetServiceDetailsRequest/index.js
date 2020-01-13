@@ -5,6 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fetchData_1 = __importDefault(require("../fetchData"));
 var removeArrays_1 = __importDefault(require("../removeArrays"));
+/**
+ *
+ * @param {string} serviceID (string): The LDBWS service ID of the service to request the details of. The service ID is obtained from a service listed in a StationBoard object returned from any other request.
+ */
 function GetServiceDetailsRequest(_a, tokenValue) {
     var serviceID = _a.serviceID;
     return new Promise(function (resolve, reject) {
