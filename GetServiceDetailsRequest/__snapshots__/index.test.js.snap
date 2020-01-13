@@ -20,7 +20,7 @@ Object {
   "locationName": "East Croydon",
   "operator": "Thameslink",
   "operatorCode": "TL",
-  "platform": "3",
+  "platform": 3,
   "previousCallingPoints": Object {
     "callingPointList": Object {
       "callingPoint": Array [
@@ -122,7 +122,7 @@ Object {
   "locationName": "East Croydon",
   "operator": "Thameslink",
   "operatorCode": "TL",
-  "platform": "3",
+  "platform": 3,
   "previousCallingPoints": Object {
     "callingPointList": Object {
       "callingPoint": Array [
