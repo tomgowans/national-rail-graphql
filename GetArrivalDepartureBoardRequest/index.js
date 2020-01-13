@@ -14,7 +14,7 @@ function GetArrivalDepartureBoardRequest(
   {
     numRows = null,
     crs,
-    filterCrs = [],
+    filterCrs = null,
     filterType = "to",
     timeOffset = 0,
     timeWindow = 120
@@ -27,12 +27,7 @@ function GetArrivalDepartureBoardRequest(
       <ldb:GetArrivalDepartureBoardRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
-        ${filterCrs.length &&
-          `<ldb:filterList>
-          ${filterCrs.map(
-            filterCrsItem => `<ldb:crs>${filterCrsItem}</ldb:crs>`
-          )}
-        </ldb:filterList>`}
+        ${filterCrs && `<ldb:filterCrs>${filterCrs}</ldb:filterCrs>`}
         <ldb:filterType>${filterType}</ldb:filterType>
         <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>

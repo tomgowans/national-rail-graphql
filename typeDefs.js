@@ -228,7 +228,7 @@ const typeDefs = gql`
     GetDepartureBoard(
       numRows: String
       crs: String!
-      filterCrs: [String]
+      filterCrs: String
       filterType: String
       timeOffset: String
       timeWindow: String
@@ -236,7 +236,7 @@ const typeDefs = gql`
     GetDepBoardWithDetails(
       numRows: String
       crs: String!
-      filterCrs: [String]
+      filterCrs: String
       filterType: String
       timeOffset: String
       timeWindow: String
@@ -244,7 +244,7 @@ const typeDefs = gql`
     GetArrivalBoard(
       numRows: String
       crs: String!
-      filterCrs: [String]
+      filterCrs: String
       filterType: String
       timeOffset: String
       timeWindow: String
@@ -252,7 +252,7 @@ const typeDefs = gql`
     GetArrBoardWithDetails(
       numRows: String
       crs: String!
-      filterCrs: [String]
+      filterCrs: String
       filterType: String
       timeOffset: String
       timeWindow: String
@@ -260,40 +260,38 @@ const typeDefs = gql`
     GetArrivalDepartureBoard(
       numRows: String
       crs: String!
-      filterCrs: [String]
-      filterType: String
+      filterCrs: String
       timeOffset: String
       timeWindow: String
     ): StationBoard
     GetArrDepBoardWithDetails(
       numRows: String
       crs: String!
-      filterCrs: [String]
-      filterType: String
+      filterCrs: String
       timeOffset: String
       timeWindow: String
     ): StationBoardWithDetails
     GetNextDepartures(
       crs: String!
-      filterCrs: [String!]
+      filterList: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoard
     GetNextDeparturesWithDetails(
       crs: String!
-      filterCrs: [String!]
+      filterList: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoardWithDetails
     GetFastestDepartures(
       crs: String!
-      filterCrs: [String!]
+      filterList: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoard
     GetFastestDeparturesWithDetails(
       crs: String!
-      filterCrs: [String!]
+      filterList: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoardWithDetails
