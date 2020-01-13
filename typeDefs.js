@@ -88,14 +88,14 @@ const typeDefs = gql`
     eta: String
     std: String
     etd: String
-    platform: String
+    platform: Int
     operator: String
     operatorCode: String
-    isCircularRoute: String
-    isCancelled: String
+    isCircularRoute: Boolean
+    isCancelled: Boolean
     filterLocationCancelled: String
     serviceType: String
-    length: String
+    length: Int
     detachFront: String
     isReverseFormation: String
     cancelReason: String
@@ -114,14 +114,14 @@ const typeDefs = gql`
     eta: String
     std: String
     etd: String
-    platform: String
+    platform: Int
     operator: String
     operatorCode: String
-    isCircularRoute: String
-    isCancelled: String
+    isCircularRoute: Boolean
+    isCancelled: Boolean
     filterLocationCancelled: String
     serviceType: String
-    length: String
+    length: Int
     detachFront: String
     isReverseFormation: String
     cancelReason: String
@@ -161,7 +161,10 @@ const typeDefs = gql`
     crs: String
     via: String
     futureChangeTo: String
-    assocIsCancelled: String
+    assocIsCancelled: Boolean
+    st: String
+    et: String
+    length: Int
   }
 
   type ServiceDetails {
@@ -172,14 +175,14 @@ const typeDefs = gql`
     crs: String
     operator: String
     operatorCode: String
-    isCancelled: String
+    isCancelled: Boolean
     cancelReason: String
     delayReason: String
     overdueMessage: String
-    length: String
+    length: Int
     detachFront: String
     isReverseFormation: String
-    platform: String
+    platform: Int
     sta: String
     eta: String
     ata: String
@@ -205,8 +208,8 @@ const typeDefs = gql`
     st: String
     et: String
     at: String
-    isCancelled: String
-    length: String
+    isCancelled: Boolean
+    length: Int
     detachFront: String
     #adhocAlerts
   }
@@ -224,7 +227,7 @@ const typeDefs = gql`
   type Query {
     GetDepartureBoard(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
@@ -232,7 +235,7 @@ const typeDefs = gql`
     ): StationBoard
     GetDepBoardWithDetails(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
@@ -240,7 +243,7 @@ const typeDefs = gql`
     ): StationBoardWithDetails
     GetArrivalBoard(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
@@ -248,7 +251,7 @@ const typeDefs = gql`
     ): StationBoard
     GetArrBoardWithDetails(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
@@ -256,7 +259,7 @@ const typeDefs = gql`
     ): StationBoardWithDetails
     GetArrivalDepartureBoard(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
@@ -264,37 +267,37 @@ const typeDefs = gql`
     ): StationBoard
     GetArrDepBoardWithDetails(
       numRows: String
-      crs: String
+      crs: String!
       filterCrs: [String]
       filterType: String
       timeOffset: String
       timeWindow: String
     ): StationBoardWithDetails
     GetNextDepartures(
-      crs: String
-      filterCrs: [String]
+      crs: String!
+      filterCrs: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoard
     GetNextDeparturesWithDetails(
-      crs: String
-      filterCrs: [String]
+      crs: String!
+      filterCrs: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoardWithDetails
     GetFastestDepartures(
-      crs: String
-      filterCrs: [String]
+      crs: String!
+      filterCrs: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoard
     GetFastestDeparturesWithDetails(
-      crs: String
-      filterCrs: [String]
+      crs: String!
+      filterCrs: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoardWithDetails
-    GetServiceDetails(serviceID: String): ServiceDetails
+    GetServiceDetails(serviceID: String!): ServiceDetails
   }
 `;
 
