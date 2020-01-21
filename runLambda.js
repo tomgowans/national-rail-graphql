@@ -1,4 +1,12 @@
-const service = require("./lambda");
-const config = require("./config.json");
+const { ApolloServer } = require("apollo-server-lambda");
 
-service({ tokenValue: config.tokenValue });
+const typeDefs = require("./typeDefs");
+const resolvers = require("./resolvers");
+
+const server = new ApolloServer({
+  typeDefs,
+  // eslint-disable-next-line no-undef
+  resolvers: resolvers({ tokenValue: process.env.tokenValue })
+});
+
+exports.handler = server.createHandler();
