@@ -13,6 +13,7 @@
     "@babel/preset-env": "*",
     "@ovotech/apollo-datasource-soap": "^4.1.0",
     "apollo-server": "^2.9.12",
+    "apollo-server-lambda": "^2.9.16",
     "apollo-server-testing": "^2.9.14",
     "babel-jest": "*",
     "enzyme": "^3.10.0",
