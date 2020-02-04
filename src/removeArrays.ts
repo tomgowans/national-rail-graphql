@@ -98,8 +98,6 @@ const removeArrays = (values: Result) => {
 
   replaceKeys(``, values);
 
-  const service = values.trainServices.service || [];
-
   if (values.departures) {
     _set(values, "departures.destination", values.departures.destination[0]);
 
@@ -241,7 +239,9 @@ const removeArrays = (values: Result) => {
     }
   }
 
-  if (_isArray(service)) {
+  if (values.trainServices) {
+    const service = values.trainServices.service || [];
+
     for (let index1 = 0; index1 < service.length; index1++) {
       replaceKeys(
         `trainServices.service[${index1}]`,

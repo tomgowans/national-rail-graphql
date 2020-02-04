@@ -1,1 +1,1 @@
-declare const GetArrBoardWithDetailsRequest: any;
+export {};

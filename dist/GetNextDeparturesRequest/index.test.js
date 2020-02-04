@@ -40,19 +40,33 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = __importDefault(require("./index"));
+var response_1 = __importDefault(require("./response"));
+jest.mock("node-fetch");
+var fetch = require("node-fetch");
+var _a = jest.requireActual("node-fetch"), Response = _a.Response, Headers = _a.Headers;
 describe("GetNextDeparturesRequest", function () {
+    beforeEach(function () {
+        jest.clearAllMocks();
+    });
     it("sends a request with minimal parameters correctly", function () { return __awaiter(void 0, void 0, void 0, function () {
         var result;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    expect.assertions(1);
+                    fetch.mockResolvedValueOnce(Promise.resolve(new Response(response_1.default.text(), {
+                        status: 200,
+                        statusText: "fail",
+                        headers: new Headers({
+                            "Content-Type": "text/xml"
+                        })
+                    })));
                     return [4 /*yield*/, index_1.default({
                             crs: "ECR"
                         }, "TOKEN_VALUE")];
                 case 1:
                     result = _a.sent();
                     expect(result).toMatchSnapshot();
+                    expect(fetch).toBeCalledTimes(1);
                     return [2 /*return*/];
             }
         });
@@ -71,12 +85,29 @@ describe("GetNextDeparturesRequest", function () {
             }
         });
     }); });
-    it("sends a request with more parameters correctly", function () {
-        expect.assertions(1);
-        return expect(index_1.default({
-            numRows: 12,
-            crs: "ECR",
-            filterList: ["STP"]
-        }, "TOKEN_VALUE")).resolves.toMatchSnapshot();
-    });
+    it("sends a request with more parameters correctly", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var result;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    fetch.mockResolvedValueOnce(Promise.resolve(new Response(response_1.default.text(), {
+                        status: 200,
+                        statusText: "fail",
+                        headers: new Headers({
+                            "Content-Type": "text/xml"
+                        })
+                    })));
+                    return [4 /*yield*/, index_1.default({
+                            crs: "ECR",
+                            filterCrs: "STP",
+                            numRows: 12
+                        }, "TOKEN_VALUE")];
+                case 1:
+                    result = _a.sent();
+                    expect(result).toMatchSnapshot();
+                    expect(fetch).toBeCalledTimes(1);
+                    return [2 /*return*/];
+            }
+        });
+    }); });
 });

@@ -25,7 +25,7 @@ const fetchData = ({ body, tokenValue }) => {
         .then(response => response.text())
         .then(response => response.replace(/(<\/?)(\w*:)/gm, "$1"))
         .then(response => {
-          parseString(response, (error, result) => {
+          parseString(response, (error: Error, result: any) => {
             if (error) {
               return reject(error);
             } else {

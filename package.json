@@ -1,19 +1,11 @@
 {
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "name": "national-rail-graphql",
   "main": "dist/index.js",
   "version": "0.0.1",
-  "jest": {
-    "collectCoverage": true,
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    }
-  },
   "dependencies": {
     "@babel/core": "*",
     "@babel/preset-env": "*",

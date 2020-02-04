@@ -1,5 +1,5 @@
-const fetchData = require("../fetchData");
-const removeArrays = require("../removeArrays");
+import fetchData from "../fetchData";
+import removeArrays from "../removeArrays";
 
 import { Attributes, Result } from "../types";
 

@@ -1,8 +1,28 @@
 import GetFastestDeparturesRequest from "./index";
+import responseData from "./response";
+
+jest.mock("node-fetch");
+
+const fetch = require("node-fetch");
+const { Response, Headers } = jest.requireActual("node-fetch");
 
 describe("GetFastestDeparturesRequest", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   it("sends a request with minimal parameters correctly", async () => {
-    expect.assertions(1);
+    fetch.mockResolvedValueOnce(
+      Promise.resolve(
+        new Response(responseData.text(), {
+          status: 200,
+          statusText: "fail",
+          headers: new Headers({
+            "Content-Type": "text/xml"
+          })
+        })
+      )
+    );
 
     const result = await GetFastestDeparturesRequest(
       {
@@ -11,6 +31,7 @@ describe("GetFastestDeparturesRequest", () => {
       "TOKEN_VALUE"
     );
     expect(result).toMatchSnapshot();
+    expect(fetch).toBeCalledTimes(1);
   });
 
   it("sends a request with minimal parameters and fail", async () => {
@@ -26,18 +47,28 @@ describe("GetFastestDeparturesRequest", () => {
     ).rejects.toThrow("Error with credentials");
   });
 
-  it("sends a request with more parameters correctly", () => {
-    expect.assertions(1);
-
-    return expect(
-      GetFastestDeparturesRequest(
-        {
-          numRows: 12,
-          crs: "ECR",
-          filterList: ["STP"]
-        },
-        "TOKEN_VALUE"
+  it("sends a request with more parameters correctly", async () => {
+    fetch.mockResolvedValueOnce(
+      Promise.resolve(
+        new Response(responseData.text(), {
+          status: 200,
+          statusText: "fail",
+          headers: new Headers({
+            "Content-Type": "text/xml"
+          })
+        })
       )
-    ).resolves.toMatchSnapshot();
+    );
+
+    const result = await GetFastestDeparturesRequest(
+      {
+        crs: "ECR",
+        filterCrs: "STP",
+        numRows: 12
+      },
+      "TOKEN_VALUE"
+    );
+    expect(result).toMatchSnapshot();
+    expect(fetch).toBeCalledTimes(1);
   });
 });

@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var lodash_1 = __importDefault(require("lodash"));
-var isArray_1 = __importDefault(require("lodash/isArray"));
 var isString_1 = __importDefault(require("lodash/isString"));
 var set_1 = __importDefault(require("lodash/set"));
 var toNumber_1 = __importDefault(require("lodash/toNumber"));
@@ -83,7 +82,6 @@ var removeArrays = function (values) {
         });
     };
     replaceKeys("", values);
-    var service = values.trainServices.service || [];
     if (values.departures) {
         set_1.default(values, "departures.destination", values.departures.destination[0]);
         var destinationService = values.departures.destination.service;
@@ -146,7 +144,8 @@ var removeArrays = function (values) {
             replaceKeys("subsequentCallingPoints.callingPointList.callingPoint[" + index2 + "]", values.subsequentCallingPoints.callingPointList.callingPoint[index2]);
         }
     }
-    if (isArray_1.default(service)) {
+    if (values.trainServices) {
+        var service = values.trainServices.service || [];
         for (var index1 = 0; index1 < service.length; index1++) {
             replaceKeys("trainServices.service[" + index1 + "]", values.trainServices.service[index1]);
             if (values.trainServices.service[index1].previousCallingPoints) {

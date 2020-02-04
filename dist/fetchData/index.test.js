@@ -40,39 +40,75 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = __importDefault(require("./index"));
+var response_1 = __importDefault(require("./response"));
+jest.mock("node-fetch");
+var fetch = require("node-fetch");
+var _a = jest.requireActual("node-fetch"), Response = _a.Response, Headers = _a.Headers;
 describe("fetchData", function () {
+    beforeEach(function () {
+        jest.clearAllMocks();
+    });
     test("should fetch the data correctly", function () { return __awaiter(void 0, void 0, void 0, function () {
         var result;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, index_1.default({
-                        body: "body items",
-                        tokenValue: "ABC-123"
-                    })];
+                case 0:
+                    fetch.mockResolvedValueOnce(Promise.resolve(new Response(response_1.default.text(), {
+                        status: 200,
+                        statusText: "fail",
+                        headers: new Headers({
+                            "Content-Type": "text/xml"
+                        })
+                    })));
+                    return [4 /*yield*/, index_1.default({
+                            body: "body items",
+                            tokenValue: "ABC-123"
+                        })];
                 case 1:
                     result = _a.sent();
                     expect(result).toMatchSnapshot();
+                    expect(fetch).toBeCalledTimes(1);
                     return [2 /*return*/];
             }
         });
     }); });
-    it("should fail with incorrect credentials", function () {
-        return expect(index_1.default({
-            body: "body items",
-            tokenValue: null
-        })).rejects.toThrow("Error with credentials");
-    });
-    it("should fail with a malformed XML response", function () {
-        return expect(index_1.default({
-            body: "RespondWithXMLError",
-            tokenValue: "ABC-123"
-        })).rejects.toThrow("Unclosed root tag\nLine: 0\nColumn: 20\nChar: ");
-    });
-    it("should fail with a malformed Fetch response", function () {
-        return expect(index_1.default({
-            body: "RespondWithFetchError",
-            tokenValue: "ABC-123"
-        })).rejects.toThrow("response.text is not a function");
-    });
+    it("should fail with incorrect credentials", function () { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    expect.assertions(1);
+                    return [4 /*yield*/, expect(index_1.default({
+                            body: "body items",
+                            tokenValue: null
+                        })).rejects.toThrow("Error with credentials")];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); });
+    it("should fail with a malformed XML response", function () { return __awaiter(void 0, void 0, void 0, function () {
+        var result;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    fetch.mockResolvedValueOnce(Promise.resolve(new Response("<xml><malformedxml/>", {
+                        status: 200,
+                        statusText: "fail",
+                        headers: new Headers({
+                            "Content-Type": "text/xml"
+                        })
+                    })));
+                    result = index_1.default({
+                        body: "RespondWithXMLError",
+                        tokenValue: "ABC-123"
+                    });
+                    return [4 /*yield*/, expect(result).rejects.toThrow("Unclosed root tag\nLine: 0\nColumn: 20\nChar: ")];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); });
 });
 // TODO: Server error response?
