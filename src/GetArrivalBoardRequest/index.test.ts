@@ -64,7 +64,10 @@ describe("GetArrivalBoardRequest", () => {
       {
         crs: "ECR",
         filterCrs: "STP",
-        numRows: 12
+        numRows: 11,
+        filterType: "from",
+        timeOffset: 10,
+        timeWindow: 100
       },
       "TOKEN_VALUE"
     );

@@ -63,8 +63,9 @@ describe("GetNextDeparturesWithDetailsRequest", () => {
     const result = await GetNextDeparturesWithDetailsRequest(
       {
         crs: "ECR",
-        filterCrs: "STP",
-        numRows: 12
+        filterList: ["STP"],
+        timeOffset: 10,
+        timeWindow: 100
       },
       "TOKEN_VALUE"
     );
