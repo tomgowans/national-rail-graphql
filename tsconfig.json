@@ -5,10 +5,9 @@
     "declaration": true,
     "target": "ES5",
     "strict": false,
-    "esModuleInterop": true
-    // "module": "commonjs",
-    // "allowSyntheticDefaultImports": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "__mocks__"]
-  // "exclude": ["src/**/*.test.ts"]
+  "include": ["src"],
+  "exclude": ["**/*.test.*", "**/*.spec.*"]
 }

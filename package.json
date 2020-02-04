@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "name": "national-rail-graphql",
   "main": "dist/index.js",
