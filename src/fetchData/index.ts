@@ -1,7 +1,13 @@
 const parseString = require("xml2js").parseString;
 import fetch from "node-fetch";
+import { Result } from "../types";
 
-const fetchData = ({ body, tokenValue }) => {
+type Response = {
+  body: string;
+  tokenValue: string;
+};
+
+const fetchData = ({ body, tokenValue }: Response): Promise<Result> => {
   return new Promise((resolve, reject) => {
     if (!body || !tokenValue) {
       reject(new Error("Error with credentials"));
