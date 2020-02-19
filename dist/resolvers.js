@@ -50,8 +50,8 @@ var resolvers = function (_a) {
             },
             GetServiceDetails: function (obj, queryAttributes) {
                 return GetServiceDetailsRequest_1.default(queryAttributes, tokenValue);
-            }
-        }
+            },
+        },
     };
 };
 exports.default = resolvers;

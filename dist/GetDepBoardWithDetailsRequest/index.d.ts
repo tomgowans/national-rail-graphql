@@ -1,4 +1,4 @@
-import { Attributes } from "../types";
+import { Result, Attributes } from '../types';
 /**
  *
  * @param {number || null} numRows (integer, between 0 and 150 exclusive): The number of services to return in the resulting station board.
@@ -8,5 +8,5 @@ import { Attributes } from "../types";
  * @param {number || null} timeOffset (integer, between -120 and 120 exclusive): An offset in minutes against the current time to provide the station board for. Defaults to 0. Optional.
  * @param {number || null} timeWindow (integer, between -120 and 120 exclusive): How far into the future in minutes, relative to timeOffset, to return services for. Defaults to 120. Optional.
  */
-declare function GetDepBoardWithDetailsRequest({ numRows, crs, filterCrs, filterType, timeOffset, timeWindow }: Attributes, tokenValue: string): Promise<unknown>;
+declare function GetDepBoardWithDetailsRequest({ numRows, crs, filterCrs, filterType, timeOffset, timeWindow }: Attributes, tokenValue: string): Promise<Result>;
 export default GetDepBoardWithDetailsRequest;

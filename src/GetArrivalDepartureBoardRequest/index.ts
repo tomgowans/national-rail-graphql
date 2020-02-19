@@ -1,6 +1,6 @@
-import fetchData from "../fetchData";
-import removeArrays from "../removeArrays";
-import { Attributes, Result } from "../types";
+import fetchData from '../fetchData';
+import removeArrays from '../removeArrays';
+import { Attributes, Result } from '../types';
 
 /**
  *
@@ -13,16 +13,9 @@ import { Attributes, Result } from "../types";
  */
 
 function GetArrivalDepartureBoardRequest(
-  {
-    numRows = null,
-    crs,
-    filterCrs = null,
-    filterType = "to",
-    timeOffset = 0,
-    timeWindow = 120
-  }: Attributes,
-  tokenValue: string
-) {
+  { numRows = null, crs, filterCrs = null, filterType = 'to', timeOffset = 0, timeWindow = 120 }: Attributes,
+  tokenValue: string,
+): Promise<Result> {
   return new Promise((resolve, reject) => {
     fetchData({
       body: `
@@ -35,15 +28,11 @@ function GetArrivalDepartureBoardRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetArrivalDepartureBoardRequest>
       `,
-      tokenValue
+      tokenValue,
     })
       .then((result: Result) => {
         // console.dir(result);
-        resolve(
-          removeArrays(
-            result.GetArrivalDepartureBoardResponse[0].GetStationBoardResult[0]
-          )
-        );
+        resolve(removeArrays(result.GetArrivalDepartureBoardResponse[0].GetStationBoardResult[0]));
       })
       .catch((err: Error) => reject(err));
   });

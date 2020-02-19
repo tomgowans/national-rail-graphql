@@ -1,4 +1,4 @@
-export type Attributes = {
+export interface Attributes {
   crs: string;
   filterCrs?: string | null;
   filterList?: Array<string>;
@@ -6,33 +6,33 @@ export type Attributes = {
   numRows?: number | null;
   timeOffset?: number | null;
   timeWindow?: number | null;
-};
+}
 
-export type ServiceAttributes = {
+export interface ServiceAttributes {
   serviceID: string;
-};
+}
 
-export type ServiceProps = {
+export interface ServiceProps {
   tokenValue: string;
-};
+}
 
-export type ServerProps = {
+export interface ServerProps {
   url: string;
-};
+}
 
-type GetArrBoardWithDetailsResponse = {
+interface GetArrBoardWithDetailsResponse {
   GetStationBoardResult: Array<any>;
-};
+}
 
-type GetServiceDetailsResult = {
+interface GetServiceDetailsResult {
   GetServiceDetailsResult: Array<any>;
-};
+}
 
-type DeparturesBoard = {
+interface DeparturesBoard {
   DeparturesBoard: Array<any>;
-};
+}
 
-export type Result = {
+export interface Result {
   departures: any;
   GetArrBoardWithDetailsResponse: Array<GetArrBoardWithDetailsResponse>;
   GetArrDepBoardWithDetailsResponse: Array<GetArrBoardWithDetailsResponse>;
@@ -45,14 +45,14 @@ export type Result = {
   GetNextDeparturesResponse: Array<DeparturesBoard>;
   GetNextDeparturesWithDetailsResponse: Array<DeparturesBoard>;
   GetServiceDetailsResponse: Array<GetServiceDetailsResult>;
-  isCancelled: String;
-  isCircularRoute: String;
-  length: String;
-  platform: String | Array<String>;
-  platformAvailable: String;
+  isCancelled: string;
+  isCircularRoute: string;
+  length: string;
+  platform: string | Array<string>;
+  platformAvailable: string;
   previousCallingPoints: any;
   subsequentCallingPoints: any;
   trainServices: {
     service: Array<any>;
   };
-};
+}

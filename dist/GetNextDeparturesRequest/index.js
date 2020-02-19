@@ -18,7 +18,7 @@ function GetNextDeparturesRequest(_a, tokenValue) {
         fetchData_1.default({
             body: "\n      <ldb:GetNextDeparturesRequest>\n        <ldb:crs>" + crs + "</ldb:crs>\n        " + (filterList.length &&
                 "<ldb:filterList>\n          " + filterList.map(function (filterListItem) { return "<ldb:crs>" + filterListItem + "</ldb:crs>"; }) + "\n        </ldb:filterList>") + "\n        <ldb:timeOffset>" + timeOffset + "</ldb:timeOffset>\n        <ldb:timeWindow>" + timeWindow + "</ldb:timeWindow>\n      </ldb:GetNextDeparturesRequest>\n      ",
-            tokenValue: tokenValue
+            tokenValue: tokenValue,
         })
             .then(function (result) {
             // console.dir(result.GetNextDeparturesResponse[0].DeparturesBoard[0]);

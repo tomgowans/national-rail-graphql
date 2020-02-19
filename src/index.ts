@@ -1,13 +1,13 @@
-import { ApolloServer } from "apollo-server";
+import { ApolloServer } from 'apollo-server';
 
-import typeDefs from "./typeDefs";
-import resolvers from "./resolvers";
-import { ServiceProps, ServerProps } from "./types";
+import typeDefs from './typeDefs';
+import resolvers from './resolvers';
+import { ServiceProps, ServerProps } from './types';
 
-const service = ({ tokenValue }: ServiceProps) => {
+const service = ({ tokenValue }: ServiceProps): void => {
   const server = new ApolloServer({
     typeDefs,
-    resolvers: resolvers({ tokenValue })
+    resolvers: resolvers({ tokenValue }),
   });
 
   server.listen().then(({ url }: ServerProps) => {

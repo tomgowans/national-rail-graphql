@@ -1,6 +1,6 @@
-import fetchData from "../fetchData";
-import removeArrays from "../removeArrays";
-import { Result, Attributes } from "../types";
+import fetchData from '../fetchData';
+import removeArrays from '../removeArrays';
+import { Result, Attributes } from '../types';
 
 /**
  *
@@ -12,21 +12,14 @@ import { Result, Attributes } from "../types";
  * @param {number || null} timeWindow (integer, between -120 and 120 exclusive): How far into the future in minutes, relative to timeOffset, to return services for. Defaults to 120. Optional.
  */
 function GetDepBoardWithDetailsRequest(
-  {
-    numRows = null,
-    crs,
-    filterCrs = null,
-    filterType = "to",
-    timeOffset = 0,
-    timeWindow = 120
-  }: Attributes,
-  tokenValue: string
-) {
+  { numRows = null, crs, filterCrs = null, filterType = 'to', timeOffset = 0, timeWindow = 120 }: Attributes,
+  tokenValue: string,
+): Promise<Result> {
   return new Promise((resolve, reject) => {
     fetchData({
       body: `
       <ldb:GetDepBoardWithDetailsRequest>
-        ${numRows ? `<ldb:numRows>${numRows}</ldb:numRows>` : ""}
+        ${numRows ? `<ldb:numRows>${numRows}</ldb:numRows>` : ''}
         <ldb:crs>${crs}</ldb:crs>
         ${filterCrs && `<ldb:filterCrs>${filterCrs}</ldb:filterCrs>`}
         <ldb:filterType>${filterType}</ldb:filterType>
@@ -34,16 +27,12 @@ function GetDepBoardWithDetailsRequest(
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetDepBoardWithDetailsRequest>
       `,
-      tokenValue
+      tokenValue,
     })
       .then((result: Result) => {
         // return result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0];
 
-        resolve(
-          removeArrays(
-            result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0]
-          )
-        );
+        resolve(removeArrays(result.GetDepBoardWithDetailsResponse[0].GetStationBoardResult[0]));
       })
       .catch((err: Error) => reject(err));
   });

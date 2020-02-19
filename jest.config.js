@@ -1,11 +1,11 @@
 module.exports = {
   clearMocks: true,
-  preset: "ts-jest",
-  testEnvironment: "node",
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   collectCoverage: true,
   globals: {
-    "ts-jest": {
-      tsConfig: "tsconfig.json"
-    }
-  }
+    'ts-jest': {
+      tsConfig: 'tsconfig.json',
+    },
+  },
 };

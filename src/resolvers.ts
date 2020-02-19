@@ -1,15 +1,15 @@
-import GetDepartureBoardRequest from "./GetDepartureBoardRequest";
-import GetDepBoardWithDetailsRequest from "./GetDepBoardWithDetailsRequest";
-import GetArrivalBoardRequest from "./GetArrivalBoardRequest";
-import GetArrBoardWithDetailsRequest from "./GetArrBoardWithDetailsRequest";
-import GetArrivalDepartureBoardRequest from "./GetArrivalDepartureBoardRequest";
-import GetArrDepBoardWithDetailsRequest from "./GetArrDepBoardWithDetailsRequest";
-import GetNextDeparturesRequest from "./GetNextDeparturesRequest";
-import GetNextDeparturesWithDetailsRequest from "./GetNextDeparturesWithDetailsRequest";
-import GetFastestDeparturesRequest from "./GetFastestDeparturesRequest";
-import GetFastestDeparturesWithDetailsRequest from "./GetFastestDeparturesWithDetailsRequest";
-import GetServiceDetailsRequest from "./GetServiceDetailsRequest";
-import { Attributes, ServiceAttributes, ServiceProps } from "./types";
+import GetDepartureBoardRequest from './GetDepartureBoardRequest';
+import GetDepBoardWithDetailsRequest from './GetDepBoardWithDetailsRequest';
+import GetArrivalBoardRequest from './GetArrivalBoardRequest';
+import GetArrBoardWithDetailsRequest from './GetArrBoardWithDetailsRequest';
+import GetArrivalDepartureBoardRequest from './GetArrivalDepartureBoardRequest';
+import GetArrDepBoardWithDetailsRequest from './GetArrDepBoardWithDetailsRequest';
+import GetNextDeparturesRequest from './GetNextDeparturesRequest';
+import GetNextDeparturesWithDetailsRequest from './GetNextDeparturesWithDetailsRequest';
+import GetFastestDeparturesRequest from './GetFastestDeparturesRequest';
+import GetFastestDeparturesWithDetailsRequest from './GetFastestDeparturesWithDetailsRequest';
+import GetServiceDetailsRequest from './GetServiceDetailsRequest';
+import { Attributes, ServiceAttributes, ServiceProps } from './types';
 
 const resolvers = ({ tokenValue }: ServiceProps) => {
   return {
@@ -51,16 +51,13 @@ const resolvers = ({ tokenValue }: ServiceProps) => {
       },
 
       GetFastestDeparturesWithDetails(obj: any, queryAttributes: Attributes) {
-        return GetFastestDeparturesWithDetailsRequest(
-          queryAttributes,
-          tokenValue
-        );
+        return GetFastestDeparturesWithDetailsRequest(queryAttributes, tokenValue);
       },
 
       GetServiceDetails(obj: any, queryAttributes: ServiceAttributes) {
         return GetServiceDetailsRequest(queryAttributes, tokenValue);
-      }
-    }
+      },
+    },
   };
 };
 

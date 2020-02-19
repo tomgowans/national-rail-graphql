@@ -1,4 +1,4 @@
-import { gql } from "apollo-server";
+import { gql } from 'apollo-server';
 
 const typeDefs = gql`
   type Location {
@@ -271,24 +271,14 @@ const typeDefs = gql`
       timeOffset: String
       timeWindow: String
     ): StationBoardWithDetails
-    GetNextDepartures(
-      crs: String!
-      filterList: [String!]
-      timeOffset: String
-      timeWindow: String
-    ): DeparturesBoard
+    GetNextDepartures(crs: String!, filterList: [String!], timeOffset: String, timeWindow: String): DeparturesBoard
     GetNextDeparturesWithDetails(
       crs: String!
       filterList: [String!]
       timeOffset: String
       timeWindow: String
     ): DeparturesBoardWithDetails
-    GetFastestDepartures(
-      crs: String!
-      filterList: [String!]
-      timeOffset: String
-      timeWindow: String
-    ): DeparturesBoard
+    GetFastestDepartures(crs: String!, filterList: [String!], timeOffset: String, timeWindow: String): DeparturesBoard
     GetFastestDeparturesWithDetails(
       crs: String!
       filterList: [String!]

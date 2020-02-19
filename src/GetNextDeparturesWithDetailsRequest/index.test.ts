@@ -1,73 +1,74 @@
-import GetNextDeparturesWithDetailsRequest from "./index";
-import responseData from "./response";
+import GetNextDeparturesWithDetailsRequest from './index';
+import responseData from './response';
 
-jest.mock("node-fetch");
+jest.mock('node-fetch');
 
-const fetch = require("node-fetch");
-const { Response, Headers } = jest.requireActual("node-fetch");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const fetch = require('node-fetch');
+const { Response, Headers } = jest.requireActual('node-fetch');
 
-describe("GetNextDeparturesWithDetailsRequest", () => {
+describe('GetNextDeparturesWithDetailsRequest', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  it("sends a request with minimal parameters correctly", async () => {
+  it('sends a request with minimal parameters correctly', async () => {
     fetch.mockResolvedValueOnce(
       Promise.resolve(
-        new Response(responseData.text(), {
+        new Response(responseData.text, {
           status: 200,
-          statusText: "fail",
+          statusText: 'fail',
           headers: new Headers({
-            "Content-Type": "text/xml"
-          })
-        })
-      )
+            'Content-Type': 'text/xml',
+          }),
+        }),
+      ),
     );
 
     const result = await GetNextDeparturesWithDetailsRequest(
       {
-        crs: "ECR"
+        crs: 'ECR',
       },
-      "TOKEN_VALUE"
+      'TOKEN_VALUE',
     );
     expect(result).toMatchSnapshot();
     expect(fetch).toBeCalledTimes(1);
   });
 
-  it("sends a request with minimal parameters and fail", async () => {
+  it('sends a request with minimal parameters and fail', async () => {
     expect.assertions(1);
 
     await expect(
       GetNextDeparturesWithDetailsRequest(
         {
-          crs: "ECR"
+          crs: 'ECR',
         },
-        ""
-      )
-    ).rejects.toThrow("Error with credentials");
+        '',
+      ),
+    ).rejects.toThrow('Error with credentials');
   });
 
-  it("sends a request with more parameters correctly", async () => {
+  it('sends a request with more parameters correctly', async () => {
     fetch.mockResolvedValueOnce(
       Promise.resolve(
-        new Response(responseData.text(), {
+        new Response(responseData.text, {
           status: 200,
-          statusText: "fail",
+          statusText: 'fail',
           headers: new Headers({
-            "Content-Type": "text/xml"
-          })
-        })
-      )
+            'Content-Type': 'text/xml',
+          }),
+        }),
+      ),
     );
 
     const result = await GetNextDeparturesWithDetailsRequest(
       {
-        crs: "ECR",
-        filterList: ["STP"],
+        crs: 'ECR',
+        filterList: ['STP'],
         timeOffset: 10,
-        timeWindow: 100
+        timeWindow: 100,
       },
-      "TOKEN_VALUE"
+      'TOKEN_VALUE',
     );
     expect(result).toMatchSnapshot();
     expect(fetch).toBeCalledTimes(1);

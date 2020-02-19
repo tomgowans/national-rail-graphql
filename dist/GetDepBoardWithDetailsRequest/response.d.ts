@@ -1,1 +1,1 @@
-export declare function text(): string;
+export declare const text: string;

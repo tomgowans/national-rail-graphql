@@ -1,4 +1,4 @@
-import { Result } from "../types";
+import { Result } from '../types';
 declare type Response = {
     body: string;
     tokenValue: string;

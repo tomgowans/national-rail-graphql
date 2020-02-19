@@ -1,6 +1,6 @@
-import fetchData from "../fetchData";
-import removeArrays from "../removeArrays";
-import { Attributes, Result } from "../types";
+import fetchData from '../fetchData';
+import removeArrays from '../removeArrays';
+import { Attributes, Result } from '../types';
 
 /**
  *
@@ -12,8 +12,8 @@ import { Attributes, Result } from "../types";
 
 function GetFastestDeparturesWithDetailsRequest(
   { crs, filterList = [], timeOffset = 0, timeWindow = 120 }: Attributes,
-  tokenValue: string
-) {
+  tokenValue: string,
+): Promise<Result> {
   return new Promise((resolve, reject) => {
     fetchData({
       body: `
@@ -21,22 +21,16 @@ function GetFastestDeparturesWithDetailsRequest(
         <ldb:crs>${crs}</ldb:crs>
         ${filterList.length &&
           `<ldb:filterList>
-          ${filterList.map(
-            filterListItem => `<ldb:crs>${filterListItem}</ldb:crs>`
-          )}
+          ${filterList.map(filterListItem => `<ldb:crs>${filterListItem}</ldb:crs>`)}
         </ldb:filterList>`}
         <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
       </ldb:GetFastestDeparturesWithDetailsRequest>
       `,
-      tokenValue
+      tokenValue,
     })
       .then((result: Result) => {
-        resolve(
-          removeArrays(
-            result.GetFastestDeparturesWithDetailsResponse[0].DeparturesBoard[0]
-          )
-        );
+        resolve(removeArrays(result.GetFastestDeparturesWithDetailsResponse[0].DeparturesBoard[0]));
         // console.dir(result);
       })
       .catch((err: Error) => reject(err));

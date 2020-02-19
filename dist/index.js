@@ -10,7 +10,7 @@ var service = function (_a) {
     var tokenValue = _a.tokenValue;
     var server = new apollo_server_1.ApolloServer({
         typeDefs: typeDefs_1.default,
-        resolvers: resolvers_1.default({ tokenValue: tokenValue })
+        resolvers: resolvers_1.default({ tokenValue: tokenValue }),
     });
     server.listen().then(function (_a) {
         var url = _a.url;

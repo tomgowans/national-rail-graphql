@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var fetchData_1 = __importDefault(require("../fetchData"));
+var index_1 = __importDefault(require("../fetchData/index"));
 var removeArrays_1 = __importDefault(require("../removeArrays"));
 /**
  *
@@ -12,9 +12,9 @@ var removeArrays_1 = __importDefault(require("../removeArrays"));
 function GetServiceDetailsRequest(_a, tokenValue) {
     var serviceID = _a.serviceID;
     return new Promise(function (resolve, reject) {
-        fetchData_1.default({
+        index_1.default({
             body: "\n      <ldb:GetServiceDetailsRequest>\n        " + (serviceID && "<ldb:serviceID>" + serviceID + "</ldb:serviceID>") + "\n      </ldb:GetServiceDetailsRequest>\n      ",
-            tokenValue: tokenValue
+            tokenValue: tokenValue,
         })
             .then(function (result) {
             // console.dir(result);

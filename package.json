@@ -19,7 +19,6 @@
     "apollo-server-testing": "^2.9.14",
     "babel-jest": "*",
     "enzyme": "^3.10.0",
-    "eslint": "^6.7.2",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
     "jest": "^24.9.0",
@@ -31,6 +30,11 @@
     "xml2js": "^0.4.22"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
     "ts-jest": "^24.3.0"
   }
 }
