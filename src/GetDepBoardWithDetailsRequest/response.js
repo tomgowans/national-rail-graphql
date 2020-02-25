@@ -851,4 +851,1365 @@ const response = {
     </soap:Envelope>`,
 };
 
+const EcrToLKnd = {
+  text: `<?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <soap:Body>
+            <GetDepBoardWithDetailsResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+                <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types" xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types" xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types" xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                    <lt4:generatedAt>2020-02-24T17:31:54.7519442+00:00</lt4:generatedAt>
+                    <lt4:locationName>East Croydon</lt4:locationName>
+                    <lt4:crs>ECR</lt4:crs>
+                    <lt4:filterLocationName>Kingswood</lt4:filterLocationName>
+                    <lt4:filtercrs>KND</lt4:filtercrs>
+                    <lt4:nrccMessages>
+                        <lt:message>&lt;P&gt;Line closed between Lingfield and East Grinstead due to a landslip. More information can be found in &lt;A href="http://nationalrail.co.uk/service_disruptions/242588.aspx"&gt;Latest Travel News.&lt;/A&gt;&lt;/P&gt;</lt:message>
+                        <lt:message>The lifts are out of order between platforms 3 &amp;amp; 4 and the footbridge at East Croydon station </lt:message>
+                        <lt:message>The lifts are out of order between platforms 3 &amp;amp; 4 and the footbridge at East Croydon station </lt:message>
+                        <lt:message>Delays to Thameslink services between Luton and London St Pancras International due to a points failure between Cricklewood and West Hampstead Thameslink. More details can be found in &lt;A href="http://nationalrail.co.uk/service_disruptions/243501.aspx "&gt;Latest Travel News&lt;/A&gt;.</lt:message>
+                    </lt4:nrccMessages>
+                    <lt4:platformAvailable>true</lt4:platformAvailable>
+                    <lt7:trainServices>
+                        <lt7:service>
+                            <lt4:std>17:33</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>6</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>q8XqRgtqdwSZvTxW2y8U+w==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>17:35</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>17:38</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>17:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>17:48</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>17:51</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>17:53</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>17:58</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>17:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>17:50</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>17:53</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>17:56</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>17:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>18:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>18:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>18:12</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>17:50</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>5</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>6P+RNgm5Sm8oG4C92zIoIA==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Victoria</lt4:locationName>
+                                    <lt4:crs>VIC</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>17:52</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>17:56</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>17:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>18:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>18:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>18:13</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>18:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>17:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:10</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:13</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:16</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:19</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>18:25</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>18:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>18:32</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:03</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>6</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>J/SxdtSvUmx2Yx68DT1F0Q==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>18:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>18:21</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>18:23</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>18:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:20</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:23</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:26</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:29</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>18:35</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>18:38</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>18:42</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:20</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>5</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>CUItlCdwSAP7vgel2brr2A==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Victoria</lt4:locationName>
+                                    <lt4:crs>VIC</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:22</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:26</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:29</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>18:38</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>18:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>18:43</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>18:48</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:29</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:40</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:43</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:46</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:49</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>18:55</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>18:58</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>19:02</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:33</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>6</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>mEaNb4tOEz9kzh3zHFyeOQ==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:36</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:38</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>18:48</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>18:51</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>18:53</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>18:58</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:50</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:53</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:56</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>19:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>19:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>19:12</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:50</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>5</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>8</lt4:length>
+                            <lt4:serviceID>VTpxeg2h2PKJiBZAggCemg==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Victoria</lt4:locationName>
+                                    <lt4:crs>VIC</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:52</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>8</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:56</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>8</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>19:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>19:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>19:13</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>19:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:59</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>19:10</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>19:13</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>19:16</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>19:19</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>19:25</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>19:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>19:32</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>4</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>19:03</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>6</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>10</lt4:length>
+                            <lt4:serviceID>tawhRVR2xxRV+3N0J29HIQ==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Caterham</lt4:locationName>
+                                    <lt4:crs>CAT</lt4:crs>
+                                </lt4:location>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>19:06</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>19:08</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>19:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kenley</lt7:locationName>
+                                        <lt7:crs>KLY</lt7:crs>
+                                        <lt7:st>19:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe</lt7:locationName>
+                                        <lt7:crs>WHY</lt7:crs>
+                                        <lt7:st>19:21</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Whyteleafe South</lt7:locationName>
+                                        <lt7:crs>WHS</lt7:crs>
+                                        <lt7:st>19:23</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Caterham</lt7:locationName>
+                                        <lt7:crs>CAT</lt7:crs>
+                                        <lt7:st>19:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>19:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>19:20</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>19:23</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>19:26</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>19:29</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Kingswood</lt7:locationName>
+                                        <lt7:crs>KND</lt7:crs>
+                                        <lt7:st>19:35</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tadworth</lt7:locationName>
+                                        <lt7:crs>TAD</lt7:crs>
+                                        <lt7:st>19:38</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Tattenham Corner</lt7:locationName>
+                                        <lt7:crs>TAT</lt7:crs>
+                                        <lt7:st>19:42</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                    </lt7:trainServices>
+                </GetStationBoardResult>
+            </GetDepBoardWithDetailsResponse>
+        </soap:Body>
+    </soap:Envelope>`,
+};
+
+const KndToEcr = {
+  text: `<?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <soap:Body>
+            <GetDepBoardWithDetailsResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+                <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types" xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types" xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types" xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                    <lt4:generatedAt>2020-02-24T17:33:24.9872329+00:00</lt4:generatedAt>
+                    <lt4:locationName>Kingswood</lt4:locationName>
+                    <lt4:crs>KND</lt4:crs>
+                    <lt4:filterLocationName>East Croydon</lt4:filterLocationName>
+                    <lt4:filtercrs>ECR</lt4:filtercrs>
+                    <lt4:platformAvailable>true</lt4:platformAvailable>
+                    <lt7:trainServices>
+                        <lt7:service>
+                            <lt4:std>17:46</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>1</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>5</lt4:length>
+                            <lt4:serviceID>mqyS0fsYqLoasoKENa4MzQ==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>17:52</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>17:55</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>17:58</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:02</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:15</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>East Croydon</lt7:locationName>
+                                        <lt7:crs>ECR</lt7:crs>
+                                        <lt7:st>18:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>London Bridge</lt7:locationName>
+                                        <lt7:crs>LBG</lt7:crs>
+                                        <lt7:st>18:34</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:16</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>1</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>5</lt4:length>
+                            <lt4:serviceID>6Ck/b9QfT6ngC++hMyBWzA==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:22</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:25</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>18:32</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>18:35</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>18:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>18:45</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>East Croydon</lt7:locationName>
+                                        <lt7:crs>ECR</lt7:crs>
+                                        <lt7:st>18:48</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>London Bridge</lt7:locationName>
+                                        <lt7:crs>LBG</lt7:crs>
+                                        <lt7:st>19:04</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>18:46</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>1</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>5</lt4:length>
+                            <lt4:serviceID>aUBqQ+5/vthukaQS08Xwgg==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>18:52</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>18:55</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>18:58</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>19:02</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>19:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>19:11</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>19:15</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>East Croydon</lt7:locationName>
+                                        <lt7:crs>ECR</lt7:crs>
+                                        <lt7:st>19:18</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>London Bridge</lt7:locationName>
+                                        <lt7:crs>LBG</lt7:crs>
+                                        <lt7:st>19:34</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                        <lt7:service>
+                            <lt4:std>19:16</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>1</lt4:platform>
+                            <lt4:operator>Southern</lt4:operator>
+                            <lt4:operatorCode>SN</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:length>5</lt4:length>
+                            <lt4:serviceID>O/iVlgGNszspHr+okO7BfQ==</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>Tattenham Corner</lt4:locationName>
+                                    <lt4:crs>TAT</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>London Bridge</lt4:locationName>
+                                    <lt4:crs>LBG</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                            <lt7:subsequentCallingPoints>
+                                <lt7:callingPointList>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Chipstead</lt7:locationName>
+                                        <lt7:crs>CHP</lt7:crs>
+                                        <lt7:st>19:22</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Woodmansterne</lt7:locationName>
+                                        <lt7:crs>WME</lt7:crs>
+                                        <lt7:st>19:25</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Coulsdon Town</lt7:locationName>
+                                        <lt7:crs>CDN</lt7:crs>
+                                        <lt7:st>19:28</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Reedham (Surrey)</lt7:locationName>
+                                        <lt7:crs>RHM</lt7:crs>
+                                        <lt7:st>19:32</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley</lt7:locationName>
+                                        <lt7:crs>PUR</lt7:crs>
+                                        <lt7:st>19:35</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>5</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>Purley Oaks</lt7:locationName>
+                                        <lt7:crs>PUO</lt7:crs>
+                                        <lt7:st>19:41</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>South Croydon</lt7:locationName>
+                                        <lt7:crs>SCY</lt7:crs>
+                                        <lt7:st>19:45</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>East Croydon</lt7:locationName>
+                                        <lt7:crs>ECR</lt7:crs>
+                                        <lt7:st>19:48</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                    <lt7:callingPoint>
+                                        <lt7:locationName>London Bridge</lt7:locationName>
+                                        <lt7:crs>LBG</lt7:crs>
+                                        <lt7:st>20:05</lt7:st>
+                                        <lt7:et>On time</lt7:et>
+                                        <lt7:length>10</lt7:length>
+                                    </lt7:callingPoint>
+                                </lt7:callingPointList>
+                            </lt7:subsequentCallingPoints>
+                        </lt7:service>
+                    </lt7:trainServices>
+                </GetStationBoardResult>
+            </GetDepBoardWithDetailsResponse>
+        </soap:Body>
+    </soap:Envelope>`,
+};
+
 module.exports = response;
