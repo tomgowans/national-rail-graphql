@@ -65,3 +65,4 @@ typings/
 # Archive files
 *.zip
 .DS_Store
+.yarn
