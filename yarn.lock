@@ -1465,13 +1465,13 @@ apollo-server-express@^2.17.0:
     subscriptions-transport-ws "^0.9.16"
     type-is "^1.6.16"
 
-apollo-server-lambda@^2.14.2:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-lambda/-/apollo-server-lambda-2.16.0.tgz#35ef5eb10e7f625d528d1fbdf9f75946c67047be"
+apollo-server-lambda@^2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/apollo-server-lambda/-/apollo-server-lambda-2.17.0.tgz#2e3e432f818abc30c77b6ce823471cee4e4b8526"
   dependencies:
     "@apollographql/graphql-playground-html" "1.6.26"
     "@types/aws-lambda" "^8.10.31"
-    apollo-server-core "^2.16.0"
+    apollo-server-core "^2.17.0"
     apollo-server-env "^2.4.5"
     apollo-server-types "^0.5.1"
     graphql-tools "^4.0.0"
