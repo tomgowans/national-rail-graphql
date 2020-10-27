@@ -18,7 +18,7 @@
     "babel-jest": "*",
     "enzyme": "^3.10.0",
     "eslint": "^7.9.0",
-    "graphql": "^15.3.0",
+    "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "jest": "^26.4.2",
     "lodash": "^4.17.20",
