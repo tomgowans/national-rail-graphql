@@ -14,7 +14,7 @@
     "@ovotech/apollo-datasource-soap": "^4.1.0",
     "apollo-server": "^2.18.2",
     "apollo-server-lambda": "^2.19.0",
-    "apollo-server-testing": "^2.18.2",
+    "apollo-server-testing": "^2.19.0",
     "babel-jest": "*",
     "enzyme": "^3.10.0",
     "eslint": "^7.9.0",
