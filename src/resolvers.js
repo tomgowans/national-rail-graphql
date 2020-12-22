@@ -58,8 +58,8 @@ const resolvers = ({ tokenValue }) => {
 
       GetServiceDetails(obj, queryAttributes) {
         return GetServiceDetailsRequest(queryAttributes, tokenValue);
-      }
-    }
+      },
+    },
   };
 };
 

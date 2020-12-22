@@ -1,4 +1,4 @@
-const fetchData = require("../fetchData");
+const fetchData = require("../../fetchData");
 const removeArrays = require("../removeArrays");
 
 /**
@@ -10,41 +10,41 @@ const removeArrays = require("../removeArrays");
  * @param {number || null} timeOffset (integer, between -120 and 120 exclusive): An offset in minutes against the current time to provide the station board for. Defaults to 0. Optional.
  * @param {number || null} timeWindow (integer, between -120 and 120 exclusive): How far into the future in minutes, relative to timeOffset, to return services for. Defaults to 120. Optional.
  */
-function GetArrivalBoardRequest(
+function GetArrBoardWithDetailsRequest(
   {
     numRows = null,
     crs,
     filterCrs = null,
     filterType = "to",
     timeOffset = 0,
-    timeWindow = 120
+    timeWindow = 120,
   },
   tokenValue
 ) {
   return new Promise((resolve, reject) => {
     fetchData({
       body: `
-      <ldb:GetArrivalBoardRequest>
+      <ldb:GetArrBoardWithDetailsRequest>
         ${numRows && `<ldb:numRows>${numRows}</ldb:numRows>`}
         <ldb:crs>${crs}</ldb:crs>
         ${filterCrs && `<ldb:filterCrs>${filterCrs}</ldb:filterCrs>`}
         <ldb:filterType>${filterType}</ldb:filterType>
         <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
         <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
-      </ldb:GetArrivalBoardRequest>
+      </ldb:GetArrBoardWithDetailsRequest>
       `,
-      tokenValue
+      tokenValue,
     })
-      .then(result => {
+      .then((result) => {
         // console.dir(result);
         resolve(
           removeArrays(
-            result.GetArrivalBoardResponse[0].GetStationBoardResult[0]
+            result.GetArrBoardWithDetailsResponse[0].GetStationBoardResult[0]
           )
         );
       })
-      .catch(err => reject(err));
+      .catch((err) => reject(err));
   });
 }
 
-module.exports = GetArrivalBoardRequest;
+module.exports = GetArrBoardWithDetailsRequest;

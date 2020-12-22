@@ -1,4 +1,4 @@
-const fetchData = require("../fetchData");
+const fetchData = require("../../fetchData");
 const removeArrays = require("../removeArrays");
 
 /**
@@ -17,20 +17,22 @@ function GetNextDeparturesWithDetailsRequest(
       body: `
       <ldb:GetNextDeparturesWithDetailsRequest>
       <ldb:crs>${crs}</ldb:crs>
-      ${filterList.length &&
+      ${
+        filterList.length &&
         `<ldb:filterList>
         ${filterList.map(
-          filterListItem => `<ldb:crs>${filterListItem}</ldb:crs>`
+          (filterListItem) => `<ldb:crs>${filterListItem}</ldb:crs>`
         )}
-      </ldb:filterList>`}
+      </ldb:filterList>`
+      }
       <ldb:timeOffset>${timeOffset}</ldb:timeOffset>
       <ldb:timeWindow>${timeWindow}</ldb:timeWindow>
     </ldb:GetNextDeparturesWithDetailsRequest>
 
       `,
-      tokenValue
+      tokenValue,
     })
-      .then(result => {
+      .then((result) => {
         // console.dir(result);
         resolve(
           removeArrays(
@@ -38,7 +40,7 @@ function GetNextDeparturesWithDetailsRequest(
           )
         );
       })
-      .catch(err => reject(err));
+      .catch((err) => reject(err));
   });
 }
 

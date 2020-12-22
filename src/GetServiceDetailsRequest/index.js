@@ -1,4 +1,4 @@
-const fetchData = require("../fetchData");
+const fetchData = require("../../fetchData");
 const removeArrays = require("../removeArrays");
 
 /**
@@ -14,9 +14,9 @@ function GetServiceDetailsRequest({ serviceID }, tokenValue) {
         ${serviceID && `<ldb:serviceID>${serviceID}</ldb:serviceID>`}
       </ldb:GetServiceDetailsRequest>
       `,
-      tokenValue
+      tokenValue,
     })
-      .then(result => {
+      .then((result) => {
         // console.dir(result);
         resolve(
           removeArrays(
@@ -24,7 +24,7 @@ function GetServiceDetailsRequest({ serviceID }, tokenValue) {
           )
         );
       })
-      .catch(err => reject(err));
+      .catch((err) => reject(err));
   });
 }
 

@@ -34,7 +34,7 @@ describe.skip("Queries", () => {
   it("fetches the correct data", async () => {
     const server = new ApolloServer({
       typeDefs,
-      resolvers
+      resolvers,
     });
 
     const { query } = createTestClient(server);
