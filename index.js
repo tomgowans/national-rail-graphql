@@ -7,7 +7,7 @@ const resolvers = require("./resolvers");
 const service = ({ tokenValue }) => {
   const server = new ApolloServer({
     typeDefs,
-    resolvers: resolvers({ tokenValue })
+    resolvers: resolvers({ tokenValue }),
   });
 
   server.listen().then(({ url }) => {

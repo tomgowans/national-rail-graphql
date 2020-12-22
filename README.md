@@ -1,5 +1,9 @@
 # national-rail-graphql
 
+# Install
+
+`npm i`
+
 Running locally documentation:
 `node runServer.js`
 
