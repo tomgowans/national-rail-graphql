@@ -1,16 +1,16 @@
 const response = require("../response");
 
-const GetDepartureBoardRequest = require("../../GetDepartureBoardRequest/response");
-const GetDepBoardWithDetailsRequest = require("../../GetDepBoardWithDetailsRequest/response");
-const GetArrivalBoardRequest = require("../../GetArrivalBoardRequest/response");
-const GetArrBoardWithDetailsRequest = require("../../GetArrBoardWithDetailsRequest/response");
-const GetArrDepBoardWithDetailsRequest = require("../../GetArrDepBoardWithDetailsRequest/response");
-const GetArrivalDepartureBoardRequest = require("../../GetArrivalDepartureBoardRequest/response");
-const GetNextDeparturesRequest = require("../../GetNextDeparturesRequest/response");
-const GetNextDeparturesWithDetailsRequest = require("../../GetNextDeparturesWithDetailsRequest/response");
-const GetFastestDeparturesRequest = require("../../GetFastestDeparturesRequest/response");
-const GetFastestDeparturesWithDetailsRequest = require("../../GetFastestDeparturesWithDetailsRequest/response");
-const GetServiceDetailsRequest = require("../../GetServiceDetailsRequest/response");
+const GetDepartureBoardRequest = require("../../src/GetDepartureBoardRequest/response");
+const GetDepBoardWithDetailsRequest = require("../../src/GetDepBoardWithDetailsRequest/response");
+const GetArrivalBoardRequest = require("../../src/GetArrivalBoardRequest/response");
+const GetArrBoardWithDetailsRequest = require("../../src/GetArrBoardWithDetailsRequest/response");
+const GetArrDepBoardWithDetailsRequest = require("../../src/GetArrDepBoardWithDetailsRequest/response");
+const GetArrivalDepartureBoardRequest = require("../../src/GetArrivalDepartureBoardRequest/response");
+const GetNextDeparturesRequest = require("../../src/GetNextDeparturesRequest/response");
+const GetNextDeparturesWithDetailsRequest = require("../../src/GetNextDeparturesWithDetailsRequest/response");
+const GetFastestDeparturesRequest = require("../../src/GetFastestDeparturesRequest/response");
+const GetFastestDeparturesWithDetailsRequest = require("../../src/GetFastestDeparturesWithDetailsRequest/response");
+const GetServiceDetailsRequest = require("../../src/GetServiceDetailsRequest/response");
 
 const fetch = (url, args) => {
   return new Promise(resolve => {

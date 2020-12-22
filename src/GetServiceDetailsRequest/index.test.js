@@ -1,4 +1,4 @@
-const GetServiceDetailsRequest = require("./index");
+const GetServiceDetailsRequest = require("./");
 
 describe("GetServiceDetailsRequest", () => {
   it("sends a request with minimal parameters correctly", async () => {
