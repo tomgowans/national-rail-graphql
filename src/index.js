@@ -3,16 +3,17 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./typeDefs");
 const resolvers = require("./resolvers");
 
-// Add production flag
-const service = ({ tokenValue }) => {
+const service = ({ tokenValue, isDevEnv = false }) => {
   const server = new ApolloServer({
     typeDefs,
     resolvers: resolvers({ tokenValue }),
   });
 
-  server.listen().then(({ url }) => {
-    console.log(`🚂 Server ready at ${url}`);
-  });
+  if (isDevEnv) {
+    server.listen().then(({ url }) => {
+      console.log(`🚂 Server ready at ${url}`);
+    });
+  }
 };
 
 module.exports = service;
