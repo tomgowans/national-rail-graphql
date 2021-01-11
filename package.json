@@ -3,11 +3,12 @@
     "test": "jest"
   },
   "name": "national-rail-graphql",
-  "main": "index.js",
-  "version": "0.0.1",
+  "main": "src/index.js",
+  "version": "11.0.0",
   "jest": {
     "collectCoverage": true
   },
+  "homepage": "https://github.com/tomgowans/national-rail-graphql",
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
