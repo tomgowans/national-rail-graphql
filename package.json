@@ -13,7 +13,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "apollo-server": "^2.19.1",
-    "apollo-server-lambda": "^2.19.0",
+    "apollo-server-lambda": "^2.19.1",
     "apollo-server-testing": "^2.19.1",
     "enzyme": "^3.11.0",
     "graphql": "^15.4.0",
