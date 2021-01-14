@@ -19,7 +19,8 @@ function GetNextDeparturesRequest(
       body: `
       <ldb:GetNextDeparturesRequest>
         <ldb:crs>${crs}</ldb:crs>
-        ${filterList.length &&
+        ${
+          filterList.length &&
           `<ldb:filterList>
           ${filterList.map(filterListItem => `<ldb:crs>${filterListItem}</ldb:crs>`)}
         </ldb:filterList>`}
