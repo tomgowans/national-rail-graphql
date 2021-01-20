@@ -16,8 +16,8 @@ export const service = ({ tokenValue }: ServiceProps): void => {
   });
 };
 
-export const lambdaService = ({ tokenValue}:ServiceProps): void => {
-  const server = new ApolloServerLambda({
+export const lambdaService = ({ tokenValue }: ServiceProps) => {
+  return new ApolloServerLambda({
     typeDefs,
     resolvers: resolvers({ tokenValue }),
   });
