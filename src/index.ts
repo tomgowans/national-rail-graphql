@@ -1,10 +1,11 @@
 import { ApolloServer } from 'apollo-server';
+import { ApolloServer as ApolloServerLambda } from 'apollo-server-lambda';
 
 import typeDefs from './typeDefs';
 import resolvers from './resolvers';
 import { ServiceProps, ServerProps } from './types';
 
-const service = ({ tokenValue }: ServiceProps): void => {
+export const service = ({ tokenValue }: ServiceProps): void => {
   const server = new ApolloServer({
     typeDefs,
     resolvers: resolvers({ tokenValue }),
@@ -15,4 +16,9 @@ const service = ({ tokenValue }: ServiceProps): void => {
   });
 };
 
-module.exports = service;
+export const lambdaService = ({ tokenValue}:ServiceProps): void => {
+  const server = new ApolloServerLambda({
+    typeDefs,
+    resolvers: resolvers({ tokenValue }),
+  });
+}
