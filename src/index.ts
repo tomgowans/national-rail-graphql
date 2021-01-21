@@ -22,3 +22,5 @@ export const lambdaService = ({ tokenValue }: ServiceProps) => {
     resolvers: resolvers({ tokenValue }),
   });
 }
+
+export { typeDefs, resolvers};

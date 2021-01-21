@@ -3,11 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.lambdaService = exports.service = void 0;
+exports.resolvers = exports.typeDefs = exports.lambdaService = exports.service = void 0;
 var apollo_server_1 = require("apollo-server");
 var apollo_server_lambda_1 = require("apollo-server-lambda");
 var typeDefs_1 = __importDefault(require("./typeDefs"));
+exports.typeDefs = typeDefs_1.default;
 var resolvers_1 = __importDefault(require("./resolvers"));
+exports.resolvers = resolvers_1.default;
 exports.service = function (_a) {
     var tokenValue = _a.tokenValue;
     var server = new apollo_server_1.ApolloServer({
@@ -21,7 +23,7 @@ exports.service = function (_a) {
 };
 exports.lambdaService = function (_a) {
     var tokenValue = _a.tokenValue;
-    var server = new apollo_server_lambda_1.ApolloServer({
+    return new apollo_server_lambda_1.ApolloServer({
         typeDefs: typeDefs_1.default,
         resolvers: resolvers_1.default({ tokenValue: tokenValue }),
     });
