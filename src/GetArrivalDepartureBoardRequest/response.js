@@ -1,6 +1,5 @@
 const response = {
-  text: () => {
-    return `<?xml version="1.0" encoding="utf-8"?>
+  text: `<?xml version="1.0" encoding="utf-8"?>
     <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
         <soap:Body>
             <GetArrivalDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
@@ -3020,8 +3019,7 @@ const response = {
                 </GetStationBoardResult>
             </GetArrivalDepartureBoardResponse>
         </soap:Body>
-    </soap:Envelope>`;
-  }
+    </soap:Envelope>`,
 };
 
 module.exports = response;

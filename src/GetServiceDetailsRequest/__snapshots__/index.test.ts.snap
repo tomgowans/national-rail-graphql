@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GetServiceDetailsRequest sends a request with minimal parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": "ECR",
+  "eta": "On time",
+  "etd": "On time",
+  "generatedAt": "2020-02-27T08:31:54.4790478+00:00",
+  "length": 10,
+  "locationName": "East Croydon",
+  "operator": "Southern",
+  "operatorCode": "SN",
+  "platform": 6,
+  "previousCallingPoints": Object {
+    "callingPointList": Array [
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "LBG",
+            "et": "On time",
+            "length": 10,
+            "locationName": "London Bridge",
+            "st": "08:47",
+          },
+        ],
+      },
+    ],
+  },
+  "serviceType": "train",
+  "sta": "09:03",
+  "std": "09:04",
+  "subsequentCallingPoints": Object {
+    "callingPointList": Array [
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "SCY",
+            "et": "On time",
+            "length": 10,
+            "locationName": "South Croydon",
+            "st": "09:06",
+          },
+          Object {
+            "crs": "PUO",
+            "et": "On time",
+            "length": 10,
+            "locationName": "Purley Oaks",
+            "st": "09:09",
+          },
+          Object {
+            "crs": "PUR",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Purley",
+            "st": "09:12",
+          },
+          Object {
+            "crs": "KLY",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Kenley",
+            "st": "09:18",
+          },
+          Object {
+            "crs": "WHY",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Whyteleafe",
+            "st": "09:22",
+          },
+          Object {
+            "crs": "WHS",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Whyteleafe South",
+            "st": "09:24",
+          },
+          Object {
+            "crs": "CAT",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Caterham",
+            "st": "09:28",
+          },
+        ],
+      },
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "PUR",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Purley",
+            "st": "09:12",
+          },
+          Object {
+            "crs": "RHM",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Reedham (Surrey)",
+            "st": "09:20",
+          },
+          Object {
+            "crs": "CDN",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Coulsdon Town",
+            "st": "09:23",
+          },
+          Object {
+            "crs": "WME",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Woodmansterne",
+            "st": "09:26",
+          },
+          Object {
+            "crs": "CHP",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Chipstead",
+            "st": "09:29",
+          },
+          Object {
+            "crs": "KND",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Kingswood",
+            "st": "09:35",
+          },
+          Object {
+            "crs": "TAD",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Tadworth",
+            "st": "09:38",
+          },
+          Object {
+            "crs": "TAT",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Tattenham Corner",
+            "st": "09:42",
+          },
+        ],
+      },
+    ],
+  },
+}
+`;
+
+exports[`GetServiceDetailsRequest sends a request with more parameters correctly 1`] = `
+Object {
+  "$": Object {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+  },
+  "crs": "ECR",
+  "eta": "On time",
+  "etd": "On time",
+  "generatedAt": "2020-02-27T08:31:54.4790478+00:00",
+  "length": 10,
+  "locationName": "East Croydon",
+  "operator": "Southern",
+  "operatorCode": "SN",
+  "platform": 6,
+  "previousCallingPoints": Object {
+    "callingPointList": Array [
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "LBG",
+            "et": "On time",
+            "length": 10,
+            "locationName": "London Bridge",
+            "st": "08:47",
+          },
+        ],
+      },
+    ],
+  },
+  "serviceType": "train",
+  "sta": "09:03",
+  "std": "09:04",
+  "subsequentCallingPoints": Object {
+    "callingPointList": Array [
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "SCY",
+            "et": "On time",
+            "length": 10,
+            "locationName": "South Croydon",
+            "st": "09:06",
+          },
+          Object {
+            "crs": "PUO",
+            "et": "On time",
+            "length": 10,
+            "locationName": "Purley Oaks",
+            "st": "09:09",
+          },
+          Object {
+            "crs": "PUR",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Purley",
+            "st": "09:12",
+          },
+          Object {
+            "crs": "KLY",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Kenley",
+            "st": "09:18",
+          },
+          Object {
+            "crs": "WHY",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Whyteleafe",
+            "st": "09:22",
+          },
+          Object {
+            "crs": "WHS",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Whyteleafe South",
+            "st": "09:24",
+          },
+          Object {
+            "crs": "CAT",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Caterham",
+            "st": "09:28",
+          },
+        ],
+      },
+      Object {
+        "callingPoint": Array [
+          Object {
+            "crs": "PUR",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Purley",
+            "st": "09:12",
+          },
+          Object {
+            "crs": "RHM",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Reedham (Surrey)",
+            "st": "09:20",
+          },
+          Object {
+            "crs": "CDN",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Coulsdon Town",
+            "st": "09:23",
+          },
+          Object {
+            "crs": "WME",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Woodmansterne",
+            "st": "09:26",
+          },
+          Object {
+            "crs": "CHP",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Chipstead",
+            "st": "09:29",
+          },
+          Object {
+            "crs": "KND",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Kingswood",
+            "st": "09:35",
+          },
+          Object {
+            "crs": "TAD",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Tadworth",
+            "st": "09:38",
+          },
+          Object {
+            "crs": "TAT",
+            "et": "On time",
+            "length": 5,
+            "locationName": "Tattenham Corner",
+            "st": "09:42",
+          },
+        ],
+      },
+    ],
+  },
+}
+`;
