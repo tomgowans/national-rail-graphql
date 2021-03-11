@@ -4,7 +4,7 @@
   },
   "name": "national-rail-graphql",
   "main": "src/index.js",
-  "version": "11.0.1",
+  "version": "11.0.2",
   "jest": {
     "collectCoverage": true
   },
