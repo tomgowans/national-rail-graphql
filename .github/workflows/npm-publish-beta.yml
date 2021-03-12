@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 12
       - run: npm i -g jest typescript
-      - run: npm ci
+      - run: npm i
       - run: npm test
       - run: npm run build
 
