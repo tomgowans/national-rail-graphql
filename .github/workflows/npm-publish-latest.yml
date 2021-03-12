@@ -27,7 +27,9 @@ jobs:
         with:
           node-version: 15
           registry-url: https://registry.npmjs.org/
+      - run: npm i -g jest typescript
       - run: npm ci
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
