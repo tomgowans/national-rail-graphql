@@ -10,7 +10,7 @@ var typeDefs_1 = __importDefault(require("./typeDefs"));
 exports.typeDefs = typeDefs_1.default;
 var resolvers_1 = __importDefault(require("./resolvers"));
 exports.resolvers = resolvers_1.default;
-exports.service = function (_a) {
+var service = function (_a) {
     var tokenValue = _a.tokenValue;
     var server = new apollo_server_1.ApolloServer({
         typeDefs: typeDefs_1.default,
@@ -21,10 +21,12 @@ exports.service = function (_a) {
         console.log("\uD83D\uDE82 Server ready at " + url);
     });
 };
-exports.lambdaService = function (_a) {
+exports.service = service;
+var lambdaService = function (_a) {
     var tokenValue = _a.tokenValue;
     return new apollo_server_lambda_1.ApolloServer({
         typeDefs: typeDefs_1.default,
         resolvers: resolvers_1.default({ tokenValue: tokenValue }),
     });
 };
+exports.lambdaService = lambdaService;
