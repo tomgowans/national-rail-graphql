@@ -59,4 +59,4 @@ const response = {
     </soap:Envelope>`,
 };
 
-module.exports = response;
+export { response as default };

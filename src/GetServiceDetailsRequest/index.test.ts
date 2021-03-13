@@ -1,5 +1,5 @@
 import GetServiceDetailsRequest from './index';
-import responseData from './response';
+import responseData from './response.mock';
 
 jest.mock('node-fetch');
 

@@ -2212,4 +2212,4 @@ const KndToEcr = {
     </soap:Envelope>`,
 };
 
-module.exports = response;
+export { response as default };
