@@ -13,7 +13,7 @@
   "dependencies": {
     "apollo-engine-reporting": "2.3.0",
     "apollo-server": "2.24.1",
-    "apollo-server-lambda": "2.24.1",
+    "apollo-server-lambda": "2.25.1",
     "lodash": "4.17.21",
     "node-fetch": "2.6.1",
     "xml2js": "0.4.23"
